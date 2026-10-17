@@ -13,5 +13,6 @@
     "level_3": 500,
     "level_4": 1000,
     "level_5": 2000
-  }
+  },
+  "sell_refund_rate": 0.5
 }

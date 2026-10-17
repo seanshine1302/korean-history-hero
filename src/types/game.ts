@@ -81,6 +81,7 @@ export interface EconomyRulesConfig {
   };
   character_level_up_exp: number[];
   base_upgrade_costs: Record<string, number>;
+  sell_refund_rate?: number;
 }
 
 export interface SubEnemy {

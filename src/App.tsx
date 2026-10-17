@@ -56,7 +56,11 @@ export function App() {
   const [sessionQuestions, setSessionQuestions] = useState<QuizQuestion[]>([]);
 
   // Active Modals in Era Home
-  const [showShopModal, setShowShopModal] = useState(false);
+  const [shopModalState, setShopModalState] = useState<{
+    open: boolean;
+    initialTab: 'base' | 'equipment' | 'artifact';
+    initialSlotId: string;
+  }>({ open: false, initialTab: 'base', initialSlotId: 'slot_1' });
   const [showCodexModal, setShowCodexModal] = useState(false);
   const [invasionModalState, setInvasionModalState] = useState<{
     open: boolean;
@@ -388,20 +392,44 @@ export function App() {
     });
   };
 
-  const handleBuyArtifact = (artifact: DisplayArtifactItem) => {
+  const handleSellEquipment = (item: EquipmentItem) => {
+    const refundRate = economyRules.sell_refund_rate ?? 0.5;
+    const refund = Math.floor(item.cost * refundRate);
+    updateCurrentEraState((eraState) => {
+      const owned = eraState.owned_items || [];
+      const idx = owned.indexOf(item.id);
+      if (idx === -1) return;
+      owned.splice(idx, 1);
+      eraState.owned_items = owned;
+      eraState.equipped_items = (eraState.equipped_items || []).filter((id) => id !== item.id);
+      eraState.gold += refund;
+    });
+  };
+
+  const handleBuyArtifact = (artifact: DisplayArtifactItem, targetSlotId?: string) => {
     updateCurrentEraState((eraState) => {
       if (eraState.gold < artifact.cost) return;
       eraState.gold -= artifact.cost;
-      if (!eraState.owned_artifacts.includes(artifact.id)) {
-        eraState.owned_artifacts.push(artifact.id);
+      if (!eraState.owned_artifacts) {
+        eraState.owned_artifacts = [];
       }
-      // Auto-place into first empty slot if available
+      // Always push to allow owning multiple copies of the same display artifact
+      eraState.owned_artifacts.push(artifact.id);
+
+      if (!eraState.placed_artifacts) {
+        eraState.placed_artifacts = {};
+      }
+      // Auto-place into targetSlotId if empty, otherwise into the first empty unlocked slot
       const maxSlots = eraState.base_level || 1;
-      for (let i = 1; i <= maxSlots; i++) {
-        const slotKey = `slot_${i}`;
-        if (!eraState.placed_artifacts[slotKey]) {
-          eraState.placed_artifacts[slotKey] = artifact.id;
-          break;
+      if (targetSlotId && !eraState.placed_artifacts[targetSlotId]) {
+        eraState.placed_artifacts[targetSlotId] = artifact.id;
+      } else {
+        for (let i = 1; i <= maxSlots; i++) {
+          const slotKey = `slot_${i}`;
+          if (!eraState.placed_artifacts[slotKey]) {
+            eraState.placed_artifacts[slotKey] = artifact.id;
+            break;
+          }
         }
       }
     });
@@ -413,13 +441,61 @@ export function App() {
       if (artifactId === null) {
         delete nextPlaced[slotId];
       } else {
-        // Remove from any existing slot first
-        Object.keys(nextPlaced).forEach((k) => {
-          if (nextPlaced[k] === artifactId) delete nextPlaced[k];
-        });
+        const ownedCount = (eraState.owned_artifacts || []).filter(
+          (id) => id === artifactId
+        ).length;
+        if (ownedCount <= 0) return;
+
+        // Check how many other slots currently hold this same artifactId
+        const otherSlotsWithSame = Object.keys(nextPlaced).filter(
+          (k) => k !== slotId && nextPlaced[k] === artifactId
+        );
+
+        // Only remove from an existing slot if all owned copies are already placed in other slots
+        if (otherSlotsWithSame.length >= ownedCount) {
+          const excessCount = otherSlotsWithSame.length - ownedCount + 1;
+          for (let i = 0; i < excessCount; i++) {
+            delete nextPlaced[otherSlotsWithSame[i]];
+          }
+        }
         nextPlaced[slotId] = artifactId;
       }
       eraState.placed_artifacts = nextPlaced;
+    });
+  };
+
+  const handleSellArtifact = (
+    artifact: DisplayArtifactItem,
+    preferredUnplaceSlotId?: string
+  ) => {
+    const refundRate = economyRules.sell_refund_rate ?? 0.5;
+    const refund = Math.floor(artifact.cost * refundRate);
+    updateCurrentEraState((eraState) => {
+      const owned = eraState.owned_artifacts || [];
+      const idx = owned.indexOf(artifact.id);
+      if (idx === -1) return;
+
+      // Remove 1 copy from owned_artifacts
+      owned.splice(idx, 1);
+      eraState.owned_artifacts = owned;
+      eraState.gold += refund;
+
+      // If placed copies now exceed remaining owned copies, unplace 1 copy
+      const remainingOwnedCount = owned.filter((id) => id === artifact.id).length;
+      const nextPlaced = { ...(eraState.placed_artifacts || {}) };
+      const placedSlots = Object.keys(nextPlaced).filter((k) => nextPlaced[k] === artifact.id);
+
+      if (placedSlots.length > remainingOwnedCount) {
+        if (preferredUnplaceSlotId && nextPlaced[preferredUnplaceSlotId] === artifact.id) {
+          delete nextPlaced[preferredUnplaceSlotId];
+        } else {
+          const lastSlot = placedSlots[placedSlots.length - 1];
+          if (lastSlot) {
+            delete nextPlaced[lastSlot];
+          }
+        }
+        eraState.placed_artifacts = nextPlaced;
+      }
     });
   };
 
@@ -480,25 +556,31 @@ export function App() {
         shopCatalog={shopCatalog}
         onBackToEraSelect={() => setScreen('era_select')}
         onStartQuiz={handleStartQuiz}
-        onOpenShop={() => setShowShopModal(true)}
+        onOpenShop={(initialTab = 'base', initialSlotId = 'slot_1') =>
+          setShopModalState({ open: true, initialTab, initialSlotId })
+        }
         onOpenCodex={() => setShowCodexModal(true)}
         onStartReview={handleStartReview}
         onStartInvasion={(isBoss) => setInvasionModalState({ open: true, isBoss })}
       />
 
-      {showShopModal && (
+      {shopModalState.open && (
         <ShopDecorateModal
           eraId={currentEraId}
           eraConfig={currentEraConfig}
           eraSave={currentEraSave}
           economyRules={economyRules}
           shopCatalog={shopCatalog}
+          initialTab={shopModalState.initialTab}
+          initialSlotId={shopModalState.initialSlotId}
           onUpgradeBase={handleUpgradeBase}
           onBuyAndEquipItem={handleBuyAndEquipItem}
           onToggleEquipItem={handleToggleEquipItem}
+          onSellEquipment={handleSellEquipment}
           onBuyArtifact={handleBuyArtifact}
           onPlaceArtifact={handlePlaceArtifact}
-          onClose={() => setShowShopModal(false)}
+          onSellArtifact={handleSellArtifact}
+          onClose={() => setShopModalState((prev) => ({ ...prev, open: false }))}
         />
       )}
 

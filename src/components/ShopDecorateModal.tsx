@@ -27,11 +27,15 @@ interface ShopDecorateModalProps {
   eraSave: EraSaveState;
   economyRules: EconomyRulesConfig;
   shopCatalog: ShopCatalogConfig;
+  initialTab?: 'base' | 'equipment' | 'artifact';
+  initialSlotId?: string;
   onUpgradeBase: (cost: number) => void;
   onBuyAndEquipItem: (item: EquipmentItem) => void;
   onToggleEquipItem: (item: EquipmentItem) => void;
-  onBuyArtifact: (artifact: DisplayArtifactItem) => void;
+  onSellEquipment: (item: EquipmentItem) => void;
+  onBuyArtifact: (artifact: DisplayArtifactItem, targetSlotId?: string) => void;
   onPlaceArtifact: (slotId: string, artifactId: string | null) => void;
+  onSellArtifact: (artifact: DisplayArtifactItem, preferredUnplaceSlotId?: string) => void;
   onClose: () => void;
 }
 
@@ -41,21 +45,26 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
   eraSave,
   economyRules,
   shopCatalog,
+  initialTab = 'base',
+  initialSlotId = 'slot_1',
   onUpgradeBase,
   onBuyAndEquipItem,
   onToggleEquipItem,
+  onSellEquipment,
   onBuyArtifact,
   onPlaceArtifact,
+  onSellArtifact,
   onClose,
 }) => {
-  const [activeTab, setActiveTab] = useState<'base' | 'equipment' | 'artifact'>('base');
-  const [selectedSlotId, setSelectedSlotId] = useState<string>('slot_1');
+  const [activeTab, setActiveTab] = useState<'base' | 'equipment' | 'artifact'>(initialTab);
+  const [selectedSlotId, setSelectedSlotId] = useState<string>(initialSlotId);
 
   const baseLv = eraSave.base_level || 1;
   const nextLv = Math.min(5, baseLv + 1);
   const currentBaseGraphic = eraConfig.base_levels[`level_${baseLv}`];
   const nextBaseGraphic = eraConfig.base_levels[`level_${nextLv}`];
   const upgradeCost = economyRules.base_upgrade_costs[`level_${nextLv}`] || 0;
+  const sellRefundRate = economyRules.sell_refund_rate ?? 0.5;
 
   const eraEquipment = shopCatalog.equipment_items.filter((e) => e.era === eraId);
   const eraArtifacts = shopCatalog.display_artifacts.filter((a) => a.era === eraId);
@@ -247,7 +256,7 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
           {activeTab === 'equipment' && (
             <div className="space-y-4">
               <p className="text-sm font-bold text-slate-600">
-                시대별 무기와 갑옷, 장신구를 구매해 장착하면 캐릭터 외형 옆에 표시되고 거점 방어 전투력이 올라가요!
+                시대별 무기와 갑옷, 장신구를 구매해 장착하면 캐릭터 외형 옆에 표시되고 거점 방어 전투력이 올라가요! 보유한 장비는 상점에 되팔 수도 있어요.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
@@ -255,6 +264,7 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
                   const isOwned = (eraSave.owned_items || []).includes(item.id);
                   const isEquipped = (eraSave.equipped_items || []).includes(item.id);
                   const canAfford = eraSave.gold >= item.cost;
+                  const sellPrice = Math.floor(item.cost * sellRefundRate);
 
                   const categoryLabel =
                     item.category === 'weapon'
@@ -281,10 +291,15 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
                           />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-1.5">
+                          <div className="flex items-center gap-1.5 flex-wrap">
                             <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">
                               {categoryLabel}
                             </span>
+                            {isOwned && (
+                              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">
+                                보유 중
+                              </span>
+                            )}
                             {isEquipped && (
                               <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-emerald-500 text-white">
                                 장착 중
@@ -303,21 +318,36 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
                       </div>
 
                       {isOwned ? (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            sound.playClick();
-                            onToggleEquipItem(item);
-                          }}
-                          className={`w-full py-2.5 rounded-xl font-black text-sm flex items-center justify-center gap-1.5 ${
-                            isEquipped
-                              ? 'bg-slate-200 hover:bg-slate-300 text-slate-700'
-                              : 'bg-emerald-500 hover:bg-emerald-600 text-white'
-                          }`}
-                        >
-                          <Check className="w-4 h-4" />
-                          <span>{isEquipped ? '장착 해제하기' : '장착하기'}</span>
-                        </button>
+                        <div className="flex gap-2">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              sound.playClick();
+                              onToggleEquipItem(item);
+                            }}
+                            className={`flex-1 py-2.5 px-3 rounded-xl font-black text-sm flex items-center justify-center gap-1.5 ${
+                              isEquipped
+                                ? 'bg-slate-200 hover:bg-slate-300 text-slate-700'
+                                : 'bg-emerald-500 hover:bg-emerald-600 text-white'
+                            }`}
+                          >
+                            <Check className="w-4 h-4" />
+                            <span>{isEquipped ? '장착 해제' : '장착하기'}</span>
+                          </button>
+
+                          <button
+                            type="button"
+                            onClick={() => {
+                              sound.playClick();
+                              onSellEquipment(item);
+                            }}
+                            className="py-2.5 px-3 rounded-xl font-black text-xs sm:text-sm bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 flex items-center justify-center gap-1 shrink-0 transition-colors"
+                            title="장비를 상점에 되팔고 골드를 돌려받아요"
+                          >
+                            <Coins className="w-3.5 h-3.5 text-rose-500" />
+                            <span>되팔기 (+{sellPrice}G)</span>
+                          </button>
+                        </div>
                       ) : (
                         <button
                           type="button"
@@ -350,7 +380,7 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
               <div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-3.5">
                 <div className="text-xs font-black text-amber-900 mb-2">
                   거점에 배치할 전시 슬롯을 먼저 선택하세요 (현재 거점 Lv.{baseLv} → 슬롯{' '}
-                  {availableSlots.length}개 개방)
+                  {availableSlots.length}개 개방 · 동일한 유물도 중복 구매하여 여러 슬롯에 전시할 수 있어요!)
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {availableSlots.map((slot, idx) => {
@@ -384,17 +414,25 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
               {/* Artifact Catalog */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                 {eraArtifacts.map((art) => {
-                  const isOwned = (eraSave.owned_artifacts || []).includes(art.id);
-                  const placedSlotEntry = Object.entries(eraSave.placed_artifacts || {}).find(
-                    ([, aId]) => aId === art.id
-                  );
+                  const ownedCount = (eraSave.owned_artifacts || []).filter(
+                    (id) => id === art.id
+                  ).length;
+                  const placedSlots = Object.entries(eraSave.placed_artifacts || {})
+                    .filter(([, aId]) => aId === art.id)
+                    .map(([sId]) => sId);
+                  const placedCount = placedSlots.length;
+                  const spareCount = Math.max(0, ownedCount - placedCount);
+                  const isPlacedInSelectedSlot =
+                    eraSave.placed_artifacts?.[selectedSlotId] === art.id;
                   const canAfford = eraSave.gold >= art.cost;
+                  const sellPrice = Math.floor(art.cost * sellRefundRate);
+                  const selectedSlotLabel = selectedSlotId.replace('slot_', '슬롯 ');
 
                   return (
                     <div
                       key={art.id}
                       className={`p-4 rounded-2xl border-3 flex flex-col justify-between gap-3 ${
-                        placedSlotEntry
+                        placedCount > 0
                           ? 'border-emerald-400 bg-emerald-50/50'
                           : 'border-slate-200 bg-white'
                       }`}
@@ -407,45 +445,110 @@ export const ShopDecorateModal: React.FC<ShopDecorateModalProps> = ({
                             className="w-full h-full object-contain"
                           />
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-1.5 flex-wrap mb-1">
+                            {ownedCount > 0 ? (
+                              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">
+                                보유 {ownedCount}개
+                              </span>
+                            ) : (
+                              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
+                                미보유
+                              </span>
+                            )}
+                            {placedCount > 0 && (
+                              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-emerald-500 text-white">
+                                전시 중:{' '}
+                                {placedSlots
+                                  .map((s) => s.replace('slot_', '슬롯'))
+                                  .join(', ')}
+                              </span>
+                            )}
+                            {spareCount > 0 && (
+                              <span className="text-[11px] font-black px-2 py-0.5 rounded-full bg-sky-100 text-sky-800">
+                                여유 {spareCount}개
+                              </span>
+                            )}
+                          </div>
                           <h4 className="text-base font-black text-slate-800">{art.name}</h4>
                           <p className="text-xs font-bold text-slate-500 mt-0.5 break-keep">
                             {art.description}
                           </p>
                           <div className="text-xs font-black text-emerald-700 mt-1">
-                            수호 보너스 +{art.power_bonus + art.defense_bonus}
+                            수호 보너스 +{art.power_bonus + art.defense_bonus} (개당)
                           </div>
                         </div>
                       </div>
 
-                      {isOwned ? (
-                        <button
-                          type="button"
-                          onClick={() => {
-                            sound.playClick();
-                            if (placedSlotEntry) {
-                              onPlaceArtifact(placedSlotEntry[0], null);
-                            } else {
-                              onPlaceArtifact(selectedSlotId, art.id);
-                            }
-                          }}
-                          className={`w-full py-2.5 rounded-xl font-black text-sm ${
-                            placedSlotEntry
-                              ? 'bg-slate-200 hover:bg-slate-300 text-slate-700'
-                              : 'bg-emerald-500 hover:bg-emerald-600 text-white'
-                          }`}
-                        >
-                          {placedSlotEntry
-                            ? `전시 해제 (${placedSlotEntry[0].replace('slot_', '슬롯 ')})`
-                            : `${selectedSlotId.replace('slot_', '슬롯 ')}에 전시하기`}
-                        </button>
+                      {ownedCount > 0 ? (
+                        <div className="space-y-2">
+                          {/* Primary Slot Placement / Unplacement Action */}
+                          <button
+                            type="button"
+                            onClick={() => {
+                              sound.playClick();
+                              if (isPlacedInSelectedSlot) {
+                                onPlaceArtifact(selectedSlotId, null);
+                              } else {
+                                onPlaceArtifact(selectedSlotId, art.id);
+                              }
+                            }}
+                            className={`w-full py-2.5 rounded-xl font-black text-sm transition-colors ${
+                              isPlacedInSelectedSlot
+                                ? 'bg-slate-200 hover:bg-slate-300 text-slate-700'
+                                : spareCount > 0
+                                ? 'bg-emerald-500 hover:bg-emerald-600 text-white shadow'
+                                : 'bg-sky-500 hover:bg-sky-600 text-white'
+                            }`}
+                          >
+                            {isPlacedInSelectedSlot
+                              ? `${selectedSlotLabel} 전시 해제`
+                              : spareCount > 0
+                              ? `${selectedSlotLabel}에 전시하기`
+                              : `${selectedSlotLabel}(으)로 위치 이동`}
+                          </button>
+
+                          {/* Secondary Row: Buy Additional Copy & Sell Copy */}
+                          <div className="flex gap-2">
+                            <button
+                              type="button"
+                              disabled={!canAfford}
+                              onClick={() => {
+                                sound.playFanfare();
+                                onBuyArtifact(art, selectedSlotId);
+                              }}
+                              className={`flex-1 py-2 px-2.5 rounded-xl font-black text-xs sm:text-sm flex items-center justify-center gap-1 transition-colors ${
+                                canAfford
+                                  ? 'bg-amber-500 hover:bg-amber-600 text-white shadow-sm'
+                                  : 'bg-slate-100 text-slate-400 cursor-not-allowed'
+                              }`}
+                              title="동일한 유물을 추가로 구매해 다른 슬롯에도 배치할 수 있어요"
+                            >
+                              <Coins className="w-3.5 h-3.5" />
+                              <span>추가 구매 ({art.cost}G)</span>
+                            </button>
+
+                            <button
+                              type="button"
+                              onClick={() => {
+                                sound.playClick();
+                                onSellArtifact(art, selectedSlotId);
+                              }}
+                              className="py-2 px-3 rounded-xl font-black text-xs sm:text-sm bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 flex items-center justify-center gap-1 shrink-0 transition-colors"
+                              title="보유한 유물 1개를 상점에 되팔고 골드를 돌려받아요"
+                            >
+                              <Coins className="w-3.5 h-3.5 text-rose-500" />
+                              <span>되팔기 (+{sellPrice}G)</span>
+                            </button>
+                          </div>
+                        </div>
                       ) : (
                         <button
                           type="button"
                           disabled={!canAfford}
                           onClick={() => {
                             sound.playFanfare();
-                            onBuyArtifact(art);
+                            onBuyArtifact(art, selectedSlotId);
                           }}
                           className={`w-full py-2.5 rounded-xl font-black text-sm flex items-center justify-center gap-1.5 ${
                             canAfford

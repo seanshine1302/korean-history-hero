@@ -37,7 +37,7 @@ interface EraHomeScreenProps {
   shopCatalog: ShopCatalogConfig;
   onBackToEraSelect: () => void;
   onStartQuiz: (difficulty: UserDifficulty) => void;
-  onOpenShop: () => void;
+  onOpenShop: (initialTab?: 'base' | 'equipment' | 'artifact', initialSlotId?: string) => void;
   onOpenCodex: () => void;
   onStartReview: () => void;
   onStartInvasion: (isBoss: boolean) => void;
@@ -273,7 +273,7 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
                   key={slot.slot_id}
                   onClick={() => {
                     sound.playClick();
-                    onOpenShop();
+                    onOpenShop('artifact', slot.slot_id);
                   }}
                   style={{
                     left: `${slot.x}%`,
