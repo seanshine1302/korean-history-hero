@@ -1,0 +1,477 @@
+{
+  "version": "1.0",
+  "eras": {
+    "1": {
+      "era": "1",
+      "era_name": "선사 시대",
+      "subtitle": "구석기, 신석기, 청동기 시대의 생활 모습과 도구",
+      "hero_boy": "/assets/heroes/hero_prehistoric_boy.png",
+      "hero_girl": "/assets/heroes/hero_prehistoric_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "작은 움막과 목책",
+          "asset_path": "/assets/bases/base_prehistoric_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "확장된 움막과 방어 시설",
+          "asset_path": "/assets/bases/base_prehistoric_lv2.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "더 큰 마을과 강화된 목책",
+          "asset_path": "/assets/bases/base_prehistoric_lv3.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "정착지 확대와 방어탑",
+          "asset_path": "/assets/bases/base_prehistoric_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "대형 마을과 완전한 방어 시설",
+          "asset_path": "/assets/bases/base_prehistoric_lv5.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    },
+    "2": {
+      "era": "2",
+      "era_name": "고조선과 여러 나라",
+      "subtitle": "단군신화, 고조선 성립, 부여·고구려·옥저·동예·삼한",
+      "hero_boy": "/assets/heroes/hero_prehistoric_boy.png",
+      "hero_girl": "/assets/heroes/hero_prehistoric_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "신단수 제단과 초기 목책",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "부족 마을과 목조 성곽",
+          "asset_path": "/assets/bases/base_prehistoric_lv3.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "청동기 군장 성읍",
+          "asset_path": "/assets/bases/base_prehistoric_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "고조선 왕검성 요새",
+          "asset_path": "/assets/bases/base_prehistoric_lv5.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "아사달 대성읍과 신전",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv3.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    },
+    "3": {
+      "era": "3",
+      "era_name": "삼국과 가야",
+      "subtitle": "고구려, 백제, 신라의 발전과 가야 연맹",
+      "hero_boy": "/assets/heroes/hero_three_kingdoms_boy.png",
+      "hero_girl": "/assets/heroes/hero_three_kingdoms_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "초기 목책과 초소",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "목조 성곽과 개선된 시설",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv2.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "석성의 강화와 방어탑",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv3.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "성곽 확장과 군사 시설",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "대규모 성곽과 종합 방어 체계",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv5.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    },
+    "4": {
+      "era": "4",
+      "era_name": "남북국 시대",
+      "subtitle": "통일신라의 문화와 발해의 건국 및 발전",
+      "hero_boy": "/assets/heroes/hero_three_kingdoms_boy.png",
+      "hero_girl": "/assets/heroes/hero_three_kingdoms_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "초기 기와집과 목책",
+          "asset_path": "/assets/bases/base_goryeo_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "서라벌 기와 성곽",
+          "asset_path": "/assets/bases/base_goryeo_lv2.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "석축 성곽과 감시탑",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv3.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "상경성 군사 요새",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "통일신라·발해 대왕성",
+          "asset_path": "/assets/bases/base_three_kingdoms_lv5.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    },
+    "5": {
+      "era": "5",
+      "era_name": "고려",
+      "subtitle": "고려의 건국, 문화재(청자, 팔만대장경), 외세 침입 극복",
+      "hero_boy": "/assets/heroes/hero_goryeo_boy.png",
+      "hero_girl": "/assets/heroes/hero_goryeo_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "초기 초가집과 울타리",
+          "asset_path": "/assets/bases/base_goryeo_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "기와집과 작은 성곽",
+          "asset_path": "/assets/bases/base_goryeo_lv2.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "중간 규모의 성곽과 시설",
+          "asset_path": "/assets/bases/base_goryeo_lv3.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "강화된 성곽과 군사 시설",
+          "asset_path": "/assets/bases/base_goryeo_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "대형 성곽과 종합 방어 체계",
+          "asset_path": "/assets/bases/base_goryeo_lv5.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    },
+    "6": {
+      "era": "6",
+      "era_name": "조선",
+      "subtitle": "조선 건국, 세종대왕과 한글, 임진왜란과 병자호란",
+      "hero_boy": "/assets/heroes/hero_joseon_boy.png",
+      "hero_girl": "/assets/heroes/hero_joseon_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "초기 한옥과 울타리",
+          "asset_path": "/assets/bases/base_joseon_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "확장된 한옥과 방어 시설",
+          "asset_path": "/assets/bases/base_joseon_lv2.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "성곽과 군사 시설 강화",
+          "asset_path": "/assets/bases/base_joseon_lv3.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "대규모 성곽과 관아 시설",
+          "asset_path": "/assets/bases/base_joseon_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "왕궁급 거점과 완벽한 방어 체계",
+          "asset_path": "/assets/bases/base_joseon_lv5.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    },
+    "7": {
+      "era": "7",
+      "era_name": "개항기와 대한제국",
+      "subtitle": "개항, 근대화 운동, 대한제국 선포와 시련",
+      "hero_boy": "/assets/heroes/hero_korean_empire_boy.png",
+      "hero_girl": "/assets/heroes/hero_korean_empire_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "작은 개항장 항구와 관아",
+          "asset_path": "/assets/bases/base_open_port_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "확장된 상점과 관청 시설",
+          "asset_path": "/assets/bases/base_open_port_lv2.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "근대식 건물과 방어 시설",
+          "asset_path": "/assets/bases/base_korean_empire_lv3.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "대한제국 궁성과 군사 시설 강화",
+          "asset_path": "/assets/bases/base_korean_empire_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "제국의 위용을 갖춘 대형 궁성",
+          "asset_path": "/assets/bases/base_korean_empire_lv5.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    },
+    "8": {
+      "era": "8",
+      "era_name": "일제강점기와 독립운동",
+      "subtitle": "국권 피탈, 3·1 운동, 대한민국 임시정부와 독립운동",
+      "hero_boy": "/assets/heroes/hero_independence_movement_boy.png",
+      "hero_girl": "/assets/heroes/hero_independence_movement_girl.png",
+      "base_levels": {
+        "level_1": {
+          "name": "비밀 거점과 은신처",
+          "asset_path": "/assets/bases/base_independence_movement_lv1.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 22, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_2": {
+          "name": "확장된 거점과 연락 시설",
+          "asset_path": "/assets/bases/base_independence_movement_lv2.png",
+          "character_position": { "x": 50, "y": 72 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 20, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 80, "y": 65, "scale": 1.0 }
+          ]
+        },
+        "level_3": {
+          "name": "무기고와 독립군 훈련 시설",
+          "asset_path": "/assets/bases/base_independence_movement_lv3.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 18, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 82, "y": 65, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 25, "y": 32, "scale": 0.95 }
+          ]
+        },
+        "level_4": {
+          "name": "독립군 기지와 방어 시설",
+          "asset_path": "/assets/bases/base_independence_movement_lv4.png",
+          "character_position": { "x": 50, "y": 74 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 16, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 84, "y": 66, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 22, "y": 30, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 78, "y": 30, "scale": 0.95 }
+          ]
+        },
+        "level_5": {
+          "name": "광복을 향한 총력 항전의 거점",
+          "asset_path": "/assets/bases/base_independence_movement_lv5.png",
+          "character_position": { "x": 50, "y": 75 },
+          "display_slots": [
+            { "slot_id": "slot_1", "x": 15, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_2", "x": 85, "y": 68, "scale": 1.0 },
+            { "slot_id": "slot_3", "x": 20, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_4", "x": 80, "y": 28, "scale": 0.95 },
+            { "slot_id": "slot_5", "x": 50, "y": 18, "scale": 1.05 }
+          ]
+        }
+      }
+    }
+  }
+}

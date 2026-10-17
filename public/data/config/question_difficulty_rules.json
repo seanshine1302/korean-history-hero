@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "max_stem_sentences": 2,
+  "target_grade": 2,
+  "evidence_type_prefixes": {
+    "myth": "건국 신화에 따르면,",
+    "tradition": "전해지는 이야기에 따르면,",
+    "historical_fact": "",
+    "interpretation": "역사학자들의 연구에 따르면,"
+  },
+  "difficulty_levels": {
+    "1": {
+      "name": "시각 단서 직관 인지 (기초)",
+      "description": "대표 유물이나 인물의 사진/그림을 보고 이름을 바로 찾는 가장 쉬운 문제",
+      "allowed_types": ["artifact_identification", "person_matching"],
+      "distractor_rule": "다른 시대의 매우 이질적인 보기로 구성하여 헷갈리지 않게 설계"
+    },
+    "2": {
+      "name": "핵심 용어 직접 매칭",
+      "description": "가장 기본적인 역사 용어와 한 줄 설명을 연결하는 문제",
+      "allowed_types": ["artifact_identification", "person_matching", "myth_understanding"],
+      "distractor_rule": "명확히 구분되는 다른 범주의 단어 배치"
+    },
+    "3": {
+      "name": "단순 용도 및 특징 이해",
+      "description": "유물을 어디에 썼는지, 인물이 어떤 일을 했는지 묻는 문제",
+      "allowed_types": ["artifact_identification", "person_matching", "cause_effect"],
+      "distractor_rule": "비슷한 형태이지만 시대가 다른 보기 배치"
+    },
+    "4": {
+      "name": "시대와 대표 문화 연결",
+      "description": "특정 시대의 생활 모습이나 대표적인 사건을 고르는 문제",
+      "allowed_types": ["cause_effect", "artifact_identification", "myth_understanding"],
+      "distractor_rule": "인접한 시대의 유물이나 사건을 오답으로 배치"
+    },
+    "5": {
+      "name": "신화·전승과 역사적 사실 구분",
+      "description": "건국 신화의 이야기 흐름이나 상징적 의미를 이해하는 문제",
+      "allowed_types": ["myth_understanding", "cause_effect"],
+      "distractor_rule": "다른 건국 신화의 요소들을 오답으로 구성"
+    },
+    "6": {
+      "name": "사건의 원인과 결과 파악",
+      "description": "왜 이런 일이 일어났는지, 그 결과 어떻게 되었는지 묻는 문제",
+      "allowed_types": ["cause_effect", "person_matching"],
+      "distractor_rule": "같은 시대의 다른 사건 결과를 오답으로 배치"
+    },
+    "7": {
+      "name": "제도 및 과학·문화의 가치 이해",
+      "description": "문화유산이나 제도가 백성들의 삶에 어떤 도움을 주었는지 묻는 문제",
+      "allowed_types": ["cause_effect", "artifact_identification"],
+      "distractor_rule": "같은 시대의 유사 분야 업적을 오답으로 구성"
+    },
+    "8": {
+      "name": "역사적 흐름과 선후 관계",
+      "description": "시대 내 주요 사건의 흐름과 인물들의 활약을 종합적으로 묻는 문제",
+      "allowed_types": ["cause_effect", "person_matching"],
+      "distractor_rule": "동시대 인물 및 사건을 정교하게 비교하는 오답 배치"
+    },
+    "9": {
+      "name": "다중 맥락 추론",
+      "description": "두 가지 이상의 역사적 단서를 보고 공통된 시대나 인물을 추론하는 문제",
+      "allowed_types": ["cause_effect", "person_matching"],
+      "distractor_rule": "고학년 수준의 심화 비교 선택지"
+    },
+    "10": {
+      "name": "역사적 의의와 교훈 종합",
+      "description": "역사적 사건이 오늘날 우리에게 주는 의미와 가치를 깊이 있게 묻는 문제",
+      "allowed_types": ["cause_effect"],
+      "distractor_rule": "복합적 사고를 요하는 선택지"
+    }
+  }
+}

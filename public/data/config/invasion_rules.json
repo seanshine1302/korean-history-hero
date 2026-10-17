@@ -1,0 +1,227 @@
+{
+  "version": "1.0",
+  "gauge_rules": {
+    "max_gauge": 100,
+    "increase_per_wrong": 25,
+    "decrease_per_review_correct": 15,
+    "max_invasion_per_session": 1
+  },
+  "era_encounters": {
+    "1": {
+      "event_type": "combat",
+      "normal_enemy": {
+        "id": "ENEMY-PREHISTORIC-WOLF",
+        "name": "굶주린 늑대와 맹수 무리",
+        "asset": "/assets/enemies/enemy_prehistoric_wolf.png",
+        "sub_enemies": [
+          { "id": "ENEMY-PREHISTORIC-WOLF", "name": "굶주린 늑대", "asset": "/assets/enemies/enemy_prehistoric_wolf.png" },
+          { "id": "ENEMY-PREHISTORIC-BOAR", "name": "날카로운 멧돼지", "asset": "/assets/enemies/enemy_prehistoric_boar.png" },
+          { "id": "ENEMY-PREHISTORIC-BEAR", "name": "거대 동굴곰", "asset": "/assets/enemies/enemy_prehistoric_bear.png" }
+        ],
+        "power": 40,
+        "reward_gold": 100,
+        "reward_exp": 30,
+        "description": "선사 시대 마을 주변을 어슬렁거리며 식량을 노리는 사나운 야생 동물들이에요!"
+      },
+      "boss": {
+        "id": "BOSS-MAMMOTH",
+        "name": "빙하기 대왕 매머드",
+        "asset": "/assets/enemies/boss_prehistoric_mammoth.png",
+        "power": 180,
+        "reward_gold": 500,
+        "reward_exp": 120,
+        "reward_item": "전설의 주먹도끼",
+        "description": "땅이 흔들릴 만큼 거대한 몸집과 긴 상아를 가진 빙하기 최강의 거대 동물이에요!"
+      }
+    },
+    "2": {
+      "event_type": "combat",
+      "normal_enemy": {
+        "id": "ENEMY-GOJOSEON-BEAR",
+        "name": "태백산 사나운 맹수",
+        "asset": "/assets/enemies/enemy_prehistoric_bear.png",
+        "sub_enemies": [
+          { "id": "ENEMY-GOJOSEON-BEAR", "name": "태백산 불곰", "asset": "/assets/enemies/enemy_prehistoric_bear.png" },
+          { "id": "ENEMY-GOJOSEON-WEI", "name": "국경 침입 보병", "asset": "/assets/enemies/enemy_three_kingdoms_wei_infantry.png" }
+        ],
+        "power": 50,
+        "reward_gold": 110,
+        "reward_exp": 35,
+        "description": "고조선과 초기 여러 나라의 마을 경계를 위협하는 침입자들이에요!"
+      },
+      "boss": {
+        "id": "BOSS-GOJOSEON-INVADER",
+        "name": "고대 침략군 수장",
+        "asset": "/assets/enemies/boss_three_kingdoms_commander.png",
+        "power": 200,
+        "reward_gold": 520,
+        "reward_exp": 130,
+        "reward_item": "전설의 비파형 동검",
+        "description": "청동 무기로 무장하고 고조선의 성읍을 노리는 강력한 적군 대장이에요!"
+      }
+    },
+    "3": {
+      "event_type": "combat",
+      "normal_enemy": {
+        "id": "ENEMY-THREE-KINGDOMS-ARMY",
+        "name": "국경 위협 외세 침략군",
+        "asset": "/assets/enemies/enemy_three_kingdoms_sui_archer.png",
+        "sub_enemies": [
+          { "id": "ENEMY-TK-WEI", "name": "위나라 보병", "asset": "/assets/enemies/enemy_three_kingdoms_wei_infantry.png" },
+          { "id": "ENEMY-TK-SUI", "name": "수나라 궁수", "asset": "/assets/enemies/enemy_three_kingdoms_sui_archer.png" },
+          { "id": "ENEMY-TK-TANG", "name": "당나라 기병", "asset": "/assets/enemies/enemy_three_kingdoms_tang_cavalry.png" }
+        ],
+        "power": 60,
+        "reward_gold": 120,
+        "reward_exp": 40,
+        "description": "삼국의 굳건한 성곽을 넘어 침입하려는 외세의 군사들이에요!"
+      },
+      "boss": {
+        "id": "BOSS-THREE-KINGDOMS-COMMANDER",
+        "name": "외세 침략군 총사령관",
+        "asset": "/assets/enemies/boss_three_kingdoms_commander.png",
+        "power": 220,
+        "reward_gold": 550,
+        "reward_exp": 140,
+        "reward_item": "을지문덕의 승전 태도",
+        "description": "수많은 대군을 이끌고 삼국의 성을 함락시키려 하는 외세의 총사령관이에요!"
+      }
+    },
+    "4": {
+      "event_type": "combat",
+      "normal_enemy": {
+        "id": "ENEMY-NORTH-SOUTH-CAVALRY",
+        "name": "북방 변경 침입 기병",
+        "asset": "/assets/enemies/enemy_three_kingdoms_tang_cavalry.png",
+        "sub_enemies": [
+          { "id": "ENEMY-NS-TANG", "name": "당나라 기병대", "asset": "/assets/enemies/enemy_three_kingdoms_tang_cavalry.png" },
+          { "id": "ENEMY-NS-KHITAN", "name": "북방 유목 침략군", "asset": "/assets/enemies/enemy_goryeo_khitan_infantry.png" }
+        ],
+        "power": 65,
+        "reward_gold": 130,
+        "reward_exp": 45,
+        "description": "통일신라와 발해의 평화로운 국경을 어지럽히는 침입군이에요!"
+      },
+      "boss": {
+        "id": "BOSS-NORTH-SOUTH-GENERAL",
+        "name": "북방 대군 사령관",
+        "asset": "/assets/enemies/boss_goryeo_khitan_general.png",
+        "power": 230,
+        "reward_gold": 560,
+        "reward_exp": 150,
+        "reward_item": "해동성국 황금 방패",
+        "description": "발해와 통일신라의 번영을 시샘하여 대군을 몰고 온 북방의 장군이에요!"
+      }
+    },
+    "5": {
+      "event_type": "combat",
+      "normal_enemy": {
+        "id": "ENEMY-GORYEO-INVADERS",
+        "name": "북방 유목 침략군",
+        "asset": "/assets/enemies/enemy_goryeo_khitan_infantry.png",
+        "sub_enemies": [
+          { "id": "ENEMY-GORYEO-KHITAN", "name": "거란족 보병", "asset": "/assets/enemies/enemy_goryeo_khitan_infantry.png" },
+          { "id": "ENEMY-GORYEO-JURCHEN", "name": "여진족 기병", "asset": "/assets/enemies/enemy_goryeo_jurchen_cavalry.png" },
+          { "id": "ENEMY-GORYEO-MONGOL", "name": "몽골족 궁수", "asset": "/assets/enemies/enemy_goryeo_mongol_archer.png" }
+        ],
+        "power": 70,
+        "reward_gold": 140,
+        "reward_exp": 50,
+        "description": "고려의 평화를 깨뜨리고 국경을 넘어온 거란·여진·몽골의 침략군이에요!"
+      },
+      "boss": {
+        "id": "BOSS-GORYEO-GENERAL",
+        "name": "거란군 대장군",
+        "asset": "/assets/enemies/boss_goryeo_khitan_general.png",
+        "power": 240,
+        "reward_gold": 580,
+        "reward_exp": 160,
+        "reward_item": "강감찬의 귀주대첩 신검",
+        "description": "거대한 도끼를 휘두르며 고려의 성을 위협하는 거란군의 총대장이에요!"
+      }
+    },
+    "6": {
+      "event_type": "combat",
+      "normal_enemy": {
+        "id": "ENEMY-JOSEON-INVADERS",
+        "name": "왜군 조총병과 침략군",
+        "asset": "/assets/enemies/enemy_joseon_musketeer.png",
+        "sub_enemies": [
+          { "id": "ENEMY-JOSEON-BANDIT", "name": "산적(도적)", "asset": "/assets/enemies/enemy_joseon_bandit.png" },
+          { "id": "ENEMY-JOSEON-MUSKETEER", "name": "왜군 조총병", "asset": "/assets/enemies/enemy_joseon_musketeer.png" },
+          { "id": "ENEMY-JOSEON-ARTILLERY", "name": "외세 포병", "asset": "/assets/enemies/enemy_joseon_artillery.png" }
+        ],
+        "power": 75,
+        "reward_gold": 150,
+        "reward_exp": 55,
+        "description": "조총과 대포로 조선의 바다와 육지를 어지럽히는 침략군이에요!"
+      },
+      "boss": {
+        "id": "BOSS-JOSEON-ADMIRAL",
+        "name": "외세 함대 제독",
+        "asset": "/assets/enemies/boss_joseon_admiral.png",
+        "power": 250,
+        "reward_gold": 600,
+        "reward_exp": 170,
+        "reward_item": "충무공 이순신의 거북선 지휘검",
+        "description": "거대한 전함을 이끌고 조선의 바다를 침범한 외세 함대의 제독이에요!"
+      }
+    },
+    "7": {
+      "event_type": "combat",
+      "normal_enemy": {
+        "id": "ENEMY-EMPIRE-FORCES",
+        "name": "제국주의 방해꾼",
+        "asset": "/assets/enemies/enemy_korean_empire_imperial_infantry.png",
+        "sub_enemies": [
+          { "id": "ENEMY-EMPIRE-INFANTRY", "name": "제국주의 보병", "asset": "/assets/enemies/enemy_korean_empire_imperial_infantry.png" },
+          { "id": "ENEMY-EMPIRE-POLICE", "name": "제국주의 헌병", "asset": "/assets/enemies/enemy_korean_empire_military_police.png" },
+          { "id": "ENEMY-EMPIRE-SABOTEUR", "name": "방해공작원", "asset": "/assets/enemies/enemy_korean_empire_saboteur.png" }
+        ],
+        "power": 80,
+        "reward_gold": 150,
+        "reward_exp": 60,
+        "description": "개항기와 대한제국의 자주독립과 근대화 노력을 방해하는 세력이에요!"
+      },
+      "boss": {
+        "id": "BOSS-EMPIRE-POLICE-CHIEF",
+        "name": "특급 경무국장",
+        "asset": "/assets/enemies/boss_korean_empire_police_chief.png",
+        "power": 250,
+        "reward_gold": 600,
+        "reward_exp": 180,
+        "reward_item": "대한제국 황실 금장 시계",
+        "description": "대한제국의 외교권과 국권을 빼앗으려 계략을 꾸미는 우두머리예요!"
+      }
+    },
+    "8": {
+      "event_type": "mission",
+      "normal_enemy": {
+        "id": "MISSION-FUND",
+        "name": "비밀 독립자금 안전 수송 작전",
+        "asset": "/assets/enemies/enemy_independence_movement_sentry.png",
+        "sub_enemies": [
+          { "id": "ENEMY-IND-SOLDIER", "name": "추격대 군인", "asset": "/assets/enemies/enemy_independence_movement_pursuit_soldier.png" },
+          { "id": "ENEMY-IND-SENTRY", "name": "보초병", "asset": "/assets/enemies/enemy_independence_movement_sentry.png" },
+          { "id": "ENEMY-IND-SPY", "name": "감시 밀정", "asset": "/assets/enemies/enemy_independence_movement_spy.png" }
+        ],
+        "difficulty": 80,
+        "power": 80,
+        "reward_gold": 150,
+        "reward_exp": 65,
+        "description": "감시 밀정과 보초병의 눈을 피해 대한민국 임시정부로 소중한 독립자금을 안전하게 전달하는 역사 미션이에요!"
+      },
+      "boss": {
+        "id": "MISSION-DECLARATION",
+        "name": "3·1 독립선언서 전국 배포 작전",
+        "asset": "/assets/enemies/boss_independence_movement_commander.png",
+        "difficulty": 250,
+        "power": 250,
+        "reward_gold": 600,
+        "reward_exp": 200,
+        "reward_item": "태극기 휘장",
+        "description": "추격대 총사령관의 삼엄한 경계를 뚫고 방방곡곡에 독립선언서와 태극기를 나눠주며 대한독립만세를 외치는 특별 역사 미션이에요!"
+      }
+    }
+  }
+}

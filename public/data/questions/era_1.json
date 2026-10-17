@@ -1,0 +1,1927 @@
+{
+  "era": 1,
+  "era_name": "선사 시대",
+  "total_questions": 120,
+  "questions": [
+    {
+      "question_id": "Q-ERA1-001",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "구석기 시대 사람들이 돌을 깨뜨려서 사냥하거나 가죽을 벗길 때 사용한 만능 도구예요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "홍익인간 정신",
+        "주먹도끼",
+        "마니산 참성단",
+        "옥저와 동예의 생활 풍습"
+      ],
+      "answer_index": 1,
+      "explanation": "주먹도끼에 대한 설명이에요! 경기도 연천 전곡리 유적에서 많이 발견되었어요."
+    },
+    {
+      "question_id": "Q-ERA1-002",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "단군 신화 속 곰과 호랑이 이야기",
+        "부여의 사출도와 영고",
+        "주먹도끼",
+        "신석기 시대의 움집과 정착 생활"
+      ],
+      "answer_index": 2,
+      "explanation": "정답은 '주먹도끼'이에요! 구석기 시대 사람들이 돌을 깨뜨려서 사냥하거나 가죽을 벗길 때 사용한 만능 도구예요."
+    },
+    {
+      "question_id": "Q-ERA1-003",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "'구석기, 주먹도끼, 뗀석기'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "고조선의 8조법",
+        "초기 고구려의 동맹과 서옥제",
+        "세형 동검과 잔무늬 거울(다뉴세문경)",
+        "주먹도끼"
+      ],
+      "answer_index": 3,
+      "explanation": "'구석기, 주먹도끼, 뗀석기'은(는) 바로 '주먹도끼'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-004",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "'선사 시대'에 등장하는 '주먹도끼'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구",
+        "고려 시대에 금속활자로 찍은 직지심체요절",
+        "통일신라 시대의 불국사 다보탑",
+        "백제 시대에 만든 금동대향로"
+      ],
+      "answer_index": 0,
+      "explanation": "'주먹도끼'은(는) 동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-005",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "돌을 깨뜨려 만든 뗀석기를 사용하던 구석기 시대 대표 유물은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "울산 반구대 암각화",
+        "주먹도끼",
+        "비파형 동검과 청동 방울",
+        "단군왕검과 고조선 건국"
+      ],
+      "answer_index": 1,
+      "explanation": "돌을 깨뜨려 만든 뗀석기를 사용하던 구석기 시대 대표 유물은(는) 바로 '주먹도끼'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-006",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "다음 중 '주먹도끼'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "조선 시대에 시간을 알려주던 자격루",
+        "조선 시대에 만든 철갑 거북선",
+        "돌을 깨뜨려 만든 뗀석기를 사용하던 구석기 시대 대표 유물",
+        "고려 시대에 금속활자로 찍은 직지심체요절"
+      ],
+      "answer_index": 2,
+      "explanation": "구석기 시대 사람들이 돌을 깨뜨려서 사냥하거나 가죽을 벗길 때 사용한 만능 도구예요. 경기도 연천 전곡리 유적에서 많이 발견되었어요."
+    },
+    {
+      "question_id": "Q-ERA1-007",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "경기도 연천 전곡리 유적에서 많이 발견되었어요. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "고인돌",
+        "민무늬 토기",
+        "신석기 시대의 움집과 정착 생활",
+        "주먹도끼"
+      ],
+      "answer_index": 3,
+      "explanation": "'주먹도끼'에 관한 이야기예요! 구석기 시대 사람들이 돌을 깨뜨려서 사냥하거나 가죽을 벗길 때 사용한 만능 도구예요."
+    },
+    {
+      "question_id": "Q-ERA1-008",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "역사 탐험대가 '주먹도끼'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구",
+        "하늘에 제사를 지내는 제사장(단군)과 나라를 다스리는 왕(왕검)의 뜻을 함께 담은 고조선의 건국자",
+        "백성들이 서로 해치지 않고 약속을 지키며 평화롭게 살도록 만든 고조선의 8가지 규칙",
+        "추수를 마친 10월에 온 백성이 모여 하늘과 조상에게 감사하며 하나로 뭉치던 고구려의 큰 축제"
+      ],
+      "answer_index": 0,
+      "explanation": "참 잘했어요! '주먹도끼'의 핵심 가치는 '동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-009",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "'구석기' 시대를 대표하는 '주먹도끼'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "사냥이 끝나는 12월에 북을 치며 하늘에 제사를 지내고 죄수를 풀어주던 부여의 제천행사 영고",
+        "돌을 깨뜨려 만든 뗀석기를 사용하던 구석기 시대 대표 유물",
+        "따뜻한 남쪽 평야에서 저수지를 만들어 벼농사를 짓고, 5월과 10월에 두 번 하늘에 제사를 지내던 나라들",
+        "밝은 빛으로 세상을 다스린다는 뜻의 이름을 가진 신라의 시조"
+      ],
+      "answer_index": 1,
+      "explanation": "'주먹도끼'을(를) 완벽하게 이해했군요! 구석기 시대 사람들이 돌을 깨뜨려서 사냥하거나 가죽을 벗길 때 사용한 만능 도구예요. 경기도 연천 전곡리 유적에서 많이 발견되었어요."
+    },
+    {
+      "question_id": "Q-ERA1-010",
+      "master_id": "K-PRE-001",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_handaxe.jpg",
+      "stem": "'선사 시대'의 역사를 빛낸 '주먹도끼'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "단군 신화 · 웅녀 · 쑥과 마늘",
+        "부여 · 사출도 · 마가·우가·저가·구가",
+        "구석기 · 주먹도끼 · 뗀석기",
+        "단군왕검 · 고조선 · 아사달"
+      ],
+      "answer_index": 2,
+      "explanation": "'구석기, 주먹도끼, 뗀석기'은(는) 모두 '주먹도끼'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-011",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "구석기 시대 사람들은 열매를 따거나 사냥을 하며 먹을거리를 찾아 자주 이동했어요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "구석기 시대의 동굴과 막집 생활",
+        "삼한(마한·진한·변한)과 소도",
+        "박혁거세와 신라 건국",
+        "근초고왕과 백제의 전성기"
+      ],
+      "answer_index": 0,
+      "explanation": "구석기 시대의 동굴과 막집 생활에 대한 설명이에요! 그래서 자연 동굴이나 나뭇가지로 대충 지은 막집에서 살았답니다."
+    },
+    {
+      "question_id": "Q-ERA1-012",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "가락바퀴와 뼈바늘",
+        "구석기 시대의 동굴과 막집 생활",
+        "반달 돌칼",
+        "부여 송국리 청동기 마을 유적"
+      ],
+      "answer_index": 1,
+      "explanation": "정답은 '구석기 시대의 동굴과 막집 생활'이에요! 구석기 시대 사람들은 열매를 따거나 사냥을 하며 먹을거리를 찾아 자주 이동했어요."
+    },
+    {
+      "question_id": "Q-ERA1-013",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'구석기, 동굴, 막집'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "주몽(동명성왕)과 고구려 건국",
+        "김수로왕과 가야 연맹",
+        "구석기 시대의 동굴과 막집 생활",
+        "진흥왕과 신라의 발전(화랑도·순수비)"
+      ],
+      "answer_index": 2,
+      "explanation": "'구석기, 동굴, 막집'은(는) 바로 '구석기 시대의 동굴과 막집 생활'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-014",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'에 등장하는 '구석기 시대의 동굴과 막집 생활'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "신라 시대에 별을 관측하던 첨성대",
+        "조선 시대에 시간을 알려주던 자격루",
+        "조선 시대에 만든 철갑 거북선",
+        "사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집"
+      ],
+      "answer_index": 3,
+      "explanation": "'구석기 시대의 동굴과 막집 생활'은(는) 사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-015",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "농사를 짓지 않고 자연 동굴이나 바위 그늘에서 불을 피워 추위를 피하던 시대은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "구석기 시대의 동굴과 막집 생활",
+        "홍익인간 정신",
+        "주먹도끼",
+        "가락바퀴와 뼈바늘"
+      ],
+      "answer_index": 0,
+      "explanation": "농사를 짓지 않고 자연 동굴이나 바위 그늘에서 불을 피워 추위를 피하던 시대은(는) 바로 '구석기 시대의 동굴과 막집 생활'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-016",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '구석기 시대의 동굴과 막집 생활'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "대한제국 시기에 달렸던 전차와 기차",
+        "농사를 짓지 않고 자연 동굴이나 바위 그늘에서 불을 피워 추위를 피하던 시대",
+        "고려 시대에 만든 푸른빛 고려청자",
+        "신라 시대에 별을 관측하던 첨성대"
+      ],
+      "answer_index": 1,
+      "explanation": "구석기 시대 사람들은 열매를 따거나 사냥을 하며 먹을거리를 찾아 자주 이동했어요. 그래서 자연 동굴이나 나뭇가지로 대충 지은 막집에서 살았답니다."
+    },
+    {
+      "question_id": "Q-ERA1-017",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "그래서 자연 동굴이나 나뭇가지로 대충 지은 막집에서 살았답니다. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "가락바퀴와 뼈바늘",
+        "반달 돌칼",
+        "구석기 시대의 동굴과 막집 생활",
+        "부여 송국리 청동기 마을 유적"
+      ],
+      "answer_index": 2,
+      "explanation": "'구석기 시대의 동굴과 막집 생활'에 관한 이야기예요! 구석기 시대 사람들은 열매를 따거나 사냥을 하며 먹을거리를 찾아 자주 이동했어요."
+    },
+    {
+      "question_id": "Q-ERA1-018",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '구석기 시대의 동굴과 막집 생활'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "부족마다 사냥하고 농사짓는 땅의 경계를 소중히 지켜 침범하면 소나 말로 물어주게 한 동예의 약속(책화)",
+        "하늘을 숭배하던 환웅 부족과 곰을 숭배하던 부족이 힘을 합쳐 고조선을 세웠음을 알려주는 이야기",
+        "말·소·돼지·개 등 가축의 이름을 딴 관리들이 나라의 네 구역을 나누어 다스리던 부여의 제도",
+        "사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집"
+      ],
+      "answer_index": 3,
+      "explanation": "참 잘했어요! '구석기 시대의 동굴과 막집 생활'의 핵심 가치는 '사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-019",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'구석기' 시대를 대표하는 '구석기 시대의 동굴과 막집 생활'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "농사를 짓지 않고 자연 동굴이나 바위 그늘에서 불을 피워 추위를 피하던 시대",
+        "인천 강화도 마니산에 남아 있으며 단군왕검이 하늘에 감사의 제사를 올렸다고 전해지는 제단",
+        "왕이 없이 읍군·삼로라는 군장이 다스렸으며 동해안의 풍부한 소금과 어물을 거두던 나라들",
+        "어릴 때부터 활을 잘 쏘아 \"활을 잘 쏘는 사람\"이라는 뜻의 이름을 가진 고구려의 시조"
+      ],
+      "answer_index": 0,
+      "explanation": "'구석기 시대의 동굴과 막집 생활'을(를) 완벽하게 이해했군요! 구석기 시대 사람들은 열매를 따거나 사냥을 하며 먹을거리를 찾아 자주 이동했어요. 그래서 자연 동굴이나 나뭇가지로 대충 지은 막집에서 살았답니다."
+    },
+    {
+      "question_id": "Q-ERA1-020",
+      "master_id": "K-PRE-002",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'의 역사를 빛낸 '구석기 시대의 동굴과 막집 생활'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "홍익인간 · 널리 인간을 이롭게 · 고조선 건국 이념",
+        "구석기 · 동굴 · 막집",
+        "마니산 참성단 · 강화도 · 하늘 제사",
+        "옥저 · 동예 · 무천"
+      ],
+      "answer_index": 1,
+      "explanation": "'구석기, 동굴, 막집'은(는) 모두 '구석기 시대의 동굴과 막집 생활'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-021",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "신석기 시대 사람들이 곡식을 저장하거나 음식을 조리할 때 사용한 끝이 뾰족한 토기예요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "광개토 대왕과 장수왕",
+        "을지문덕과 살수대첩",
+        "고구려 고분 벽화(수렵도·씨름도)",
+        "빗살무늬 토기"
+      ],
+      "answer_index": 3,
+      "explanation": "빗살무늬 토기에 대한 설명이에요! 겉면에 빗살 같은 줄무늬가 새겨져 있어요."
+    },
+    {
+      "question_id": "Q-ERA1-022",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "빗살무늬 토기",
+        "민무늬 토기",
+        "단군 신화 속 곰과 호랑이 이야기",
+        "부여의 사출도와 영고"
+      ],
+      "answer_index": 0,
+      "explanation": "정답은 '빗살무늬 토기'이에요! 신석기 시대 사람들이 곡식을 저장하거나 음식을 조리할 때 사용한 끝이 뾰족한 토기예요."
+    },
+    {
+      "question_id": "Q-ERA1-023",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "'신석기, 빗살무늬 토기, 서울 암사동'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "이사부 장군과 우산국(독도)",
+        "빗살무늬 토기",
+        "신라 첨성대와 황금 유물(금관)",
+        "문무왕과 삼국 통일 완성(대왕암)"
+      ],
+      "answer_index": 1,
+      "explanation": "'신석기, 빗살무늬 토기, 서울 암사동'은(는) 바로 '빗살무늬 토기'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-024",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "'선사 시대'에 등장하는 '빗살무늬 토기'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "백제 시대에 만든 금동대향로",
+        "대한제국 시기에 달렸던 전차와 기차",
+        "강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇",
+        "고려 시대에 만든 푸른빛 고려청자"
+      ],
+      "answer_index": 2,
+      "explanation": "'빗살무늬 토기'은(는) 강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-025",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "신석기 시대에 흙을 빚어 불에 구워 만든 가장 대표적인 토기은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "간석기와 돌보습·돌괭이",
+        "고인돌",
+        "민무늬 토기",
+        "빗살무늬 토기"
+      ],
+      "answer_index": 3,
+      "explanation": "신석기 시대에 흙을 빚어 불에 구워 만든 가장 대표적인 토기은(는) 바로 '빗살무늬 토기'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-026",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "다음 중 '빗살무늬 토기'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "신석기 시대에 흙을 빚어 불에 구워 만든 가장 대표적인 토기",
+        "고려 시대에 금속활자로 찍은 직지심체요절",
+        "통일신라 시대의 불국사 다보탑",
+        "백제 시대에 만든 금동대향로"
+      ],
+      "answer_index": 0,
+      "explanation": "신석기 시대 사람들이 곡식을 저장하거나 음식을 조리할 때 사용한 끝이 뾰족한 토기예요. 겉면에 빗살 같은 줄무늬가 새겨져 있어요."
+    },
+    {
+      "question_id": "Q-ERA1-027",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "겉면에 빗살 같은 줄무늬가 새겨져 있어요. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "민무늬 토기",
+        "빗살무늬 토기",
+        "신석기 시대의 움집과 정착 생활",
+        "울산 반구대 암각화"
+      ],
+      "answer_index": 1,
+      "explanation": "'빗살무늬 토기'에 관한 이야기예요! 신석기 시대 사람들이 곡식을 저장하거나 음식을 조리할 때 사용한 끝이 뾰족한 토기예요."
+    },
+    {
+      "question_id": "Q-ERA1-028",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "역사 탐험대가 '빗살무늬 토기'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "추수를 마친 10월에 온 백성이 모여 하늘과 조상에게 감사하며 하나로 뭉치던 고구려의 큰 축제",
+        "사람들을 널리 이롭게 하고 평화롭게 살게 하겠다는 고조선의 건국 정신",
+        "강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇",
+        "높은 산 위에서 하늘은 둥글고 땅은 네모나다는 생각으로 돌을 쌓아 하늘에 제사를 지내던 곳"
+      ],
+      "answer_index": 2,
+      "explanation": "참 잘했어요! '빗살무늬 토기'의 핵심 가치는 '강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-029",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "'신석기' 시대를 대표하는 '빗살무늬 토기'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "밝은 빛으로 세상을 다스린다는 뜻의 이름을 가진 신라의 시조",
+        "산과 계곡이 많은 지역에서 뛰어난 무예와 활쏘기 실력을 키웠던 초기 고구려의 문화",
+        "눈으로 보기 힘들 만큼 가늘고 정교한 수천 개의 선을 새겨 햇빛을 반사하던 청동 거울",
+        "신석기 시대에 흙을 빚어 불에 구워 만든 가장 대표적인 토기"
+      ],
+      "answer_index": 3,
+      "explanation": "'빗살무늬 토기'을(를) 완벽하게 이해했군요! 신석기 시대 사람들이 곡식을 저장하거나 음식을 조리할 때 사용한 끝이 뾰족한 토기예요. 겉면에 빗살 같은 줄무늬가 새겨져 있어요."
+    },
+    {
+      "question_id": "Q-ERA1-030",
+      "master_id": "K-PRE-003",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_comb_pottery.jpg",
+      "stem": "'선사 시대'의 역사를 빛낸 '빗살무늬 토기'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "신석기 · 빗살무늬 토기 · 서울 암사동",
+        "단군왕검 · 고조선 · 아사달",
+        "8조법 · 고조선 법 · 생명 존중",
+        "고구려 · 동맹 · 서옥제"
+      ],
+      "answer_index": 0,
+      "explanation": "'신석기, 빗살무늬 토기, 서울 암사동'은(는) 모두 '빗살무늬 토기'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-031",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "신석기 시대에 농사가 시작되면서 사람들은 한곳에 머물러 살기 시작했어요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "김춘추(태종 무열왕)와 김유신",
+        "해동성국 발해와 고구려 문화 계승",
+        "신석기 시대의 움집과 정착 생활",
+        "원효 대사와 의상 대사"
+      ],
+      "answer_index": 2,
+      "explanation": "신석기 시대의 움집과 정착 생활에 대한 설명이에요! 땅을 둥글게 파고 지붕을 덮은 움집에 모여 마을을 이루었답니다."
+    },
+    {
+      "question_id": "Q-ERA1-032",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "주먹도끼",
+        "가락바퀴와 뼈바늘",
+        "반달 돌칼",
+        "신석기 시대의 움집과 정착 생활"
+      ],
+      "answer_index": 3,
+      "explanation": "정답은 '신석기 시대의 움집과 정착 생활'이에요! 신석기 시대에 농사가 시작되면서 사람들은 한곳에 머물러 살기 시작했어요."
+    },
+    {
+      "question_id": "Q-ERA1-033",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'신석기, 움집, 정착 생활'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "신석기 시대의 움집과 정착 생활",
+        "대조영과 발해 건국",
+        "무구정광대다라니경",
+        "해상왕 장보고와 청해진"
+      ],
+      "answer_index": 0,
+      "explanation": "'신석기, 움집, 정착 생활'은(는) 바로 '신석기 시대의 움집과 정착 생활'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-034",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'에 등장하는 '신석기 시대의 움집과 정착 생활'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "조선 시대에 만든 철갑 거북선",
+        "바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집",
+        "고려 시대에 금속활자로 찍은 직지심체요절",
+        "통일신라 시대의 불국사 다보탑"
+      ],
+      "answer_index": 1,
+      "explanation": "'신석기 시대의 움집과 정착 생활'은(는) 바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-035",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "농사를 처음 시작하면서 이동하지 않고 강가에 마을을 이루어 살던 신석기 시대 집은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "단군왕검과 고조선 건국",
+        "고조선의 8조법",
+        "신석기 시대의 움집과 정착 생활",
+        "빗살무늬 토기"
+      ],
+      "answer_index": 2,
+      "explanation": "농사를 처음 시작하면서 이동하지 않고 강가에 마을을 이루어 살던 신석기 시대 집은(는) 바로 '신석기 시대의 움집과 정착 생활'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-036",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '신석기 시대의 움집과 정착 생활'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "신라 시대에 별을 관측하던 첨성대",
+        "조선 시대에 시간을 알려주던 자격루",
+        "조선 시대에 만든 철갑 거북선",
+        "농사를 처음 시작하면서 이동하지 않고 강가에 마을을 이루어 살던 신석기 시대 집"
+      ],
+      "answer_index": 3,
+      "explanation": "신석기 시대에 농사가 시작되면서 사람들은 한곳에 머물러 살기 시작했어요. 땅을 둥글게 파고 지붕을 덮은 움집에 모여 마을을 이루었답니다."
+    },
+    {
+      "question_id": "Q-ERA1-037",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "땅을 둥글게 파고 지붕을 덮은 움집에 모여 마을을 이루었답니다. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "신석기 시대의 움집과 정착 생활",
+        "반달 돌칼",
+        "부여 송국리 청동기 마을 유적",
+        "구석기 시대의 동굴과 막집 생활"
+      ],
+      "answer_index": 0,
+      "explanation": "'신석기 시대의 움집과 정착 생활'에 관한 이야기예요! 신석기 시대에 농사가 시작되면서 사람들은 한곳에 머물러 살기 시작했어요."
+    },
+    {
+      "question_id": "Q-ERA1-038",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '신석기 시대의 움집과 정착 생활'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "말·소·돼지·개 등 가축의 이름을 딴 관리들이 나라의 네 구역을 나누어 다스리던 부여의 제도",
+        "바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집",
+        "하늘에 제사를 지내는 제사장(단군)과 나라를 다스리는 왕(왕검)의 뜻을 함께 담은 고조선의 건국자",
+        "백성들이 서로 해치지 않고 약속을 지키며 평화롭게 살도록 만든 고조선의 8가지 규칙"
+      ],
+      "answer_index": 1,
+      "explanation": "참 잘했어요! '신석기 시대의 움집과 정착 생활'의 핵심 가치는 '바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-039",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'신석기' 시대를 대표하는 '신석기 시대의 움집과 정착 생활'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "어릴 때부터 활을 잘 쏘아 \"활을 잘 쏘는 사람\"이라는 뜻의 이름을 가진 고구려의 시조",
+        "사냥이 끝나는 12월에 북을 치며 하늘에 제사를 지내고 죄수를 풀어주던 부여의 제천행사 영고",
+        "농사를 처음 시작하면서 이동하지 않고 강가에 마을을 이루어 살던 신석기 시대 집",
+        "따뜻한 남쪽 평야에서 저수지를 만들어 벼농사를 짓고, 5월과 10월에 두 번 하늘에 제사를 지내던 나라들"
+      ],
+      "answer_index": 2,
+      "explanation": "'신석기 시대의 움집과 정착 생활'을(를) 완벽하게 이해했군요! 신석기 시대에 농사가 시작되면서 사람들은 한곳에 머물러 살기 시작했어요. 땅을 둥글게 파고 지붕을 덮은 움집에 모여 마을을 이루었답니다."
+    },
+    {
+      "question_id": "Q-ERA1-040",
+      "master_id": "K-PRE-004",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'의 역사를 빛낸 '신석기 시대의 움집과 정착 생활'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "옥저 · 동예 · 무천",
+        "단군 신화 · 웅녀 · 쑥과 마늘",
+        "부여 · 사출도 · 마가·우가·저가·구가",
+        "신석기 · 움집 · 정착 생활"
+      ],
+      "answer_index": 3,
+      "explanation": "'신석기, 움집, 정착 생활'은(는) 모두 '신석기 시대의 움집과 정착 생활'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-041",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "신석기 시대 사람들이 실을 뽑을 때 사용한 가락바퀴와 옷을 꿰맬 때 쓴 동물의 뼈로 만든 뼈바늘이에요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "혜초 스님과 왕오천축국전",
+        "가락바퀴와 뼈바늘",
+        "태조 왕건과 고려 건국·후삼국 통일",
+        "강감찬 장군과 귀주대첩"
+      ],
+      "answer_index": 1,
+      "explanation": "가락바퀴와 뼈바늘에 대한 설명이에요! 이 도구들로 옷과 그물을 만들었어요."
+    },
+    {
+      "question_id": "Q-ERA1-042",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "고인돌",
+        "민무늬 토기",
+        "가락바퀴와 뼈바늘",
+        "단군 신화 속 곰과 호랑이 이야기"
+      ],
+      "answer_index": 2,
+      "explanation": "정답은 '가락바퀴와 뼈바늘'이에요! 신석기 시대 사람들이 실을 뽑을 때 사용한 가락바퀴와 옷을 꿰맬 때 쓴 동물의 뼈로 만든 뼈바늘이에요."
+    },
+    {
+      "question_id": "Q-ERA1-043",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'신석기, 가락바퀴, 뼈바늘'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "서희의 외교 담판과 강동 6주",
+        "고려청자와 상감 기법",
+        "가락바퀴와 뼈바늘"
+      ],
+      "answer_index": 3,
+      "explanation": "'신석기, 가락바퀴, 뼈바늘'은(는) 바로 '가락바퀴와 뼈바늘'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-044",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'에 등장하는 '가락바퀴와 뼈바늘'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구",
+        "고려 시대에 만든 푸른빛 고려청자",
+        "신라 시대에 별을 관측하던 첨성대",
+        "조선 시대에 시간을 알려주던 자격루"
+      ],
+      "answer_index": 0,
+      "explanation": "'가락바퀴와 뼈바늘'은(는) 가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-045",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "신석기 시대 사람들이 직접 실을 뽑아 옷을 지어 입었음을 알려주는 유물은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "신석기 시대의 움집과 정착 생활",
+        "가락바퀴와 뼈바늘",
+        "반달 돌칼",
+        "부여 송국리 청동기 마을 유적"
+      ],
+      "answer_index": 1,
+      "explanation": "신석기 시대 사람들이 직접 실을 뽑아 옷을 지어 입었음을 알려주는 유물은(는) 바로 '가락바퀴와 뼈바늘'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-046",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '가락바퀴와 뼈바늘'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "백제 시대에 만든 금동대향로",
+        "대한제국 시기에 달렸던 전차와 기차",
+        "신석기 시대 사람들이 직접 실을 뽑아 옷을 지어 입었음을 알려주는 유물",
+        "고려 시대에 만든 푸른빛 고려청자"
+      ],
+      "answer_index": 2,
+      "explanation": "신석기 시대 사람들이 실을 뽑을 때 사용한 가락바퀴와 옷을 꿰맬 때 쓴 동물의 뼈로 만든 뼈바늘이에요. 이 도구들로 옷과 그물을 만들었어요."
+    },
+    {
+      "question_id": "Q-ERA1-047",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "이 도구들로 옷과 그물을 만들었어요. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "빗살무늬 토기",
+        "울산 반구대 암각화",
+        "비파형 동검과 청동 방울",
+        "가락바퀴와 뼈바늘"
+      ],
+      "answer_index": 3,
+      "explanation": "'가락바퀴와 뼈바늘'에 관한 이야기예요! 신석기 시대 사람들이 실을 뽑을 때 사용한 가락바퀴와 옷을 꿰맬 때 쓴 동물의 뼈로 만든 뼈바늘이에요."
+    },
+    {
+      "question_id": "Q-ERA1-048",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '가락바퀴와 뼈바늘'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구",
+        "높은 산 위에서 하늘은 둥글고 땅은 네모나다는 생각으로 돌을 쌓아 하늘에 제사를 지내던 곳",
+        "부족마다 사냥하고 농사짓는 땅의 경계를 소중히 지켜 침범하면 소나 말로 물어주게 한 동예의 약속(책화)",
+        "하늘을 숭배하던 환웅 부족과 곰을 숭배하던 부족이 힘을 합쳐 고조선을 세웠음을 알려주는 이야기"
+      ],
+      "answer_index": 0,
+      "explanation": "참 잘했어요! '가락바퀴와 뼈바늘'의 핵심 가치는 '가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-049",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'신석기' 시대를 대표하는 '가락바퀴와 뼈바늘'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "눈으로 보기 힘들 만큼 가늘고 정교한 수천 개의 선을 새겨 햇빛을 반사하던 청동 거울",
+        "신석기 시대 사람들이 직접 실을 뽑아 옷을 지어 입었음을 알려주는 유물",
+        "인천 강화도 마니산에 남아 있으며 단군왕검이 하늘에 감사의 제사를 올렸다고 전해지는 제단",
+        "왕이 없이 읍군·삼로라는 군장이 다스렸으며 동해안의 풍부한 소금과 어물을 거두던 나라들"
+      ],
+      "answer_index": 1,
+      "explanation": "'가락바퀴와 뼈바늘'을(를) 완벽하게 이해했군요! 신석기 시대 사람들이 실을 뽑을 때 사용한 가락바퀴와 옷을 꿰맬 때 쓴 동물의 뼈로 만든 뼈바늘이에요. 이 도구들로 옷과 그물을 만들었어요."
+    },
+    {
+      "question_id": "Q-ERA1-050",
+      "master_id": "K-PRE-005",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'의 역사를 빛낸 '가락바퀴와 뼈바늘'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "고구려 · 동맹 · 서옥제",
+        "홍익인간 · 널리 인간을 이롭게 · 고조선 건국 이념",
+        "신석기 · 가락바퀴 · 뼈바늘",
+        "마니산 참성단 · 강화도 · 하늘 제사"
+      ],
+      "answer_index": 2,
+      "explanation": "'신석기, 가락바퀴, 뼈바늘'은(는) 모두 '가락바퀴와 뼈바늘'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-051",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "신석기 시대에는 돌을 매끄럽게 갈아서 만든 간석기를 사용했어요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "간석기와 돌보습·돌괭이",
+        "윤관 장군과 별무반·동북 9성",
+        "직지심체요절과 금속활자",
+        "김윤후와 처인성 전투·삼별초의 항쟁"
+      ],
+      "answer_index": 0,
+      "explanation": "간석기와 돌보습·돌괭이에 대한 설명이에요! 돌괭이와 돌보습으로 땅을 일구어 조, 피, 수수 같은 곡식을 길렀답니다."
+    },
+    {
+      "question_id": "Q-ERA1-052",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "고조선의 8조법",
+        "간석기와 돌보습·돌괭이",
+        "주먹도끼",
+        "신석기 시대의 움집과 정착 생활"
+      ],
+      "answer_index": 1,
+      "explanation": "정답은 '간석기와 돌보습·돌괭이'이에요! 신석기 시대에는 돌을 매끄럽게 갈아서 만든 간석기를 사용했어요."
+    },
+    {
+      "question_id": "Q-ERA1-053",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'신석기, 간석기, 돌보습'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "팔만대장경(재조대장경)",
+        "최무선과 문익점의 발명과 애민 정신",
+        "간석기와 돌보습·돌괭이",
+        "태조 이성계와 조선 건국·한양 천도"
+      ],
+      "answer_index": 2,
+      "explanation": "'신석기, 간석기, 돌보습'은(는) 바로 '간석기와 돌보습·돌괭이'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-054",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'에 등장하는 '간석기와 돌보습·돌괭이'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "통일신라 시대의 불국사 다보탑",
+        "백제 시대에 만든 금동대향로",
+        "대한제국 시기에 달렸던 전차와 기차",
+        "단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구"
+      ],
+      "answer_index": 3,
+      "explanation": "'간석기와 돌보습·돌괭이'은(는) 단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-055",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "간석기와 돌보습·돌괭이",
+        "민무늬 토기",
+        "단군 신화 속 곰과 호랑이 이야기",
+        "구석기 시대의 동굴과 막집 생활"
+      ],
+      "answer_index": 0,
+      "explanation": "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구은(는) 바로 '간석기와 돌보습·돌괭이'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-056",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '간석기와 돌보습·돌괭이'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "조선 시대에 만든 철갑 거북선",
+        "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구",
+        "고려 시대에 금속활자로 찍은 직지심체요절",
+        "통일신라 시대의 불국사 다보탑"
+      ],
+      "answer_index": 1,
+      "explanation": "신석기 시대에는 돌을 매끄럽게 갈아서 만든 간석기를 사용했어요. 돌괭이와 돌보습으로 땅을 일구어 조, 피, 수수 같은 곡식을 길렀답니다."
+    },
+    {
+      "question_id": "Q-ERA1-057",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "돌괭이와 돌보습으로 땅을 일구어 조, 피, 수수 같은 곡식을 길렀답니다. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "부여 송국리 청동기 마을 유적",
+        "구석기 시대의 동굴과 막집 생활",
+        "간석기와 돌보습·돌괭이",
+        "가락바퀴와 뼈바늘"
+      ],
+      "answer_index": 2,
+      "explanation": "'간석기와 돌보습·돌괭이'에 관한 이야기예요! 신석기 시대에는 돌을 매끄럽게 갈아서 만든 간석기를 사용했어요."
+    },
+    {
+      "question_id": "Q-ERA1-058",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '간석기와 돌보습·돌괭이'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "백성들이 서로 해치지 않고 약속을 지키며 평화롭게 살도록 만든 고조선의 8가지 규칙",
+        "추수를 마친 10월에 온 백성이 모여 하늘과 조상에게 감사하며 하나로 뭉치던 고구려의 큰 축제",
+        "사람들을 널리 이롭게 하고 평화롭게 살게 하겠다는 고조선의 건국 정신",
+        "단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구"
+      ],
+      "answer_index": 3,
+      "explanation": "참 잘했어요! '간석기와 돌보습·돌괭이'의 핵심 가치는 '단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-059",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'신석기' 시대를 대표하는 '간석기와 돌보습·돌괭이'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구",
+        "따뜻한 남쪽 평야에서 저수지를 만들어 벼농사를 짓고, 5월과 10월에 두 번 하늘에 제사를 지내던 나라들",
+        "밝은 빛으로 세상을 다스린다는 뜻의 이름을 가진 신라의 시조",
+        "산과 계곡이 많은 지역에서 뛰어난 무예와 활쏘기 실력을 키웠던 초기 고구려의 문화"
+      ],
+      "answer_index": 0,
+      "explanation": "'간석기와 돌보습·돌괭이'을(를) 완벽하게 이해했군요! 신석기 시대에는 돌을 매끄럽게 갈아서 만든 간석기를 사용했어요. 돌괭이와 돌보습으로 땅을 일구어 조, 피, 수수 같은 곡식을 길렀답니다."
+    },
+    {
+      "question_id": "Q-ERA1-060",
+      "master_id": "K-PRE-006",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'의 역사를 빛낸 '간석기와 돌보습·돌괭이'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "부여 · 사출도 · 마가·우가·저가·구가",
+        "신석기 · 간석기 · 돌보습",
+        "단군왕검 · 고조선 · 아사달",
+        "8조법 · 고조선 법 · 생명 존중"
+      ],
+      "answer_index": 1,
+      "explanation": "'신석기, 간석기, 돌보습'은(는) 모두 '간석기와 돌보습·돌괭이'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-061",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "선사 시대 사람들이 큰 바위에 고래와 호랑이, 사슴, 사냥하는 사람들의 모습을 정성껏 새겨 넣은 바위그림이에요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "국제 무역항 벽란도와 코리아(Korea)",
+        "장영실과 조선의 과학기구(자격루·측우기·앙부일구)",
+        "권율·김시민 장군과 홍의장군 곽재우(의병)",
+        "울산 반구대 암각화"
+      ],
+      "answer_index": 3,
+      "explanation": "울산 반구대 암각화에 대한 설명이에요! 사냥이 잘되기를 바라는 마음이 담겨 있어요."
+    },
+    {
+      "question_id": "Q-ERA1-062",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "울산 반구대 암각화",
+        "가락바퀴와 뼈바늘",
+        "고인돌",
+        "민무늬 토기"
+      ],
+      "answer_index": 0,
+      "explanation": "정답은 '울산 반구대 암각화'이에요! 선사 시대 사람들이 큰 바위에 고래와 호랑이, 사슴, 사냥하는 사람들의 모습을 정성껏 새겨 넣은 바위그림이에요."
+    },
+    {
+      "question_id": "Q-ERA1-063",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "'반구대 암각화, 바위그림, 고래 사냥'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "세종대왕과 훈민정음(한글) 창제",
+        "울산 반구대 암각화",
+        "이순신 장군과 거북선·한산도 대첩",
+        "안용복과 울릉도·독도 수호"
+      ],
+      "answer_index": 1,
+      "explanation": "'반구대 암각화, 바위그림, 고래 사냥'은(는) 바로 '울산 반구대 암각화'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-064",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "'선사 시대'에 등장하는 '울산 반구대 암각화'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "조선 시대에 시간을 알려주던 자격루",
+        "조선 시대에 만든 철갑 거북선",
+        "바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림",
+        "고려 시대에 금속활자로 찍은 직지심체요절"
+      ],
+      "answer_index": 2,
+      "explanation": "'울산 반구대 암각화'은(는) 바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-065",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "빗살무늬 토기",
+        "간석기와 돌보습·돌괭이",
+        "비파형 동검과 청동 방울",
+        "울산 반구대 암각화"
+      ],
+      "answer_index": 3,
+      "explanation": "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산은(는) 바로 '울산 반구대 암각화'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-066",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "다음 중 '울산 반구대 암각화'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산",
+        "고려 시대에 만든 푸른빛 고려청자",
+        "신라 시대에 별을 관측하던 첨성대",
+        "조선 시대에 시간을 알려주던 자격루"
+      ],
+      "answer_index": 0,
+      "explanation": "선사 시대 사람들이 큰 바위에 고래와 호랑이, 사슴, 사냥하는 사람들의 모습을 정성껏 새겨 넣은 바위그림이에요. 사냥이 잘되기를 바라는 마음이 담겨 있어요."
+    },
+    {
+      "question_id": "Q-ERA1-067",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "사냥이 잘되기를 바라는 마음이 담겨 있어요. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "간석기와 돌보습·돌괭이",
+        "울산 반구대 암각화",
+        "비파형 동검과 청동 방울",
+        "주먹도끼"
+      ],
+      "answer_index": 1,
+      "explanation": "'울산 반구대 암각화'에 관한 이야기예요! 선사 시대 사람들이 큰 바위에 고래와 호랑이, 사슴, 사냥하는 사람들의 모습을 정성껏 새겨 넣은 바위그림이에요."
+    },
+    {
+      "question_id": "Q-ERA1-068",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "역사 탐험대가 '울산 반구대 암각화'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "하늘을 숭배하던 환웅 부족과 곰을 숭배하던 부족이 힘을 합쳐 고조선을 세웠음을 알려주는 이야기",
+        "말·소·돼지·개 등 가축의 이름을 딴 관리들이 나라의 네 구역을 나누어 다스리던 부여의 제도",
+        "바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림",
+        "하늘에 제사를 지내는 제사장(단군)과 나라를 다스리는 왕(왕검)의 뜻을 함께 담은 고조선의 건국자"
+      ],
+      "answer_index": 2,
+      "explanation": "참 잘했어요! '울산 반구대 암각화'의 핵심 가치는 '바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-069",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "'반구대 암각화' 시대를 대표하는 '울산 반구대 암각화'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "왕이 없이 읍군·삼로라는 군장이 다스렸으며 동해안의 풍부한 소금과 어물을 거두던 나라들",
+        "어릴 때부터 활을 잘 쏘아 \"활을 잘 쏘는 사람\"이라는 뜻의 이름을 가진 고구려의 시조",
+        "사냥이 끝나는 12월에 북을 치며 하늘에 제사를 지내고 죄수를 풀어주던 부여의 제천행사 영고",
+        "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산"
+      ],
+      "answer_index": 3,
+      "explanation": "'울산 반구대 암각화'을(를) 완벽하게 이해했군요! 선사 시대 사람들이 큰 바위에 고래와 호랑이, 사슴, 사냥하는 사람들의 모습을 정성껏 새겨 넣은 바위그림이에요. 사냥이 잘되기를 바라는 마음이 담겨 있어요."
+    },
+    {
+      "question_id": "Q-ERA1-070",
+      "master_id": "K-PRE-007",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_bangudae.jpg",
+      "stem": "'선사 시대'의 역사를 빛낸 '울산 반구대 암각화'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "반구대 암각화 · 바위그림 · 고래 사냥",
+        "마니산 참성단 · 강화도 · 하늘 제사",
+        "옥저 · 동예 · 무천",
+        "단군 신화 · 웅녀 · 쑥과 마늘"
+      ],
+      "answer_index": 0,
+      "explanation": "'반구대 암각화, 바위그림, 고래 사냥'은(는) 모두 '울산 반구대 암각화'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-071",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "청동기 시대 사람들이 벼의 이삭을 따서 수확할 때 사용한 반달 모양의 돌칼이에요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "허준과 동의보감",
+        "정약용과 실학(거중기·목민심서)",
+        "반달 돌칼",
+        "흥선대원군의 개혁과 병인양요·신미양요"
+      ],
+      "answer_index": 2,
+      "explanation": "반달 돌칼에 대한 설명이에요! 구멍에 끈을 끼워 손에 쥐고 곡식을 거두었답니다."
+    },
+    {
+      "question_id": "Q-ERA1-072",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "단군왕검과 고조선 건국",
+        "고조선의 8조법",
+        "주먹도끼",
+        "반달 돌칼"
+      ],
+      "answer_index": 3,
+      "explanation": "정답은 '반달 돌칼'이에요! 청동기 시대 사람들이 벼의 이삭을 따서 수확할 때 사용한 반달 모양의 돌칼이에요."
+    },
+    {
+      "question_id": "Q-ERA1-073",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'청동기, 반달 돌칼, 벼농사'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "반달 돌칼",
+        "영조와 정조의 탕평책과 수원 화성",
+        "김홍도의 풍속화와 김만덕의 나눔, 상평통보",
+        "김옥균과 갑신정변, 근대 개화 노력"
+      ],
+      "answer_index": 0,
+      "explanation": "'청동기, 반달 돌칼, 벼농사'은(는) 바로 '반달 돌칼'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-074",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'에 등장하는 '반달 돌칼'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "대한제국 시기에 달렸던 전차와 기차",
+        "청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구",
+        "고려 시대에 만든 푸른빛 고려청자",
+        "신라 시대에 별을 관측하던 첨성대"
+      ],
+      "answer_index": 1,
+      "explanation": "'반달 돌칼'은(는) 청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-075",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "부여 송국리 청동기 마을 유적",
+        "홍익인간 정신",
+        "반달 돌칼",
+        "주먹도끼"
+      ],
+      "answer_index": 2,
+      "explanation": "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼은(는) 바로 '반달 돌칼'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-076",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '반달 돌칼'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "통일신라 시대의 불국사 다보탑",
+        "백제 시대에 만든 금동대향로",
+        "대한제국 시기에 달렸던 전차와 기차",
+        "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼"
+      ],
+      "answer_index": 3,
+      "explanation": "청동기 시대 사람들이 벼의 이삭을 따서 수확할 때 사용한 반달 모양의 돌칼이에요. 구멍에 끈을 끼워 손에 쥐고 곡식을 거두었답니다."
+    },
+    {
+      "question_id": "Q-ERA1-077",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "구멍에 끈을 끼워 손에 쥐고 곡식을 거두었답니다. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "반달 돌칼",
+        "구석기 시대의 동굴과 막집 생활",
+        "가락바퀴와 뼈바늘",
+        "고인돌"
+      ],
+      "answer_index": 0,
+      "explanation": "'반달 돌칼'에 관한 이야기예요! 청동기 시대 사람들이 벼의 이삭을 따서 수확할 때 사용한 반달 모양의 돌칼이에요."
+    },
+    {
+      "question_id": "Q-ERA1-078",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '반달 돌칼'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "사람들을 널리 이롭게 하고 평화롭게 살게 하겠다는 고조선의 건국 정신",
+        "청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구",
+        "높은 산 위에서 하늘은 둥글고 땅은 네모나다는 생각으로 돌을 쌓아 하늘에 제사를 지내던 곳",
+        "부족마다 사냥하고 농사짓는 땅의 경계를 소중히 지켜 침범하면 소나 말로 물어주게 한 동예의 약속(책화)"
+      ],
+      "answer_index": 1,
+      "explanation": "참 잘했어요! '반달 돌칼'의 핵심 가치는 '청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-079",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'청동기' 시대를 대표하는 '반달 돌칼'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "산과 계곡이 많은 지역에서 뛰어난 무예와 활쏘기 실력을 키웠던 초기 고구려의 문화",
+        "눈으로 보기 힘들 만큼 가늘고 정교한 수천 개의 선을 새겨 햇빛을 반사하던 청동 거울",
+        "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼",
+        "인천 강화도 마니산에 남아 있으며 단군왕검이 하늘에 감사의 제사를 올렸다고 전해지는 제단"
+      ],
+      "answer_index": 2,
+      "explanation": "'반달 돌칼'을(를) 완벽하게 이해했군요! 청동기 시대 사람들이 벼의 이삭을 따서 수확할 때 사용한 반달 모양의 돌칼이에요. 구멍에 끈을 끼워 손에 쥐고 곡식을 거두었답니다."
+    },
+    {
+      "question_id": "Q-ERA1-080",
+      "master_id": "K-PRE-008",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'의 역사를 빛낸 '반달 돌칼'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "8조법 · 고조선 법 · 생명 존중",
+        "고구려 · 동맹 · 서옥제",
+        "홍익인간 · 널리 인간을 이롭게 · 고조선 건국 이념",
+        "청동기 · 반달 돌칼 · 벼농사"
+      ],
+      "answer_index": 3,
+      "explanation": "'청동기, 반달 돌칼, 벼농사'은(는) 모두 '반달 돌칼'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-081",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "청동기 시대의 힘센 족장이나 마을 사람들을 묻었던 커다란 돌무덤이에요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "강화도 조약과 개항장(부산·원산·인천)",
+        "고인돌",
+        "서재필과 독립신문·독립협회(만민공동회)",
+        "을사늑약과 헤이그 특사(이준·이상설·이위종)"
+      ],
+      "answer_index": 1,
+      "explanation": "고인돌에 대한 설명이에요! 우리나라 강화, 고창, 화순의 고인돌은 유네스코 세계유산으로 지정되었어요."
+    },
+    {
+      "question_id": "Q-ERA1-082",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "많은 사람들의 힘을 모아 거대한 덮개돌을 옮겨 만든 청동기 시대의 돌무덤이자 제단을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "구석기 시대의 동굴과 막집 생활",
+        "가락바퀴와 뼈바늘",
+        "고인돌",
+        "반달 돌칼"
+      ],
+      "answer_index": 2,
+      "explanation": "정답은 '고인돌'이에요! 청동기 시대의 힘센 족장이나 마을 사람들을 묻었던 커다란 돌무덤이에요."
+    },
+    {
+      "question_id": "Q-ERA1-083",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "'청동기, 고인돌, 돌무덤'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "전봉준과 동학 농민 운동",
+        "근대 문물과 근대 학교(전차·철도·배재학당·이화학당)",
+        "항일 의병 운동(최익현·신돌석·윤희순)",
+        "고인돌"
+      ],
+      "answer_index": 3,
+      "explanation": "'청동기, 고인돌, 돌무덤'은(는) 바로 '고인돌'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-084",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "'선사 시대'에 등장하는 '고인돌'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "많은 사람들의 힘을 모아 거대한 덮개돌을 옮겨 만든 청동기 시대의 돌무덤이자 제단",
+        "고려 시대에 금속활자로 찍은 직지심체요절",
+        "통일신라 시대의 불국사 다보탑",
+        "백제 시대에 만든 금동대향로"
+      ],
+      "answer_index": 0,
+      "explanation": "'고인돌'은(는) 많은 사람들의 힘을 모아 거대한 덮개돌을 옮겨 만든 청동기 시대의 돌무덤이자 제단이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-085",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "구석기 시대의 동굴과 막집 생활",
+        "고인돌",
+        "가락바퀴와 뼈바늘",
+        "반달 돌칼"
+      ],
+      "answer_index": 1,
+      "explanation": "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적은(는) 바로 '고인돌'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-086",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "다음 중 '고인돌'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "조선 시대에 시간을 알려주던 자격루",
+        "조선 시대에 만든 철갑 거북선",
+        "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적",
+        "고려 시대에 금속활자로 찍은 직지심체요절"
+      ],
+      "answer_index": 2,
+      "explanation": "청동기 시대의 힘센 족장이나 마을 사람들을 묻었던 커다란 돌무덤이에요. 우리나라 강화, 고창, 화순의 고인돌은 유네스코 세계유산으로 지정되었어요."
+    },
+    {
+      "question_id": "Q-ERA1-087",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "우리나라 강화, 고창, 화순의 고인돌은 유네스코 세계유산으로 지정되었어요. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "비파형 동검과 청동 방울",
+        "주먹도끼",
+        "신석기 시대의 움집과 정착 생활",
+        "고인돌"
+      ],
+      "answer_index": 3,
+      "explanation": "'고인돌'에 관한 이야기예요! 청동기 시대의 힘센 족장이나 마을 사람들을 묻었던 커다란 돌무덤이에요."
+    },
+    {
+      "question_id": "Q-ERA1-088",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "역사 탐험대가 '고인돌'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "많은 사람들의 힘을 모아 거대한 덮개돌을 옮겨 만든 청동기 시대의 돌무덤이자 제단",
+        "하늘에 제사를 지내는 제사장(단군)과 나라를 다스리는 왕(왕검)의 뜻을 함께 담은 고조선의 건국자",
+        "백성들이 서로 해치지 않고 약속을 지키며 평화롭게 살도록 만든 고조선의 8가지 규칙",
+        "추수를 마친 10월에 온 백성이 모여 하늘과 조상에게 감사하며 하나로 뭉치던 고구려의 큰 축제"
+      ],
+      "answer_index": 0,
+      "explanation": "참 잘했어요! '고인돌'의 핵심 가치는 '많은 사람들의 힘을 모아 거대한 덮개돌을 옮겨 만든 청동기 시대의 돌무덤이자 제단'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-089",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "'청동기' 시대를 대표하는 '고인돌'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "사냥이 끝나는 12월에 북을 치며 하늘에 제사를 지내고 죄수를 풀어주던 부여의 제천행사 영고",
+        "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적",
+        "따뜻한 남쪽 평야에서 저수지를 만들어 벼농사를 짓고, 5월과 10월에 두 번 하늘에 제사를 지내던 나라들",
+        "밝은 빛으로 세상을 다스린다는 뜻의 이름을 가진 신라의 시조"
+      ],
+      "answer_index": 1,
+      "explanation": "'고인돌'을(를) 완벽하게 이해했군요! 청동기 시대의 힘센 족장이나 마을 사람들을 묻었던 커다란 돌무덤이에요. 우리나라 강화, 고창, 화순의 고인돌은 유네스코 세계유산으로 지정되었어요."
+    },
+    {
+      "question_id": "Q-ERA1-090",
+      "master_id": "K-PRE-009",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_dolmen.jpg",
+      "stem": "'선사 시대'의 역사를 빛낸 '고인돌'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "단군 신화 · 웅녀 · 쑥과 마늘",
+        "부여 · 사출도 · 마가·우가·저가·구가",
+        "청동기 · 고인돌 · 돌무덤",
+        "단군왕검 · 고조선 · 아사달"
+      ],
+      "answer_index": 2,
+      "explanation": "'청동기, 고인돌, 돌무덤'은(는) 모두 '고인돌'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-091",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "청동기 시대에 구리와 주석을 섞어 만든 귀한 청동 무기와 제사 도구예요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "비파형 동검과 청동 방울",
+        "국채보상운동과 애국계몽운동",
+        "3·1 운동과 유관순 열사",
+        "홍범도 장군의 봉오동 전투와 김좌진 장군의 청산리 대첩"
+      ],
+      "answer_index": 0,
+      "explanation": "비파형 동검과 청동 방울에 대한 설명이에요! 청동은 구하기 어려워 마을을 다스리는 군장(족장)만 가질 수 있었어요."
+    },
+    {
+      "question_id": "Q-ERA1-092",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "마을의 우두머리인 군장이 하늘에 제사를 지내거나 자신의 높은 힘을 보여줄 때 사용한 청동 도구을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "고인돌",
+        "비파형 동검과 청동 방울",
+        "단군왕검과 고조선 건국",
+        "고조선의 8조법"
+      ],
+      "answer_index": 1,
+      "explanation": "정답은 '비파형 동검과 청동 방울'이에요! 청동기 시대에 구리와 주석을 섞어 만든 귀한 청동 무기와 제사 도구예요."
+    },
+    {
+      "question_id": "Q-ERA1-093",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "'청동기, 비파형 동검, 청동 거울'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "안중근 의사와 하얼빈 의거·동양평화론",
+        "이회영과 신흥무관학교·남자현 지사",
+        "비파형 동검과 청동 방울",
+        "주시경 선생과 조선어학회(우리말과 한글 수호)"
+      ],
+      "answer_index": 2,
+      "explanation": "'청동기, 비파형 동검, 청동 거울'은(는) 바로 '비파형 동검과 청동 방울'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-094",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "'선사 시대'에 등장하는 '비파형 동검과 청동 방울'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "신라 시대에 별을 관측하던 첨성대",
+        "조선 시대에 시간을 알려주던 자격루",
+        "조선 시대에 만든 철갑 거북선",
+        "마을의 우두머리인 군장이 하늘에 제사를 지내거나 자신의 높은 힘을 보여줄 때 사용한 청동 도구"
+      ],
+      "answer_index": 3,
+      "explanation": "'비파형 동검과 청동 방울'은(는) 마을의 우두머리인 군장이 하늘에 제사를 지내거나 자신의 높은 힘을 보여줄 때 사용한 청동 도구이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-095",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "날 부분이 볼록하게 휘어져 악기 비파를 닮은 청동기 시대의 대표적인 칼은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "비파형 동검과 청동 방울",
+        "고인돌",
+        "단군왕검과 고조선 건국",
+        "고조선의 8조법"
+      ],
+      "answer_index": 0,
+      "explanation": "날 부분이 볼록하게 휘어져 악기 비파를 닮은 청동기 시대의 대표적인 칼은(는) 바로 '비파형 동검과 청동 방울'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-096",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "다음 중 '비파형 동검과 청동 방울'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "대한제국 시기에 달렸던 전차와 기차",
+        "날 부분이 볼록하게 휘어져 악기 비파를 닮은 청동기 시대의 대표적인 칼",
+        "고려 시대에 만든 푸른빛 고려청자",
+        "신라 시대에 별을 관측하던 첨성대"
+      ],
+      "answer_index": 1,
+      "explanation": "청동기 시대에 구리와 주석을 섞어 만든 귀한 청동 무기와 제사 도구예요. 청동은 구하기 어려워 마을을 다스리는 군장(족장)만 가질 수 있었어요."
+    },
+    {
+      "question_id": "Q-ERA1-097",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "청동은 구하기 어려워 마을을 다스리는 군장(족장)만 가질 수 있었어요. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "가락바퀴와 뼈바늘",
+        "반달 돌칼",
+        "비파형 동검과 청동 방울",
+        "민무늬 토기"
+      ],
+      "answer_index": 2,
+      "explanation": "'비파형 동검과 청동 방울'에 관한 이야기예요! 청동기 시대에 구리와 주석을 섞어 만든 귀한 청동 무기와 제사 도구예요."
+    },
+    {
+      "question_id": "Q-ERA1-098",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "역사 탐험대가 '비파형 동검과 청동 방울'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "부족마다 사냥하고 농사짓는 땅의 경계를 소중히 지켜 침범하면 소나 말로 물어주게 한 동예의 약속(책화)",
+        "하늘을 숭배하던 환웅 부족과 곰을 숭배하던 부족이 힘을 합쳐 고조선을 세웠음을 알려주는 이야기",
+        "말·소·돼지·개 등 가축의 이름을 딴 관리들이 나라의 네 구역을 나누어 다스리던 부여의 제도",
+        "마을의 우두머리인 군장이 하늘에 제사를 지내거나 자신의 높은 힘을 보여줄 때 사용한 청동 도구"
+      ],
+      "answer_index": 3,
+      "explanation": "참 잘했어요! '비파형 동검과 청동 방울'의 핵심 가치는 '마을의 우두머리인 군장이 하늘에 제사를 지내거나 자신의 높은 힘을 보여줄 때 사용한 청동 도구'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-099",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "'청동기' 시대를 대표하는 '비파형 동검과 청동 방울'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "날 부분이 볼록하게 휘어져 악기 비파를 닮은 청동기 시대의 대표적인 칼",
+        "인천 강화도 마니산에 남아 있으며 단군왕검이 하늘에 감사의 제사를 올렸다고 전해지는 제단",
+        "왕이 없이 읍군·삼로라는 군장이 다스렸으며 동해안의 풍부한 소금과 어물을 거두던 나라들",
+        "어릴 때부터 활을 잘 쏘아 \"활을 잘 쏘는 사람\"이라는 뜻의 이름을 가진 고구려의 시조"
+      ],
+      "answer_index": 0,
+      "explanation": "'비파형 동검과 청동 방울'을(를) 완벽하게 이해했군요! 청동기 시대에 구리와 주석을 섞어 만든 귀한 청동 무기와 제사 도구예요. 청동은 구하기 어려워 마을을 다스리는 군장(족장)만 가질 수 있었어요."
+    },
+    {
+      "question_id": "Q-ERA1-100",
+      "master_id": "K-PRE-010",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_lute_dagger.jpg",
+      "stem": "'선사 시대'의 역사를 빛낸 '비파형 동검과 청동 방울'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "홍익인간 · 널리 인간을 이롭게 · 고조선 건국 이념",
+        "청동기 · 비파형 동검 · 청동 거울",
+        "마니산 참성단 · 강화도 · 하늘 제사",
+        "옥저 · 동예 · 무천"
+      ],
+      "answer_index": 1,
+      "explanation": "'청동기, 비파형 동검, 청동 거울'은(는) 모두 '비파형 동검과 청동 방울'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-101",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "청동기 시대 사람들은 강이 내려다보이는 언덕에 모여 살며 벼농사를 지었어요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "이봉창·윤봉길 의사와 한인애국단, 의열단(김원봉)",
+        "안창호·신채호·박은식과 민족 정신, 윤동주·이육사",
+        "홍익인간 정신",
+        "부여 송국리 청동기 마을 유적"
+      ],
+      "answer_index": 3,
+      "explanation": "부여 송국리 청동기 마을 유적에 대한 설명이에요! 마을 주변에는 적을 막기 위해 나무 울타리(목책)를 세웠답니다."
+    },
+    {
+      "question_id": "Q-ERA1-102",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "다른 부족의 침입으로부터 마을과 곡식을 안전하게 지키기 위해 세운 나무 담장(목책)과 도랑을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "부여 송국리 청동기 마을 유적",
+        "마니산 참성단",
+        "구석기 시대의 동굴과 막집 생활",
+        "가락바퀴와 뼈바늘"
+      ],
+      "answer_index": 0,
+      "explanation": "정답은 '부여 송국리 청동기 마을 유적'이에요! 청동기 시대 사람들은 강이 내려다보이는 언덕에 모여 살며 벼농사를 지었어요."
+    },
+    {
+      "question_id": "Q-ERA1-103",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'청동기, 부여 송국리, 목책'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "방정환(어린이날)과 전형필(문화재 수호)",
+        "부여 송국리 청동기 마을 유적",
+        "단군왕검과 고조선 건국",
+        "고조선의 8조법"
+      ],
+      "answer_index": 1,
+      "explanation": "'청동기, 부여 송국리, 목책'은(는) 바로 '부여 송국리 청동기 마을 유적'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-104",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'에 등장하는 '부여 송국리 청동기 마을 유적'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "백제 시대에 만든 금동대향로",
+        "대한제국 시기에 달렸던 전차와 기차",
+        "다른 부족의 침입으로부터 마을과 곡식을 안전하게 지키기 위해 세운 나무 담장(목책)과 도랑",
+        "고려 시대에 만든 푸른빛 고려청자"
+      ],
+      "answer_index": 2,
+      "explanation": "'부여 송국리 청동기 마을 유적'은(는) 다른 부족의 침입으로부터 마을과 곡식을 안전하게 지키기 위해 세운 나무 담장(목책)과 도랑이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-105",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "주먹도끼",
+        "신석기 시대의 움집과 정착 생활",
+        "울산 반구대 암각화",
+        "부여 송국리 청동기 마을 유적"
+      ],
+      "answer_index": 3,
+      "explanation": "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적은(는) 바로 '부여 송국리 청동기 마을 유적'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-106",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '부여 송국리 청동기 마을 유적'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적",
+        "고려 시대에 금속활자로 찍은 직지심체요절",
+        "통일신라 시대의 불국사 다보탑",
+        "백제 시대에 만든 금동대향로"
+      ],
+      "answer_index": 0,
+      "explanation": "청동기 시대 사람들은 강이 내려다보이는 언덕에 모여 살며 벼농사를 지었어요. 마을 주변에는 적을 막기 위해 나무 울타리(목책)를 세웠답니다."
+    },
+    {
+      "question_id": "Q-ERA1-107",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "마을 주변에는 적을 막기 위해 나무 울타리(목책)를 세웠답니다. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "주먹도끼",
+        "부여 송국리 청동기 마을 유적",
+        "신석기 시대의 움집과 정착 생활",
+        "울산 반구대 암각화"
+      ],
+      "answer_index": 1,
+      "explanation": "'부여 송국리 청동기 마을 유적'에 관한 이야기예요! 청동기 시대 사람들은 강이 내려다보이는 언덕에 모여 살며 벼농사를 지었어요."
+    },
+    {
+      "question_id": "Q-ERA1-108",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '부여 송국리 청동기 마을 유적'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "추수를 마친 10월에 온 백성이 모여 하늘과 조상에게 감사하며 하나로 뭉치던 고구려의 큰 축제",
+        "사람들을 널리 이롭게 하고 평화롭게 살게 하겠다는 고조선의 건국 정신",
+        "다른 부족의 침입으로부터 마을과 곡식을 안전하게 지키기 위해 세운 나무 담장(목책)과 도랑",
+        "높은 산 위에서 하늘은 둥글고 땅은 네모나다는 생각으로 돌을 쌓아 하늘에 제사를 지내던 곳"
+      ],
+      "answer_index": 2,
+      "explanation": "참 잘했어요! '부여 송국리 청동기 마을 유적'의 핵심 가치는 '다른 부족의 침입으로부터 마을과 곡식을 안전하게 지키기 위해 세운 나무 담장(목책)과 도랑'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-109",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'청동기' 시대를 대표하는 '부여 송국리 청동기 마을 유적'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "밝은 빛으로 세상을 다스린다는 뜻의 이름을 가진 신라의 시조",
+        "산과 계곡이 많은 지역에서 뛰어난 무예와 활쏘기 실력을 키웠던 초기 고구려의 문화",
+        "눈으로 보기 힘들 만큼 가늘고 정교한 수천 개의 선을 새겨 햇빛을 반사하던 청동 거울",
+        "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적"
+      ],
+      "answer_index": 3,
+      "explanation": "'부여 송국리 청동기 마을 유적'을(를) 완벽하게 이해했군요! 청동기 시대 사람들은 강이 내려다보이는 언덕에 모여 살며 벼농사를 지었어요. 마을 주변에는 적을 막기 위해 나무 울타리(목책)를 세웠답니다."
+    },
+    {
+      "question_id": "Q-ERA1-110",
+      "master_id": "K-PRE-011",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'선사 시대'의 역사를 빛낸 '부여 송국리 청동기 마을 유적'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "청동기 · 부여 송국리 · 목책",
+        "단군왕검 · 고조선 · 아사달",
+        "8조법 · 고조선 법 · 생명 존중",
+        "고구려 · 동맹 · 서옥제"
+      ],
+      "answer_index": 0,
+      "explanation": "'청동기, 부여 송국리, 목책'은(는) 모두 '부여 송국리 청동기 마을 유적'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA1-111",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "청동기 시대 사람들이 사용한 겉면에 아무런 무늬가 없고 바닥이 평평한 토기예요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "단군 신화 속 곰과 호랑이 이야기",
+        "부여의 사출도와 영고",
+        "민무늬 토기",
+        "삼한(마한·진한·변한)과 소도"
+      ],
+      "answer_index": 2,
+      "explanation": "민무늬 토기에 대한 설명이에요! 신석기 시대의 빗살무늬 토기보다 더 단단하고 쓰기 편리했어요."
+    },
+    {
+      "question_id": "Q-ERA1-112",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "집 안의 평평한 바닥에 세워 두고 수확한 쌀과 곡식을 담거나 밥을 짓던 그릇을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "간석기와 돌보습·돌괭이",
+        "고인돌",
+        "단군왕검과 고조선 건국",
+        "민무늬 토기"
+      ],
+      "answer_index": 3,
+      "explanation": "정답은 '민무늬 토기'이에요! 청동기 시대 사람들이 사용한 겉면에 아무런 무늬가 없고 바닥이 평평한 토기예요."
+    },
+    {
+      "question_id": "Q-ERA1-113",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "'청동기, 민무늬 토기, 평평한 바닥'라는 단서와 가장 관계가 깊은 '선사 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "민무늬 토기",
+        "마니산 참성단",
+        "옥저와 동예의 생활 풍습",
+        "주몽(동명성왕)과 고구려 건국"
+      ],
+      "answer_index": 0,
+      "explanation": "'청동기, 민무늬 토기, 평평한 바닥'은(는) 바로 '민무늬 토기'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA1-114",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "'선사 시대'에 등장하는 '민무늬 토기'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "조선 시대에 만든 철갑 거북선",
+        "집 안의 평평한 바닥에 세워 두고 수확한 쌀과 곡식을 담거나 밥을 짓던 그릇",
+        "고려 시대에 금속활자로 찍은 직지심체요절",
+        "통일신라 시대의 불국사 다보탑"
+      ],
+      "answer_index": 1,
+      "explanation": "'민무늬 토기'은(는) 집 안의 평평한 바닥에 세워 두고 수확한 쌀과 곡식을 담거나 밥을 짓던 그릇이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA1-115",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "반달 돌칼",
+        "부여 송국리 청동기 마을 유적",
+        "민무늬 토기",
+        "단군 신화 속 곰과 호랑이 이야기"
+      ],
+      "answer_index": 2,
+      "explanation": "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기은(는) 바로 '민무늬 토기'이에요!"
+    },
+    {
+      "question_id": "Q-ERA1-116",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "다음 중 '민무늬 토기'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "신라 시대에 별을 관측하던 첨성대",
+        "조선 시대에 시간을 알려주던 자격루",
+        "조선 시대에 만든 철갑 거북선",
+        "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기"
+      ],
+      "answer_index": 3,
+      "explanation": "청동기 시대 사람들이 사용한 겉면에 아무런 무늬가 없고 바닥이 평평한 토기예요. 신석기 시대의 빗살무늬 토기보다 더 단단하고 쓰기 편리했어요."
+    },
+    {
+      "question_id": "Q-ERA1-117",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "신석기 시대의 빗살무늬 토기보다 더 단단하고 쓰기 편리했어요. 이와 가장 관련 깊은 '선사 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "민무늬 토기",
+        "반달 돌칼",
+        "부여 송국리 청동기 마을 유적",
+        "빗살무늬 토기"
+      ],
+      "answer_index": 0,
+      "explanation": "'민무늬 토기'에 관한 이야기예요! 청동기 시대 사람들이 사용한 겉면에 아무런 무늬가 없고 바닥이 평평한 토기예요."
+    },
+    {
+      "question_id": "Q-ERA1-118",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "역사 탐험대가 '민무늬 토기'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "말·소·돼지·개 등 가축의 이름을 딴 관리들이 나라의 네 구역을 나누어 다스리던 부여의 제도",
+        "집 안의 평평한 바닥에 세워 두고 수확한 쌀과 곡식을 담거나 밥을 짓던 그릇",
+        "하늘에 제사를 지내는 제사장(단군)과 나라를 다스리는 왕(왕검)의 뜻을 함께 담은 고조선의 건국자",
+        "백성들이 서로 해치지 않고 약속을 지키며 평화롭게 살도록 만든 고조선의 8가지 규칙"
+      ],
+      "answer_index": 1,
+      "explanation": "참 잘했어요! '민무늬 토기'의 핵심 가치는 '집 안의 평평한 바닥에 세워 두고 수확한 쌀과 곡식을 담거나 밥을 짓던 그릇'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA1-119",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "'청동기' 시대를 대표하는 '민무늬 토기'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "어릴 때부터 활을 잘 쏘아 \"활을 잘 쏘는 사람\"이라는 뜻의 이름을 가진 고구려의 시조",
+        "사냥이 끝나는 12월에 북을 치며 하늘에 제사를 지내고 죄수를 풀어주던 부여의 제천행사 영고",
+        "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기",
+        "따뜻한 남쪽 평야에서 저수지를 만들어 벼농사를 짓고, 5월과 10월에 두 번 하늘에 제사를 지내던 나라들"
+      ],
+      "answer_index": 2,
+      "explanation": "'민무늬 토기'을(를) 완벽하게 이해했군요! 청동기 시대 사람들이 사용한 겉면에 아무런 무늬가 없고 바닥이 평평한 토기예요. 신석기 시대의 빗살무늬 토기보다 더 단단하고 쓰기 편리했어요."
+    },
+    {
+      "question_id": "Q-ERA1-120",
+      "master_id": "K-PRE-012",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_pre_plain_pottery.jpg",
+      "stem": "'선사 시대'의 역사를 빛낸 '민무늬 토기'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "옥저 · 동예 · 무천",
+        "단군 신화 · 웅녀 · 쑥과 마늘",
+        "부여 · 사출도 · 마가·우가·저가·구가",
+        "청동기 · 민무늬 토기 · 평평한 바닥"
+      ],
+      "answer_index": 3,
+      "explanation": "'청동기, 민무늬 토기, 평평한 바닥'은(는) 모두 '민무늬 토기'을(를) 가리키는 중요한 역사 키워드예요!"
+    }
+  ]
+}

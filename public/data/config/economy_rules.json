@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "quiz_rewards": {
+    "correct_gold_by_difficulty": { "easy": 10, "normal": 15, "hard": 20 },
+    "correct_exp_by_difficulty": { "easy": 10, "normal": 15, "hard": 20 },
+    "perfect_clear_bonus_gold": 50,
+    "review_correct_gold": 5
+  },
+  "character_level_up_exp": [0, 100, 250, 450, 700, 1000, 1400, 1900, 2500, 3200],
+  "base_upgrade_costs": {
+    "level_1": 0,
+    "level_2": 200,
+    "level_3": 500,
+    "level_4": 1000,
+    "level_5": 2000
+  }
+}

@@ -1,0 +1,1607 @@
+{
+  "era": 4,
+  "era_name": "남북국 시대",
+  "total_questions": 100,
+  "questions": [
+    {
+      "question_id": "Q-ERA4-001",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 1,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "신라의 뛰어난 외교관 김춘추와 용맹한 장군 김유신은 힘을 합쳐 백제와 고구려를 차례로 통합하고 삼국 통일의 든든한 주춧돌을 놓았어요.. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "김춘추(태종 무열왕)와 김유신",
+        "가락바퀴와 뼈바늘",
+        "반달 돌칼",
+        "부여 송국리 청동기 마을 유적"
+      ],
+      "answer_index": 0,
+      "explanation": "김춘추(태종 무열왕)와 김유신에 대한 설명이에요! 뛰어난 외교력과 굳센 군사력을 결합하여 오랫동안 나뉘어 싸우던 삼국을 하나로 합치는 데 앞장선 두 인물"
+    },
+    {
+      "question_id": "Q-ERA4-002",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "뛰어난 외교력과 굳센 군사력을 결합하여 오랫동안 나뉘어 싸우던 삼국을 하나로 합치는 데 앞장선 두 인물을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "간석기와 돌보습·돌괭이",
+        "김춘추(태종 무열왕)와 김유신",
+        "해동성국 발해와 고구려 문화 계승",
+        "원효 대사와 의상 대사"
+      ],
+      "answer_index": 1,
+      "explanation": "정답은 '김춘추(태종 무열왕)와 김유신'이에요! 신라의 뛰어난 외교관 김춘추와 용맹한 장군 김유신은 힘을 합쳐 백제와 고구려를 차례로 통합하고 삼국 통일의 든든한 주춧돌을 놓았어요.."
+    },
+    {
+      "question_id": "Q-ERA4-003",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 2,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'김춘추, 김유신, 태종 무열왕'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "울산 반구대 암각화",
+        "비파형 동검과 청동 방울",
+        "김춘추(태종 무열왕)와 김유신",
+        "단군왕검과 고조선 건국"
+      ],
+      "answer_index": 2,
+      "explanation": "'김춘추, 김유신, 태종 무열왕'은(는) 바로 '김춘추(태종 무열왕)와 김유신'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-004",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'에 등장하는 '김춘추(태종 무열왕)와 김유신'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "신석기 시대에 실을 뽑던 가락바퀴",
+        "고조선 시대의 8조법과 비파형 동검",
+        "조선 후기 서민들이 널리 쓴 엽전 상평통보",
+        "뛰어난 외교력과 굳센 군사력을 결합하여 오랫동안 나뉘어 싸우던 삼국을 하나로 합치는 데 앞장선 두 인물"
+      ],
+      "answer_index": 3,
+      "explanation": "'김춘추(태종 무열왕)와 김유신'은(는) 뛰어난 외교력과 굳센 군사력을 결합하여 오랫동안 나뉘어 싸우던 삼국을 하나로 합치는 데 앞장선 두 인물이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-005",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "화랑 출신으로 평생 전장을 누빈 김유신 장군과 신라 제29대 태종 무열왕이 된 김춘추은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "김춘추(태종 무열왕)와 김유신",
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "빗살무늬 토기",
+        "대조영과 발해 건국"
+      ],
+      "answer_index": 0,
+      "explanation": "화랑 출신으로 평생 전장을 누빈 김유신 장군과 신라 제29대 태종 무열왕이 된 김춘추은(는) 바로 '김춘추(태종 무열왕)와 김유신'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-006",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '김춘추(태종 무열왕)와 김유신'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "화랑 출신으로 평생 전장을 누빈 김유신 장군과 신라 제29대 태종 무열왕이 된 김춘추",
+        "고려 시대 윤관 장군이 조직한 별무반",
+        "신석기 시대에 실을 뽑던 가락바퀴"
+      ],
+      "answer_index": 1,
+      "explanation": "신라의 뛰어난 외교관 김춘추와 용맹한 장군 김유신은 힘을 합쳐 백제와 고구려를 차례로 통합하고 삼국 통일의 든든한 주춧돌을 놓았어요."
+    },
+    {
+      "question_id": "Q-ERA4-007",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "뛰어난 외교력과 굳센 군사력을 결합하여 오랫동안 나뉘어 싸우던 삼국을 하나로 합치는 데 앞장선 두 인물 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "대조영과 발해 건국",
+        "무구정광대다라니경",
+        "김춘추(태종 무열왕)와 김유신",
+        "해상왕 장보고와 청해진"
+      ],
+      "answer_index": 2,
+      "explanation": "'김춘추(태종 무열왕)와 김유신'에 관한 이야기예요! 신라의 뛰어난 외교관 김춘추와 용맹한 장군 김유신은 힘을 합쳐 백제와 고구려를 차례로 통합하고 삼국 통일의 든든한 주춧돌을 놓았어요.."
+    },
+    {
+      "question_id": "Q-ERA4-008",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '김춘추(태종 무열왕)와 김유신'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집",
+        "바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림",
+        "사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집",
+        "뛰어난 외교력과 굳센 군사력을 결합하여 오랫동안 나뉘어 싸우던 삼국을 하나로 합치는 데 앞장선 두 인물"
+      ],
+      "answer_index": 3,
+      "explanation": "참 잘했어요! '김춘추(태종 무열왕)와 김유신'의 핵심 가치는 '뛰어난 외교력과 굳센 군사력을 결합하여 오랫동안 나뉘어 싸우던 삼국을 하나로 합치는 데 앞장선 두 인물'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-009",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'김춘추' 시대를 대표하는 '김춘추(태종 무열왕)와 김유신'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "화랑 출신으로 평생 전장을 누빈 김유신 장군과 신라 제29대 태종 무열왕이 된 김춘추",
+        "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적",
+        "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기",
+        "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산"
+      ],
+      "answer_index": 0,
+      "explanation": "'김춘추(태종 무열왕)와 김유신'을(를) 완벽하게 이해했군요! 신라의 뛰어난 외교관 김춘추와 용맹한 장군 김유신은 힘을 합쳐 백제와 고구려를 차례로 통합하고 삼국 통일의 든든한 주춧돌을 놓았어요."
+    },
+    {
+      "question_id": "Q-ERA4-010",
+      "master_id": "K-NSK-001",
+      "internal_difficulty": 8,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'의 역사를 빛낸 '김춘추(태종 무열왕)와 김유신'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "신석기 · 간석기 · 돌보습",
+        "김춘추 · 김유신 · 태종 무열왕",
+        "구석기 · 주먹도끼 · 뗀석기",
+        "신석기 · 움집 · 정착 생활"
+      ],
+      "answer_index": 1,
+      "explanation": "'김춘추, 김유신, 태종 무열왕'은(는) 모두 '김춘추(태종 무열왕)와 김유신'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-011",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 1,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "문무왕은 한반도 전체를 차지하려던 당나라 군대를 매소성과 기벌포 전투에서 물리치고 676년에 마침내 삼국 통일을 완성했어요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "민무늬 토기",
+        "단군 신화 속 곰과 호랑이 이야기",
+        "부여의 사출도와 영고",
+        "문무왕과 삼국 통일 완성(대왕암)"
+      ],
+      "answer_index": 3,
+      "explanation": "문무왕과 삼국 통일 완성(대왕암)에 대한 설명이에요! 죽어서는 동해 바다의 용이 되어 나라를 지키고자 했어요."
+    },
+    {
+      "question_id": "Q-ERA4-012",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "고구려·백제 유민들과 힘을 합쳐 당나라 군대를 몰아내고 자주적인 삼국 통일을 완수한 신라의 왕을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "혜초 스님과 왕오천축국전",
+        "주먹도끼",
+        "신석기 시대의 움집과 정착 생활"
+      ],
+      "answer_index": 0,
+      "explanation": "정답은 '문무왕과 삼국 통일 완성(대왕암)'이에요! 문무왕은 한반도 전체를 차지하려던 당나라 군대를 매소성과 기벌포 전투에서 물리치고 676년에 마침내 삼국 통일을 완성했어요."
+    },
+    {
+      "question_id": "Q-ERA4-013",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 2,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'문무왕, 삼국 통일 완성, 기벌포 전투'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "홍익인간 정신",
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "마니산 참성단",
+        "옥저와 동예의 생활 풍습"
+      ],
+      "answer_index": 1,
+      "explanation": "'문무왕, 삼국 통일 완성, 기벌포 전투'은(는) 바로 '문무왕과 삼국 통일 완성(대왕암)'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-014",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'에 등장하는 '문무왕과 삼국 통일 완성(대왕암)'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "1919년 온 민족이 만세를 외친 3·1 운동",
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "고구려·백제 유민들과 힘을 합쳐 당나라 군대를 몰아내고 자주적인 삼국 통일을 완수한 신라의 왕",
+        "고려 시대 윤관 장군이 조직한 별무반"
+      ],
+      "answer_index": 2,
+      "explanation": "'문무왕과 삼국 통일 완성(대왕암)'은(는) 고구려·백제 유민들과 힘을 합쳐 당나라 군대를 몰아내고 자주적인 삼국 통일을 완수한 신라의 왕이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-015",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "경주 앞바다의 바위섬(문무대왕릉)에 수중 무덤을 만들어 바닷길로 침입하는 왜구를 막겠다고 유언한 왕은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "해동성국 발해와 고구려 문화 계승",
+        "원효 대사와 의상 대사",
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "문무왕과 삼국 통일 완성(대왕암)"
+      ],
+      "answer_index": 3,
+      "explanation": "경주 앞바다의 바위섬(문무대왕릉)에 수중 무덤을 만들어 바닷길로 침입하는 왜구를 막겠다고 유언한 왕은(는) 바로 '문무왕과 삼국 통일 완성(대왕암)'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-016",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '문무왕과 삼국 통일 완성(대왕암)'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "경주 앞바다의 바위섬(문무대왕릉)에 수중 무덤을 만들어 바닷길로 침입하는 왜구를 막겠다고 유언한 왕",
+        "구석기 시대의 동굴과 막집 생활",
+        "개항기에 맺어진 강화도 조약",
+        "1919년 온 민족이 만세를 외친 3·1 운동"
+      ],
+      "answer_index": 0,
+      "explanation": "문무왕은 한반도 전체를 차지하려던 당나라 군대를 매소성과 기벌포 전투에서 물리치고 676년에 마침내 삼국 통일을 완성했어요. 죽어서는 동해 바다의 용이 되어 나라를 지키고자 했어요."
+    },
+    {
+      "question_id": "Q-ERA4-017",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "죽어서는 동해 바다의 용이 되어 나라를 지키고자 했어요. 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "해동성국 발해와 고구려 문화 계승",
+        "원효 대사와 의상 대사"
+      ],
+      "answer_index": 1,
+      "explanation": "'문무왕과 삼국 통일 완성(대왕암)'에 관한 이야기예요! 문무왕은 한반도 전체를 차지하려던 당나라 군대를 매소성과 기벌포 전투에서 물리치고 676년에 마침내 삼국 통일을 완성했어요."
+    },
+    {
+      "question_id": "Q-ERA4-018",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '문무왕과 삼국 통일 완성(대왕암)'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇",
+        "단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구",
+        "고구려·백제 유민들과 힘을 합쳐 당나라 군대를 몰아내고 자주적인 삼국 통일을 완수한 신라의 왕",
+        "동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구"
+      ],
+      "answer_index": 2,
+      "explanation": "참 잘했어요! '문무왕과 삼국 통일 완성(대왕암)'의 핵심 가치는 '고구려·백제 유민들과 힘을 합쳐 당나라 군대를 몰아내고 자주적인 삼국 통일을 완수한 신라의 왕'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-019",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'문무왕' 시대를 대표하는 '문무왕과 삼국 통일 완성(대왕암)'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼",
+        "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적",
+        "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구",
+        "경주 앞바다의 바위섬(문무대왕릉)에 수중 무덤을 만들어 바닷길로 침입하는 왜구를 막겠다고 유언한 왕"
+      ],
+      "answer_index": 3,
+      "explanation": "'문무왕과 삼국 통일 완성(대왕암)'을(를) 완벽하게 이해했군요! 문무왕은 한반도 전체를 차지하려던 당나라 군대를 매소성과 기벌포 전투에서 물리치고 676년에 마침내 삼국 통일을 완성했어요. 죽어서는 동해 바다의 용이 되어 나라를 지키고자 했어요."
+    },
+    {
+      "question_id": "Q-ERA4-020",
+      "master_id": "K-NSK-002",
+      "internal_difficulty": 8,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'의 역사를 빛낸 '문무왕과 삼국 통일 완성(대왕암)'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "문무왕 · 삼국 통일 완성 · 기벌포 전투",
+        "신석기 · 가락바퀴 · 뼈바늘",
+        "청동기 · 반달 돌칼 · 벼농사",
+        "신석기 · 빗살무늬 토기 · 서울 암사동"
+      ],
+      "answer_index": 0,
+      "explanation": "'문무왕, 삼국 통일 완성, 기벌포 전투'은(는) 모두 '문무왕과 삼국 통일 완성(대왕암)'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-021",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 1,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "고구려 장수 출신인 대조영이 고구려 유민과 말갈족을 이끌고 동모산에서 발해를 세웠어요(698년). 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "초기 고구려의 동맹과 서옥제",
+        "세형 동검과 잔무늬 거울(다뉴세문경)",
+        "대조영과 발해 건국",
+        "온조왕과 백제 건국"
+      ],
+      "answer_index": 2,
+      "explanation": "대조영과 발해 건국에 대한 설명이에요! 이로써 남쪽의 통일신라와 북쪽의 발해가 함께하는 남북국 시대가 열렸어요."
+    },
+    {
+      "question_id": "Q-ERA4-022",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "고구려가 멸망한 뒤 유민들을 모아 당나라의 추격을 물리치고 동모산에 고구려를 계승한 새 나라 발해를 세운 인물을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "가락바퀴와 뼈바늘",
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "무구정광대다라니경",
+        "대조영과 발해 건국"
+      ],
+      "answer_index": 3,
+      "explanation": "정답은 '대조영과 발해 건국'이에요! 고구려 장수 출신인 대조영이 고구려 유민과 말갈족을 이끌고 동모산에서 발해를 세웠어요(698년)."
+    },
+    {
+      "question_id": "Q-ERA4-023",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 2,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'대조영, 발해 건국, 동모산'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "대조영과 발해 건국",
+        "삼한(마한·진한·변한)과 소도",
+        "박혁거세와 신라 건국",
+        "근초고왕과 백제의 전성기"
+      ],
+      "answer_index": 0,
+      "explanation": "'대조영, 발해 건국, 동모산'은(는) 바로 '대조영과 발해 건국'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-024",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'에 등장하는 '대조영과 발해 건국'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "조선 후기 서민들이 널리 쓴 엽전 상평통보",
+        "고구려가 멸망한 뒤 유민들을 모아 당나라의 추격을 물리치고 동모산에 고구려를 계승한 새 나라 발해를 세운 인물",
+        "구석기 시대의 동굴과 막집 생활",
+        "개항기에 맺어진 강화도 조약"
+      ],
+      "answer_index": 1,
+      "explanation": "'대조영과 발해 건국'은(는) 고구려가 멸망한 뒤 유민들을 모아 당나라의 추격을 물리치고 동모산에 고구려를 계승한 새 나라 발해를 세운 인물이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-025",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "남쪽의 통일신라와 북쪽의 발해가 우리 역사의 무대를 나란히 이끌어가게 만든 발해의 첫 번째 왕(고왕)은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "주먹도끼",
+        "신석기 시대의 움집과 정착 생활",
+        "대조영과 발해 건국",
+        "해동성국 발해와 고구려 문화 계승"
+      ],
+      "answer_index": 2,
+      "explanation": "남쪽의 통일신라와 북쪽의 발해가 우리 역사의 무대를 나란히 이끌어가게 만든 발해의 첫 번째 왕(고왕)은(는) 바로 '대조영과 발해 건국'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-026",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '대조영과 발해 건국'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "신석기 시대에 실을 뽑던 가락바퀴",
+        "고조선 시대의 8조법과 비파형 동검",
+        "조선 후기 서민들이 널리 쓴 엽전 상평통보",
+        "남쪽의 통일신라와 북쪽의 발해가 우리 역사의 무대를 나란히 이끌어가게 만든 발해의 첫 번째 왕(고왕)"
+      ],
+      "answer_index": 3,
+      "explanation": "고구려 장수 출신인 대조영이 고구려 유민과 말갈족을 이끌고 동모산에서 발해를 세웠어요(698년). 이로써 남쪽의 통일신라와 북쪽의 발해가 함께하는 남북국 시대가 열렸어요."
+    },
+    {
+      "question_id": "Q-ERA4-027",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "이로써 남쪽의 통일신라와 북쪽의 발해가 함께하는 남북국 시대가 열렸어요. 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "대조영과 발해 건국",
+        "혜초 스님과 왕오천축국전",
+        "김춘추(태종 무열왕)와 김유신",
+        "불국사와 석굴암"
+      ],
+      "answer_index": 0,
+      "explanation": "'대조영과 발해 건국'에 관한 이야기예요! 고구려 장수 출신인 대조영이 고구려 유민과 말갈족을 이끌고 동모산에서 발해를 세웠어요(698년)."
+    },
+    {
+      "question_id": "Q-ERA4-028",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '대조영과 발해 건국'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집",
+        "고구려가 멸망한 뒤 유민들을 모아 당나라의 추격을 물리치고 동모산에 고구려를 계승한 새 나라 발해를 세운 인물",
+        "가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구",
+        "청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구"
+      ],
+      "answer_index": 1,
+      "explanation": "참 잘했어요! '대조영과 발해 건국'의 핵심 가치는 '고구려가 멸망한 뒤 유민들을 모아 당나라의 추격을 물리치고 동모산에 고구려를 계승한 새 나라 발해를 세운 인물'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-029",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'대조영' 시대를 대표하는 '대조영과 발해 건국'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산",
+        "날 부분이 볼록하게 휘어져 악기 비파를 닮은 청동기 시대의 대표적인 칼",
+        "남쪽의 통일신라와 북쪽의 발해가 우리 역사의 무대를 나란히 이끌어가게 만든 발해의 첫 번째 왕(고왕)",
+        "신석기 시대 사람들이 직접 실을 뽑아 옷을 지어 입었음을 알려주는 유물"
+      ],
+      "answer_index": 2,
+      "explanation": "'대조영과 발해 건국'을(를) 완벽하게 이해했군요! 고구려 장수 출신인 대조영이 고구려 유민과 말갈족을 이끌고 동모산에서 발해를 세웠어요(698년). 이로써 남쪽의 통일신라와 북쪽의 발해가 함께하는 남북국 시대가 열렸어요."
+    },
+    {
+      "question_id": "Q-ERA4-030",
+      "master_id": "K-NSK-003",
+      "internal_difficulty": 8,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'의 역사를 빛낸 '대조영과 발해 건국'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "신석기 · 움집 · 정착 생활",
+        "반구대 암각화 · 바위그림 · 고래 사냥",
+        "구석기 · 동굴 · 막집",
+        "대조영 · 발해 건국 · 동모산"
+      ],
+      "answer_index": 3,
+      "explanation": "'대조영, 발해 건국, 동모산'은(는) 모두 '대조영과 발해 건국'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-031",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "발해는 9세기에 영토를 크게 넓히고 문화가 융성하여 \"바다 동쪽의 번성한 나라(해동성국)\"라고 불렸어요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "김수로왕과 가야 연맹",
+        "해동성국 발해와 고구려 문화 계승",
+        "진흥왕과 신라의 발전(화랑도·순수비)",
+        "백제 금동대향로와 무령왕릉"
+      ],
+      "answer_index": 1,
+      "explanation": "해동성국 발해와 고구려 문화 계승에 대한 설명이에요! 온돌과 모줄임천장, 수막새 기와 등 고구려 문화를 이어받았어요."
+    },
+    {
+      "question_id": "Q-ERA4-032",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "넓은 만주와 연해주까지 다스리며 학문과 문화가 크게 발달해 이웃 나라들로부터 \"바다 동쪽의 융성한 나라\"라 불린 발해의 별칭을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "원효 대사와 의상 대사",
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "해동성국 발해와 고구려 문화 계승",
+        "빗살무늬 토기"
+      ],
+      "answer_index": 2,
+      "explanation": "정답은 '해동성국 발해와 고구려 문화 계승'이에요! 발해는 9세기에 영토를 크게 넓히고 문화가 융성하여 \"바다 동쪽의 번성한 나라(해동성국)\"라고 불렸어요."
+    },
+    {
+      "question_id": "Q-ERA4-033",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "'해동성국, 발해 문화, 석등'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "광개토 대왕과 장수왕",
+        "을지문덕과 살수대첩",
+        "고구려 고분 벽화(수렵도·씨름도)",
+        "해동성국 발해와 고구려 문화 계승"
+      ],
+      "answer_index": 3,
+      "explanation": "'해동성국, 발해 문화, 석등'은(는) 바로 '해동성국 발해와 고구려 문화 계승'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-034",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "'남북국 시대'에 등장하는 '해동성국 발해와 고구려 문화 계승'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "넓은 만주와 연해주까지 다스리며 학문과 문화가 크게 발달해 이웃 나라들로부터 \"바다 동쪽의 융성한 나라\"라 불린 발해의 별칭",
+        "고려 시대 윤관 장군이 조직한 별무반",
+        "신석기 시대에 실을 뽑던 가락바퀴",
+        "고조선 시대의 8조법과 비파형 동검"
+      ],
+      "answer_index": 0,
+      "explanation": "'해동성국 발해와 고구려 문화 계승'은(는) 넓은 만주와 연해주까지 다스리며 학문과 문화가 크게 발달해 이웃 나라들로부터 \"바다 동쪽의 융성한 나라\"라 불린 발해의 별칭이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-035",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "추운 겨울을 이기는 온돌 장치와 웅장한 발해 석등, 정혜공주 묘의 굴식 돌방무덤으로 고구려의 후손임을 증명한 나라은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "불국사와 석굴암",
+        "해동성국 발해와 고구려 문화 계승",
+        "혜초 스님과 왕오천축국전",
+        "주먹도끼"
+      ],
+      "answer_index": 1,
+      "explanation": "추운 겨울을 이기는 온돌 장치와 웅장한 발해 석등, 정혜공주 묘의 굴식 돌방무덤으로 고구려의 후손임을 증명한 나라은(는) 바로 '해동성국 발해와 고구려 문화 계승'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-036",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "다음 중 '해동성국 발해와 고구려 문화 계승'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "1919년 온 민족이 만세를 외친 3·1 운동",
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "추운 겨울을 이기는 온돌 장치와 웅장한 발해 석등, 정혜공주 묘의 굴식 돌방무덤으로 고구려의 후손임을 증명한 나라",
+        "고려 시대 윤관 장군이 조직한 별무반"
+      ],
+      "answer_index": 2,
+      "explanation": "발해는 9세기에 영토를 크게 넓히고 문화가 융성하여 \"바다 동쪽의 번성한 나라(해동성국)\"라고 불렸어요. 온돌과 모줄임천장, 수막새 기와 등 고구려 문화를 이어받았어요."
+    },
+    {
+      "question_id": "Q-ERA4-037",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "온돌과 모줄임천장, 수막새 기와 등 고구려 문화를 이어받았어요. 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "무구정광대다라니경",
+        "해상왕 장보고와 청해진",
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "해동성국 발해와 고구려 문화 계승"
+      ],
+      "answer_index": 3,
+      "explanation": "'해동성국 발해와 고구려 문화 계승'에 관한 이야기예요! 발해는 9세기에 영토를 크게 넓히고 문화가 융성하여 \"바다 동쪽의 번성한 나라(해동성국)\"라고 불렸어요."
+    },
+    {
+      "question_id": "Q-ERA4-038",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "역사 탐험대가 '해동성국 발해와 고구려 문화 계승'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "넓은 만주와 연해주까지 다스리며 학문과 문화가 크게 발달해 이웃 나라들로부터 \"바다 동쪽의 융성한 나라\"라 불린 발해의 별칭",
+        "동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구",
+        "바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집",
+        "바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림"
+      ],
+      "answer_index": 0,
+      "explanation": "참 잘했어요! '해동성국 발해와 고구려 문화 계승'의 핵심 가치는 '넓은 만주와 연해주까지 다스리며 학문과 문화가 크게 발달해 이웃 나라들로부터 \"바다 동쪽의 융성한 나라\"라 불린 발해의 별칭'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-039",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "'해동성국' 시대를 대표하는 '해동성국 발해와 고구려 문화 계승'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구",
+        "추운 겨울을 이기는 온돌 장치와 웅장한 발해 석등, 정혜공주 묘의 굴식 돌방무덤으로 고구려의 후손임을 증명한 나라",
+        "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적",
+        "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기"
+      ],
+      "answer_index": 1,
+      "explanation": "'해동성국 발해와 고구려 문화 계승'을(를) 완벽하게 이해했군요! 발해는 9세기에 영토를 크게 넓히고 문화가 융성하여 \"바다 동쪽의 번성한 나라(해동성국)\"라고 불렸어요. 온돌과 모줄임천장, 수막새 기와 등 고구려 문화를 이어받았어요."
+    },
+    {
+      "question_id": "Q-ERA4-040",
+      "master_id": "K-NSK-004",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_balhae_buddha.jpg",
+      "stem": "'남북국 시대'의 역사를 빛낸 '해동성국 발해와 고구려 문화 계승'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "신석기 · 빗살무늬 토기 · 서울 암사동",
+        "신석기 · 간석기 · 돌보습",
+        "해동성국 · 발해 문화 · 석등",
+        "구석기 · 주먹도끼 · 뗀석기"
+      ],
+      "answer_index": 2,
+      "explanation": "'해동성국, 발해 문화, 석등'은(는) 모두 '해동성국 발해와 고구려 문화 계승'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-041",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "통일신라 시대에 김대성이 불교의 이상 세계를 땅 위에 구현하기 위해 지은 절과 돌굴 사원이에요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "불국사와 석굴암",
+        "신라 첨성대와 황금 유물(금관)",
+        "광종과 과거제·노비안검법",
+        "윤관 장군과 별무반·동북 9성"
+      ],
+      "answer_index": 0,
+      "explanation": "불국사와 석굴암에 대한 설명이에요! 다보탑과 석가탑, 석굴암 본존불상이 유명하며 유네스코 세계유산이에요."
+    },
+    {
+      "question_id": "Q-ERA4-042",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "화강암을 정교하게 다듬어 둥근 돔 천장을 만들고 자비로운 부처님 상을 모신 통일신라 건축과 과학의 결정체을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "신석기 시대의 움집과 정착 생활",
+        "불국사와 석굴암",
+        "김춘추(태종 무열왕)와 김유신",
+        "해동성국 발해와 고구려 문화 계승"
+      ],
+      "answer_index": 1,
+      "explanation": "정답은 '불국사와 석굴암'이에요! 통일신라 시대에 김대성이 불교의 이상 세계를 땅 위에 구현하기 위해 지은 절과 돌굴 사원이에요."
+    },
+    {
+      "question_id": "Q-ERA4-043",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "'불국사, 석굴암, 다보탑'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "태조 왕건과 고려 건국·후삼국 통일",
+        "강감찬 장군과 귀주대첩",
+        "불국사와 석굴암",
+        "팔만대장경(재조대장경)"
+      ],
+      "answer_index": 2,
+      "explanation": "'불국사, 석굴암, 다보탑'은(는) 바로 '불국사와 석굴암'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-044",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "'남북국 시대'에 등장하는 '불국사와 석굴암'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "개항기에 맺어진 강화도 조약",
+        "1919년 온 민족이 만세를 외친 3·1 운동",
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "화강암을 정교하게 다듬어 둥근 돔 천장을 만들고 자비로운 부처님 상을 모신 통일신라 건축과 과학의 결정체"
+      ],
+      "answer_index": 3,
+      "explanation": "'불국사와 석굴암'은(는) 화강암을 정교하게 다듬어 둥근 돔 천장을 만들고 자비로운 부처님 상을 모신 통일신라 건축과 과학의 결정체이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-045",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "경주 토함산에 자리 잡고 있으며 화려한 다보탑과 단아한 석가탑이 나란히 서 있는 사찰은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "불국사와 석굴암",
+        "구석기 시대의 동굴과 막집 생활",
+        "김춘추(태종 무열왕)와 김유신",
+        "해동성국 발해와 고구려 문화 계승"
+      ],
+      "answer_index": 0,
+      "explanation": "경주 토함산에 자리 잡고 있으며 화려한 다보탑과 단아한 석가탑이 나란히 서 있는 사찰은(는) 바로 '불국사와 석굴암'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-046",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "다음 중 '불국사와 석굴암'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "조선 후기 서민들이 널리 쓴 엽전 상평통보",
+        "경주 토함산에 자리 잡고 있으며 화려한 다보탑과 단아한 석가탑이 나란히 서 있는 사찰",
+        "구석기 시대의 동굴과 막집 생활",
+        "개항기에 맺어진 강화도 조약"
+      ],
+      "answer_index": 1,
+      "explanation": "통일신라 시대에 김대성이 불교의 이상 세계를 땅 위에 구현하기 위해 지은 절과 돌굴 사원이에요. 다보탑과 석가탑, 석굴암 본존불상이 유명하며 유네스코 세계유산이에요."
+    },
+    {
+      "question_id": "Q-ERA4-047",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "다보탑과 석가탑, 석굴암 본존불상이 유명하며 유네스코 세계유산이에요. 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "대조영과 발해 건국",
+        "원효 대사와 의상 대사",
+        "불국사와 석굴암",
+        "성덕대왕신종(에밀레종)과 동궁과 월지"
+      ],
+      "answer_index": 2,
+      "explanation": "'불국사와 석굴암'에 관한 이야기예요! 통일신라 시대에 김대성이 불교의 이상 세계를 땅 위에 구현하기 위해 지은 절과 돌굴 사원이에요."
+    },
+    {
+      "question_id": "Q-ERA4-048",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "역사 탐험대가 '불국사와 석굴암'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구",
+        "강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇",
+        "단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구",
+        "화강암을 정교하게 다듬어 둥근 돔 천장을 만들고 자비로운 부처님 상을 모신 통일신라 건축과 과학의 결정체"
+      ],
+      "answer_index": 3,
+      "explanation": "참 잘했어요! '불국사와 석굴암'의 핵심 가치는 '화강암을 정교하게 다듬어 둥근 돔 천장을 만들고 자비로운 부처님 상을 모신 통일신라 건축과 과학의 결정체'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-049",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "'불국사' 시대를 대표하는 '불국사와 석굴암'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "경주 토함산에 자리 잡고 있으며 화려한 다보탑과 단아한 석가탑이 나란히 서 있는 사찰",
+        "신석기 시대 사람들이 직접 실을 뽑아 옷을 지어 입었음을 알려주는 유물",
+        "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼",
+        "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적"
+      ],
+      "answer_index": 0,
+      "explanation": "'불국사와 석굴암'을(를) 완벽하게 이해했군요! 통일신라 시대에 김대성이 불교의 이상 세계를 땅 위에 구현하기 위해 지은 절과 돌굴 사원이에요. 다보탑과 석가탑, 석굴암 본존불상이 유명하며 유네스코 세계유산이에요."
+    },
+    {
+      "question_id": "Q-ERA4-050",
+      "master_id": "K-NSK-005",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_seokguram.jpg",
+      "stem": "'남북국 시대'의 역사를 빛낸 '불국사와 석굴암'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "구석기 · 동굴 · 막집",
+        "불국사 · 석굴암 · 다보탑",
+        "신석기 · 가락바퀴 · 뼈바늘",
+        "청동기 · 반달 돌칼 · 벼농사"
+      ],
+      "answer_index": 1,
+      "explanation": "'불국사, 석굴암, 다보탑'은(는) 모두 '불국사와 석굴암'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-051",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "불국사 석가탑을 수리할 때 탑 안에서 발견된 두루마리 불경이에요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "고려청자와 상감 기법",
+        "김부식의 삼국사기와 일연의 삼국유사",
+        "국제 무역항 벽란도와 코리아(Korea)",
+        "무구정광대다라니경"
+      ],
+      "answer_index": 3,
+      "explanation": "무구정광대다라니경에 대한 설명이에요! 세계에서 가장 오래된 목판 인쇄물로 통일신라의 뛰어난 인쇄술과 한지 제작 기술을 보여줘요."
+    },
+    {
+      "question_id": "Q-ERA4-052",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "나무판에 글자를 새겨 닥나무 종이(한지)에 찍어낸 현존하는 세계에서 가장 오래된 목판 인쇄물을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "무구정광대다라니경",
+        "불국사와 석굴암",
+        "해상왕 장보고와 청해진",
+        "구석기 시대의 동굴과 막집 생활"
+      ],
+      "answer_index": 0,
+      "explanation": "정답은 '무구정광대다라니경'이에요! 불국사 석가탑을 수리할 때 탑 안에서 발견된 두루마리 불경이에요."
+    },
+    {
+      "question_id": "Q-ERA4-053",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'무구정광대다라니경, 석가탑, 목판 인쇄물'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "직지심체요절과 금속활자",
+        "무구정광대다라니경",
+        "김윤후와 처인성 전투·삼별초의 항쟁",
+        "세종대왕과 훈민정음(한글) 창제"
+      ],
+      "answer_index": 1,
+      "explanation": "'무구정광대다라니경, 석가탑, 목판 인쇄물'은(는) 바로 '무구정광대다라니경'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-054",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'에 등장하는 '무구정광대다라니경'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "고조선 시대의 8조법과 비파형 동검",
+        "조선 후기 서민들이 널리 쓴 엽전 상평통보",
+        "나무판에 글자를 새겨 닥나무 종이(한지)에 찍어낸 현존하는 세계에서 가장 오래된 목판 인쇄물",
+        "구석기 시대의 동굴과 막집 생활"
+      ],
+      "answer_index": 2,
+      "explanation": "'무구정광대다라니경'은(는) 나무판에 글자를 새겨 닥나무 종이(한지)에 찍어낸 현존하는 세계에서 가장 오래된 목판 인쇄물이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-055",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "경주 불국사 삼층석탑(석가탑) 안에서 천 년이 넘는 세월 동안 온전히 보존되어 나온 보물은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "불국사와 석굴암",
+        "해상왕 장보고와 청해진",
+        "구석기 시대의 동굴과 막집 생활",
+        "무구정광대다라니경"
+      ],
+      "answer_index": 3,
+      "explanation": "경주 불국사 삼층석탑(석가탑) 안에서 천 년이 넘는 세월 동안 온전히 보존되어 나온 보물은(는) 바로 '무구정광대다라니경'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-056",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '무구정광대다라니경'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "경주 불국사 삼층석탑(석가탑) 안에서 천 년이 넘는 세월 동안 온전히 보존되어 나온 보물",
+        "고려 시대 윤관 장군이 조직한 별무반",
+        "신석기 시대에 실을 뽑던 가락바퀴",
+        "고조선 시대의 8조법과 비파형 동검"
+      ],
+      "answer_index": 0,
+      "explanation": "불국사 석가탑을 수리할 때 탑 안에서 발견된 두루마리 불경이에요. 세계에서 가장 오래된 목판 인쇄물로 통일신라의 뛰어난 인쇄술과 한지 제작 기술을 보여줘요."
+    },
+    {
+      "question_id": "Q-ERA4-057",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "세계에서 가장 오래된 목판 인쇄물로 통일신라의 뛰어난 인쇄술과 한지 제작 기술을 보여줘요. 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "김춘추(태종 무열왕)와 김유신",
+        "무구정광대다라니경",
+        "해동성국 발해와 고구려 문화 계승",
+        "혜초 스님과 왕오천축국전"
+      ],
+      "answer_index": 1,
+      "explanation": "'무구정광대다라니경'에 관한 이야기예요! 불국사 석가탑을 수리할 때 탑 안에서 발견된 두루마리 불경이에요."
+    },
+    {
+      "question_id": "Q-ERA4-058",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '무구정광대다라니경'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림",
+        "사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집",
+        "나무판에 글자를 새겨 닥나무 종이(한지)에 찍어낸 현존하는 세계에서 가장 오래된 목판 인쇄물",
+        "가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구"
+      ],
+      "answer_index": 2,
+      "explanation": "참 잘했어요! '무구정광대다라니경'의 핵심 가치는 '나무판에 글자를 새겨 닥나무 종이(한지)에 찍어낸 현존하는 세계에서 가장 오래된 목판 인쇄물'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-059",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'무구정광대다라니경' 시대를 대표하는 '무구정광대다라니경'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기",
+        "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산",
+        "날 부분이 볼록하게 휘어져 악기 비파를 닮은 청동기 시대의 대표적인 칼",
+        "경주 불국사 삼층석탑(석가탑) 안에서 천 년이 넘는 세월 동안 온전히 보존되어 나온 보물"
+      ],
+      "answer_index": 3,
+      "explanation": "'무구정광대다라니경'을(를) 완벽하게 이해했군요! 불국사 석가탑을 수리할 때 탑 안에서 발견된 두루마리 불경이에요. 세계에서 가장 오래된 목판 인쇄물로 통일신라의 뛰어난 인쇄술과 한지 제작 기술을 보여줘요."
+    },
+    {
+      "question_id": "Q-ERA4-060",
+      "master_id": "K-NSK-006",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'의 역사를 빛낸 '무구정광대다라니경'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "무구정광대다라니경 · 석가탑 · 목판 인쇄물",
+        "구석기 · 주먹도끼 · 뗀석기",
+        "신석기 · 움집 · 정착 생활",
+        "반구대 암각화 · 바위그림 · 고래 사냥"
+      ],
+      "answer_index": 0,
+      "explanation": "'무구정광대다라니경, 석가탑, 목판 인쇄물'은(는) 모두 '무구정광대다라니경'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-061",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 1,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "원효 대사는 어려운 불교 교리를 노래와 춤으로 쉽게 풀어 백성들에게 널리 알렸고, 의상 대사는 부석사를 세워 통일신라 사람들의 마음을 하나로 모았어요.. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "태조 이성계와 조선 건국·한양 천도",
+        "조선왕조실록과 경국대전",
+        "원효 대사와 의상 대사",
+        "허준과 동의보감"
+      ],
+      "answer_index": 2,
+      "explanation": "원효 대사와 의상 대사에 대한 설명이에요! 글을 모르는 가난한 백성들도 마음만 깨끗하면 부처님의 구원을 받을 수 있다고 가르치며 불교를 널리 전한 스님"
+    },
+    {
+      "question_id": "Q-ERA4-062",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "글을 모르는 가난한 백성들도 마음만 깨끗하면 부처님의 구원을 받을 수 있다고 가르치며 불교를 널리 전한 스님을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "빗살무늬 토기",
+        "간석기와 돌보습·돌괭이",
+        "대조영과 발해 건국",
+        "원효 대사와 의상 대사"
+      ],
+      "answer_index": 3,
+      "explanation": "정답은 '원효 대사와 의상 대사'이에요! 원효 대사는 어려운 불교 교리를 노래와 춤으로 쉽게 풀어 백성들에게 널리 알렸고, 의상 대사는 부석사를 세워 통일신라 사람들의 마음을 하나로 모았어요.."
+    },
+    {
+      "question_id": "Q-ERA4-063",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 2,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'원효 대사, 의상 대사, 불교 대중화'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "원효 대사와 의상 대사",
+        "장영실과 조선의 과학기구(자격루·측우기·앙부일구)",
+        "권율·김시민 장군과 홍의장군 곽재우(의병)",
+        "영조와 정조의 탕평책과 수원 화성"
+      ],
+      "answer_index": 0,
+      "explanation": "'원효 대사, 의상 대사, 불교 대중화'은(는) 바로 '원효 대사와 의상 대사'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-064",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'에 등장하는 '원효 대사와 의상 대사'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "글을 모르는 가난한 백성들도 마음만 깨끗하면 부처님의 구원을 받을 수 있다고 가르치며 불교를 널리 전한 스님",
+        "고려 시대 윤관 장군이 조직한 별무반",
+        "신석기 시대에 실을 뽑던 가락바퀴"
+      ],
+      "answer_index": 1,
+      "explanation": "'원효 대사와 의상 대사'은(는) 글을 모르는 가난한 백성들도 마음만 깨끗하면 부처님의 구원을 받을 수 있다고 가르치며 불교를 널리 전한 스님이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-065",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "당나라 유학길에 동굴에서 해골물을 마시고 \"모든 것은 마음먹기에 달려 있다(일체유심조)\"는 깨달음을 얻은 스님은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "빗살무늬 토기",
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "원효 대사와 의상 대사",
+        "불국사와 석굴암"
+      ],
+      "answer_index": 2,
+      "explanation": "당나라 유학길에 동굴에서 해골물을 마시고 \"모든 것은 마음먹기에 달려 있다(일체유심조)\"는 깨달음을 얻은 스님은(는) 바로 '원효 대사와 의상 대사'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-066",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '원효 대사와 의상 대사'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "개항기에 맺어진 강화도 조약",
+        "1919년 온 민족이 만세를 외친 3·1 운동",
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "당나라 유학길에 동굴에서 해골물을 마시고 \"모든 것은 마음먹기에 달려 있다(일체유심조)\"는 깨달음을 얻은 스님"
+      ],
+      "answer_index": 3,
+      "explanation": "원효 대사는 어려운 불교 교리를 노래와 춤으로 쉽게 풀어 백성들에게 널리 알렸고, 의상 대사는 부석사를 세워 통일신라 사람들의 마음을 하나로 모았어요."
+    },
+    {
+      "question_id": "Q-ERA4-067",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "글을 모르는 가난한 백성들도 마음만 깨끗하면 부처님의 구원을 받을 수 있다고 가르치며 불교를 널리 전한 스님 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "원효 대사와 의상 대사",
+        "해상왕 장보고와 청해진",
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "불국사와 석굴암"
+      ],
+      "answer_index": 0,
+      "explanation": "'원효 대사와 의상 대사'에 관한 이야기예요! 원효 대사는 어려운 불교 교리를 노래와 춤으로 쉽게 풀어 백성들에게 널리 알렸고, 의상 대사는 부석사를 세워 통일신라 사람들의 마음을 하나로 모았어요.."
+    },
+    {
+      "question_id": "Q-ERA4-068",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '원효 대사와 의상 대사'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구",
+        "글을 모르는 가난한 백성들도 마음만 깨끗하면 부처님의 구원을 받을 수 있다고 가르치며 불교를 널리 전한 스님",
+        "동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구",
+        "바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집"
+      ],
+      "answer_index": 1,
+      "explanation": "참 잘했어요! '원효 대사와 의상 대사'의 핵심 가치는 '글을 모르는 가난한 백성들도 마음만 깨끗하면 부처님의 구원을 받을 수 있다고 가르치며 불교를 널리 전한 스님'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-069",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'원효 대사' 시대를 대표하는 '원효 대사와 의상 대사'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적",
+        "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구",
+        "당나라 유학길에 동굴에서 해골물을 마시고 \"모든 것은 마음먹기에 달려 있다(일체유심조)\"는 깨달음을 얻은 스님",
+        "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적"
+      ],
+      "answer_index": 2,
+      "explanation": "'원효 대사와 의상 대사'을(를) 완벽하게 이해했군요! 원효 대사는 어려운 불교 교리를 노래와 춤으로 쉽게 풀어 백성들에게 널리 알렸고, 의상 대사는 부석사를 세워 통일신라 사람들의 마음을 하나로 모았어요."
+    },
+    {
+      "question_id": "Q-ERA4-070",
+      "master_id": "K-NSK-007",
+      "internal_difficulty": 8,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'의 역사를 빛낸 '원효 대사와 의상 대사'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "청동기 · 반달 돌칼 · 벼농사",
+        "신석기 · 빗살무늬 토기 · 서울 암사동",
+        "신석기 · 간석기 · 돌보습",
+        "원효 대사 · 의상 대사 · 불교 대중화"
+      ],
+      "answer_index": 3,
+      "explanation": "'원효 대사, 의상 대사, 불교 대중화'은(는) 모두 '원효 대사와 의상 대사'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-071",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 1,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "통일신라의 혜초 스님이 머나먼 인도(다섯 천축국)와 중앙아시아 여러 나라를 직접 여행하고 돌아와 각 나라의 생활 모습과 풍습을 기록한 여행기예요.. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "안용복과 울릉도·독도 수호",
+        "혜초 스님과 왕오천축국전",
+        "김정호와 대동여지도",
+        "강화도 조약과 개항장(부산·원산·인천)"
+      ],
+      "answer_index": 1,
+      "explanation": "혜초 스님과 왕오천축국전에 대한 설명이에요! 부처님의 나라 인도와 서역의 기후, 음식, 옷차림, 문화를 생생하게 기록하여 세계사적으로도 귀중한 통일신라의 여행기"
+    },
+    {
+      "question_id": "Q-ERA4-072",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "부처님의 나라 인도와 서역의 기후, 음식, 옷차림, 문화를 생생하게 기록하여 세계사적으로도 귀중한 통일신라의 여행기을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "해동성국 발해와 고구려 문화 계승",
+        "원효 대사와 의상 대사",
+        "혜초 스님과 왕오천축국전",
+        "주먹도끼"
+      ],
+      "answer_index": 2,
+      "explanation": "정답은 '혜초 스님과 왕오천축국전'이에요! 통일신라의 혜초 스님이 머나먼 인도(다섯 천축국)와 중앙아시아 여러 나라를 직접 여행하고 돌아와 각 나라의 생활 모습과 풍습을 기록한 여행기예요.."
+    },
+    {
+      "question_id": "Q-ERA4-073",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 2,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'혜초, 왕오천축국전, 인도 여행기'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "정약용과 실학(거중기·목민심서)",
+        "흥선대원군의 개혁과 병인양요·신미양요",
+        "전봉준과 동학 농민 운동",
+        "혜초 스님과 왕오천축국전"
+      ],
+      "answer_index": 3,
+      "explanation": "'혜초, 왕오천축국전, 인도 여행기'은(는) 바로 '혜초 스님과 왕오천축국전'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-074",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'에 등장하는 '혜초 스님과 왕오천축국전'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "부처님의 나라 인도와 서역의 기후, 음식, 옷차림, 문화를 생생하게 기록하여 세계사적으로도 귀중한 통일신라의 여행기",
+        "구석기 시대의 동굴과 막집 생활",
+        "개항기에 맺어진 강화도 조약",
+        "1919년 온 민족이 만세를 외친 3·1 운동"
+      ],
+      "answer_index": 0,
+      "explanation": "'혜초 스님과 왕오천축국전'은(는) 부처님의 나라 인도와 서역의 기후, 음식, 옷차림, 문화를 생생하게 기록하여 세계사적으로도 귀중한 통일신라의 여행기이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-075",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "중국 둔황의 천불동 석굴에서 발견되어 세상에 다시 알려진 혜초 스님의 책은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "무구정광대다라니경",
+        "혜초 스님과 왕오천축국전",
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "빗살무늬 토기"
+      ],
+      "answer_index": 1,
+      "explanation": "중국 둔황의 천불동 석굴에서 발견되어 세상에 다시 알려진 혜초 스님의 책은(는) 바로 '혜초 스님과 왕오천축국전'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-076",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '혜초 스님과 왕오천축국전'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "고조선 시대의 8조법과 비파형 동검",
+        "조선 후기 서민들이 널리 쓴 엽전 상평통보",
+        "중국 둔황의 천불동 석굴에서 발견되어 세상에 다시 알려진 혜초 스님의 책",
+        "구석기 시대의 동굴과 막집 생활"
+      ],
+      "answer_index": 2,
+      "explanation": "통일신라의 혜초 스님이 머나먼 인도(다섯 천축국)와 중앙아시아 여러 나라를 직접 여행하고 돌아와 각 나라의 생활 모습과 풍습을 기록한 여행기예요."
+    },
+    {
+      "question_id": "Q-ERA4-077",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "부처님의 나라 인도와 서역의 기후, 음식, 옷차림, 문화를 생생하게 기록하여 세계사적으로도 귀중한 통일신라의 여행기 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "무구정광대다라니경",
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "대조영과 발해 건국",
+        "혜초 스님과 왕오천축국전"
+      ],
+      "answer_index": 3,
+      "explanation": "'혜초 스님과 왕오천축국전'에 관한 이야기예요! 통일신라의 혜초 스님이 머나먼 인도(다섯 천축국)와 중앙아시아 여러 나라를 직접 여행하고 돌아와 각 나라의 생활 모습과 풍습을 기록한 여행기예요.."
+    },
+    {
+      "question_id": "Q-ERA4-078",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '혜초 스님과 왕오천축국전'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "부처님의 나라 인도와 서역의 기후, 음식, 옷차림, 문화를 생생하게 기록하여 세계사적으로도 귀중한 통일신라의 여행기",
+        "가운데 구멍에 막대를 꽂아 돌려서 실을 뽑고, 그 실로 옷이나 그물을 꿰매던 도구",
+        "청동기 시대에 농사를 지은 뒤 익은 벼나 곡식의 이삭을 자를 때 사용한 도구",
+        "강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇"
+      ],
+      "answer_index": 0,
+      "explanation": "참 잘했어요! '혜초 스님과 왕오천축국전'의 핵심 가치는 '부처님의 나라 인도와 서역의 기후, 음식, 옷차림, 문화를 생생하게 기록하여 세계사적으로도 귀중한 통일신라의 여행기'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-079",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'혜초' 시대를 대표하는 '혜초 스님과 왕오천축국전'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "날 부분이 볼록하게 휘어져 악기 비파를 닮은 청동기 시대의 대표적인 칼",
+        "중국 둔황의 천불동 석굴에서 발견되어 세상에 다시 알려진 혜초 스님의 책",
+        "신석기 시대 사람들이 직접 실을 뽑아 옷을 지어 입었음을 알려주는 유물",
+        "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼"
+      ],
+      "answer_index": 1,
+      "explanation": "'혜초 스님과 왕오천축국전'을(를) 완벽하게 이해했군요! 통일신라의 혜초 스님이 머나먼 인도(다섯 천축국)와 중앙아시아 여러 나라를 직접 여행하고 돌아와 각 나라의 생활 모습과 풍습을 기록한 여행기예요."
+    },
+    {
+      "question_id": "Q-ERA4-080",
+      "master_id": "K-NSK-008",
+      "internal_difficulty": 8,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'의 역사를 빛낸 '혜초 스님과 왕오천축국전'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "반구대 암각화 · 바위그림 · 고래 사냥",
+        "구석기 · 동굴 · 막집",
+        "혜초 · 왕오천축국전 · 인도 여행기",
+        "신석기 · 가락바퀴 · 뼈바늘"
+      ],
+      "answer_index": 2,
+      "explanation": "'혜초, 왕오천축국전, 인도 여행기'은(는) 모두 '혜초 스님과 왕오천축국전'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-081",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 1,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "장보고 대사는 전라남도 완도에 군사 기지인 청해진을 세워 바다의 해적을 소탕했어요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "해상왕 장보고와 청해진",
+        "김옥균과 갑신정변, 근대 개화 노력",
+        "대한제국 선포와 광무개혁(덕수궁)",
+        "국채보상운동과 애국계몽운동"
+      ],
+      "answer_index": 0,
+      "explanation": "해상왕 장보고와 청해진에 대한 설명이에요! 그리고 신라·당나라·일본을 잇는 바닷길 무역을 이끌었답니다."
+    },
+    {
+      "question_id": "Q-ERA4-082",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "신라 사람들을 붙잡아가던 해적을 물리치고 동아시아 바닷길 무역을 평화롭게 지킨 완도의 해양 기지을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "구석기 시대의 동굴과 막집 생활",
+        "해상왕 장보고와 청해진",
+        "가락바퀴와 뼈바늘",
+        "문무왕과 삼국 통일 완성(대왕암)"
+      ],
+      "answer_index": 1,
+      "explanation": "정답은 '해상왕 장보고와 청해진'이에요! 장보고 대사는 전라남도 완도에 군사 기지인 청해진을 세워 바다의 해적을 소탕했어요."
+    },
+    {
+      "question_id": "Q-ERA4-083",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 2,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'장보고, 청해진, 완도'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "서재필과 독립신문·독립협회(만민공동회)",
+        "을사늑약과 헤이그 특사(이준·이상설·이위종)",
+        "해상왕 장보고와 청해진",
+        "안중근 의사와 하얼빈 의거·동양평화론"
+      ],
+      "answer_index": 2,
+      "explanation": "'장보고, 청해진, 완도'은(는) 바로 '해상왕 장보고와 청해진'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-084",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'에 등장하는 '해상왕 장보고와 청해진'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "신석기 시대에 실을 뽑던 가락바퀴",
+        "고조선 시대의 8조법과 비파형 동검",
+        "조선 후기 서민들이 널리 쓴 엽전 상평통보",
+        "신라 사람들을 붙잡아가던 해적을 물리치고 동아시아 바닷길 무역을 평화롭게 지킨 완도의 해양 기지"
+      ],
+      "answer_index": 3,
+      "explanation": "'해상왕 장보고와 청해진'은(는) 신라 사람들을 붙잡아가던 해적을 물리치고 동아시아 바닷길 무역을 평화롭게 지킨 완도의 해양 기지이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-085",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "\"바다를 맑게 하여 평안하게 한다\"는 뜻의 청해진을 이끌며 해상왕이라 불린 통일신라의 인물은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "해상왕 장보고와 청해진",
+        "신석기 시대의 움집과 정착 생활",
+        "대조영과 발해 건국",
+        "무구정광대다라니경"
+      ],
+      "answer_index": 0,
+      "explanation": "\"바다를 맑게 하여 평안하게 한다\"는 뜻의 청해진을 이끌며 해상왕이라 불린 통일신라의 인물은(는) 바로 '해상왕 장보고와 청해진'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-086",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "다음 중 '해상왕 장보고와 청해진'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "\"바다를 맑게 하여 평안하게 한다\"는 뜻의 청해진을 이끌며 해상왕이라 불린 통일신라의 인물",
+        "고려 시대 윤관 장군이 조직한 별무반",
+        "신석기 시대에 실을 뽑던 가락바퀴"
+      ],
+      "answer_index": 1,
+      "explanation": "장보고 대사는 전라남도 완도에 군사 기지인 청해진을 세워 바다의 해적을 소탕했어요. 그리고 신라·당나라·일본을 잇는 바닷길 무역을 이끌었답니다."
+    },
+    {
+      "question_id": "Q-ERA4-087",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "",
+      "stem": "그리고 신라·당나라·일본을 잇는 바닷길 무역을 이끌었답니다. 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "해동성국 발해와 고구려 문화 계승",
+        "원효 대사와 의상 대사",
+        "해상왕 장보고와 청해진",
+        "김춘추(태종 무열왕)와 김유신"
+      ],
+      "answer_index": 2,
+      "explanation": "'해상왕 장보고와 청해진'에 관한 이야기예요! 장보고 대사는 전라남도 완도에 군사 기지인 청해진을 세워 바다의 해적을 소탕했어요."
+    },
+    {
+      "question_id": "Q-ERA4-088",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "역사 탐험대가 '해상왕 장보고와 청해진'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "바람과 추위를 막기 위해 땅을 파고 가운데 화덕을 만들어 따뜻하게 지낸 집",
+        "바다에서 고래와 물고기를 많이 잡고 마을 사람들이 안전하기를 바라며 바위에 새긴 그림",
+        "사냥감과 열매를 찾아 여러 곳으로 옮겨 다니며 살기에 알맞은 집",
+        "신라 사람들을 붙잡아가던 해적을 물리치고 동아시아 바닷길 무역을 평화롭게 지킨 완도의 해양 기지"
+      ],
+      "answer_index": 3,
+      "explanation": "참 잘했어요! '해상왕 장보고와 청해진'의 핵심 가치는 '신라 사람들을 붙잡아가던 해적을 물리치고 동아시아 바닷길 무역을 평화롭게 지킨 완도의 해양 기지'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-089",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "",
+      "stem": "'장보고' 시대를 대표하는 '해상왕 장보고와 청해진'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "\"바다를 맑게 하여 평안하게 한다\"는 뜻의 청해진을 이끌며 해상왕이라 불린 통일신라의 인물",
+        "탁자 모양이나 바둑판 모양의 큰 바위로 만들어졌으며 우리나라에 세계에서 가장 많이 남아 있는 유적",
+        "겉에 무늬를 넣지 않고 깔끔하게 빚어 높은 온도에서 단단하게 구워낸 청동기 시대 토기",
+        "울산의 절벽 바위에 고래와 배를 탄 사람, 육지 동물들이 생생하게 새겨진 선사 시대 문화유산"
+      ],
+      "answer_index": 0,
+      "explanation": "'해상왕 장보고와 청해진'을(를) 완벽하게 이해했군요! 장보고 대사는 전라남도 완도에 군사 기지인 청해진을 세워 바다의 해적을 소탕했어요. 그리고 신라·당나라·일본을 잇는 바닷길 무역을 이끌었답니다."
+    },
+    {
+      "question_id": "Q-ERA4-090",
+      "master_id": "K-NSK-009",
+      "internal_difficulty": 8,
+      "question_type": "person_matching",
+      "visual_cue_asset": "",
+      "stem": "'남북국 시대'의 역사를 빛낸 '해상왕 장보고와 청해진'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "신석기 · 간석기 · 돌보습",
+        "장보고 · 청해진 · 완도",
+        "구석기 · 주먹도끼 · 뗀석기",
+        "신석기 · 움집 · 정착 생활"
+      ],
+      "answer_index": 1,
+      "explanation": "'장보고, 청해진, 완도'은(는) 모두 '해상왕 장보고와 청해진'을(를) 가리키는 중요한 역사 키워드예요!"
+    },
+    {
+      "question_id": "Q-ERA4-091",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 1,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "성덕대왕신종은 은은하고 웅장한 소리가 멀리까지 퍼지는 통일신라의 거대한 범종이에요. 이 역사 지식의 주인공(또는 이름)은 무엇일까요?",
+      "choices": [
+        "항일 의병 운동(최익현·신돌석·윤희순)",
+        "대한민국 임시정부와 백범 김구",
+        "이봉창·윤봉길 의사와 한인애국단, 의열단(김원봉)",
+        "성덕대왕신종(에밀레종)과 동궁과 월지"
+      ],
+      "answer_index": 3,
+      "explanation": "성덕대왕신종(에밀레종)과 동궁과 월지에 대한 설명이에요! 동궁과 월지(안압지)는 아름다운 연못과 정원이 있는 태자의 별궁 유적이에요."
+    },
+    {
+      "question_id": "Q-ERA4-092",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 2,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "종 맨 위의 소리통(음관)과 바닥의 오목한 울림통 등 뛰어난 과학 기술로 천 년이 지나도 맑은 소리를 내는 큰 종을(를) 가리키는 알맞은 것은 무엇일까요?",
+      "choices": [
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "대조영과 발해 건국",
+        "무구정광대다라니경",
+        "해상왕 장보고와 청해진"
+      ],
+      "answer_index": 0,
+      "explanation": "정답은 '성덕대왕신종(에밀레종)과 동궁과 월지'이에요! 성덕대왕신종은 은은하고 웅장한 소리가 멀리까지 퍼지는 통일신라의 거대한 범종이에요."
+    },
+    {
+      "question_id": "Q-ERA4-093",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 2,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "'성덕대왕신종, 동궁과 월지, 안압지'라는 단서와 가장 관계가 깊은 '남북국 시대'의 역사 이야기는 무엇일까요?",
+      "choices": [
+        "3·1 운동과 유관순 열사",
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "홍범도 장군의 봉오동 전투와 김좌진 장군의 청산리 대첩",
+        "방정환(어린이날)과 전형필(문화재 수호)"
+      ],
+      "answer_index": 1,
+      "explanation": "'성덕대왕신종, 동궁과 월지, 안압지'은(는) 바로 '성덕대왕신종(에밀레종)과 동궁과 월지'을(를) 나타내는 핵심 단어예요!"
+    },
+    {
+      "question_id": "Q-ERA4-094",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 3,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "'남북국 시대'에 등장하는 '성덕대왕신종(에밀레종)과 동궁과 월지'에 대한 올바른 설명은 다음 중 어느 것일까요?",
+      "choices": [
+        "1919년 온 민족이 만세를 외친 3·1 운동",
+        "조선 세종대왕 때 장영실이 만든 측우기",
+        "종 맨 위의 소리통(음관)과 바닥의 오목한 울림통 등 뛰어난 과학 기술로 천 년이 지나도 맑은 소리를 내는 큰 종",
+        "고려 시대 윤관 장군이 조직한 별무반"
+      ],
+      "answer_index": 2,
+      "explanation": "'성덕대왕신종(에밀레종)과 동궁과 월지'은(는) 종 맨 위의 소리통(음관)과 바닥의 오목한 울림통 등 뛰어난 과학 기술로 천 년이 지나도 맑은 소리를 내는 큰 종이랍니다!"
+    },
+    {
+      "question_id": "Q-ERA4-095",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 3,
+      "question_type": "person_matching",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "바다와 섬을 본떠 아름다운 인공 연못을 만들고 귀한 손님을 맞이해 잔치를 열던 통일신라 왕궁의 별궁은(는) 무엇을 설명한 것일까요?",
+      "choices": [
+        "원효 대사와 의상 대사",
+        "주먹도끼",
+        "신석기 시대의 움집과 정착 생활",
+        "성덕대왕신종(에밀레종)과 동궁과 월지"
+      ],
+      "answer_index": 3,
+      "explanation": "바다와 섬을 본떠 아름다운 인공 연못을 만들고 귀한 손님을 맞이해 잔치를 열던 통일신라 왕궁의 별궁은(는) 바로 '성덕대왕신종(에밀레종)과 동궁과 월지'이에요!"
+    },
+    {
+      "question_id": "Q-ERA4-096",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 4,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "다음 중 '성덕대왕신종(에밀레종)과 동궁과 월지'을(를) 통해 알 수 있는 역사적 모습으로 가장 알맞은 것은 무엇일까요?",
+      "choices": [
+        "바다와 섬을 본떠 아름다운 인공 연못을 만들고 귀한 손님을 맞이해 잔치를 열던 통일신라 왕궁의 별궁",
+        "구석기 시대의 동굴과 막집 생활",
+        "개항기에 맺어진 강화도 조약",
+        "1919년 온 민족이 만세를 외친 3·1 운동"
+      ],
+      "answer_index": 0,
+      "explanation": "성덕대왕신종은 은은하고 웅장한 소리가 멀리까지 퍼지는 통일신라의 거대한 범종이에요. 동궁과 월지(안압지)는 아름다운 연못과 정원이 있는 태자의 별궁 유적이에요."
+    },
+    {
+      "question_id": "Q-ERA4-097",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 5,
+      "question_type": "artifact_identification",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "동궁과 월지(안압지)는 아름다운 연못과 정원이 있는 태자의 별궁 유적이에요. 이와 가장 관련 깊은 '남북국 시대'의 중요 유산이나 인물은 누구(무엇)일까요?",
+      "choices": [
+        "문무왕과 삼국 통일 완성(대왕암)",
+        "성덕대왕신종(에밀레종)과 동궁과 월지",
+        "불국사와 석굴암",
+        "혜초 스님과 왕오천축국전"
+      ],
+      "answer_index": 1,
+      "explanation": "'성덕대왕신종(에밀레종)과 동궁과 월지'에 관한 이야기예요! 성덕대왕신종은 은은하고 웅장한 소리가 멀리까지 퍼지는 통일신라의 거대한 범종이에요."
+    },
+    {
+      "question_id": "Q-ERA4-098",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 6,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "역사 탐험대가 '성덕대왕신종(에밀레종)과 동궁과 월지'의 가치를 조사하고 있어요. 가장 바르게 발표한 친구의 내용은 무엇일까요?",
+      "choices": [
+        "강가나 바닷가 모래바닥에 꽂아 두고 도토리나 곡식을 보관하고 끓여 먹던 그릇",
+        "단단한 돌을 숫돌에 매끄럽게 갈아서 밭을 갈거나 곡식을 심을 때 쓴 농사 도구",
+        "종 맨 위의 소리통(음관)과 바닥의 오목한 울림통 등 뛰어난 과학 기술로 천 년이 지나도 맑은 소리를 내는 큰 종",
+        "동물을 사냥하거나 가죽을 벗기고 나무를 다듬을 때 사용한 구석기 만능 돌 도구"
+      ],
+      "answer_index": 2,
+      "explanation": "참 잘했어요! '성덕대왕신종(에밀레종)과 동궁과 월지'의 핵심 가치는 '종 맨 위의 소리통(음관)과 바닥의 오목한 울림통 등 뛰어난 과학 기술로 천 년이 지나도 맑은 소리를 내는 큰 종'이랍니다."
+    },
+    {
+      "question_id": "Q-ERA4-099",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 7,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "'성덕대왕신종' 시대를 대표하는 '성덕대왕신종(에밀레종)과 동궁과 월지'에 대해 정리한 역사 도감 설명으로 옳은 것은 무엇일까요?",
+      "choices": [
+        "생김새가 밤하늘의 반달을 닮았고 두 개의 작은 구멍에 끈을 꿰어 손가락에 끼워 쓰던 돌칼",
+        "네모난 집터와 반달 돌칼, 탄화된 쌀알이 발견된 충청남도 부여의 대표적인 청동기 시대 마을 유적",
+        "구석기의 뗀석기보다 훨씬 정교하게 돌을 갈아 만들던 신석기 시대 도구",
+        "바다와 섬을 본떠 아름다운 인공 연못을 만들고 귀한 손님을 맞이해 잔치를 열던 통일신라 왕궁의 별궁"
+      ],
+      "answer_index": 3,
+      "explanation": "'성덕대왕신종(에밀레종)과 동궁과 월지'을(를) 완벽하게 이해했군요! 성덕대왕신종은 은은하고 웅장한 소리가 멀리까지 퍼지는 통일신라의 거대한 범종이에요. 동궁과 월지(안압지)는 아름다운 연못과 정원이 있는 태자의 별궁 유적이에요."
+    },
+    {
+      "question_id": "Q-ERA4-100",
+      "master_id": "K-NSK-010",
+      "internal_difficulty": 8,
+      "question_type": "cause_effect",
+      "visual_cue_asset": "/assets/artifacts/art_nsk_emille_bell.jpg",
+      "stem": "'남북국 시대'의 역사를 빛낸 '성덕대왕신종(에밀레종)과 동궁과 월지'의 핵심 키워드로 가장 알맞게 짝지어진 것은 무엇일까요?",
+      "choices": [
+        "성덕대왕신종 · 동궁과 월지 · 안압지",
+        "신석기 · 가락바퀴 · 뼈바늘",
+        "청동기 · 반달 돌칼 · 벼농사",
+        "신석기 · 빗살무늬 토기 · 서울 암사동"
+      ],
+      "answer_index": 0,
+      "explanation": "'성덕대왕신종, 동궁과 월지, 안압지'은(는) 모두 '성덕대왕신종(에밀레종)과 동궁과 월지'을(를) 가리키는 중요한 역사 키워드예요!"
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "version": "1.0",
+  "equipment_items": [
+    {
+      "id": "equip_prehistoric_spear",
+      "era": 1,
+      "category": "weapon",
+      "name": "날카로운 돌창",
+      "asset": "/assets/equipment/equip_prehistoric_spear.png",
+      "cost": 80,
+      "power_bonus": 15,
+      "defense_bonus": 0,
+      "description": "긴 나무 끝에 날카롭게 간 돌을 묶어 만든 선사 시대 사냥 도구예요!"
+    },
+    {
+      "id": "equip_prehistoric_axe",
+      "era": 1,
+      "category": "weapon",
+      "name": "단단한 돌도끼",
+      "asset": "/assets/equipment/equip_prehistoric_axe.png",
+      "cost": 120,
+      "power_bonus": 22,
+      "defense_bonus": 5,
+      "description": "나무를 베거나 땅을 파고 맹수를 물리칠 때 쓰던 튼튼한 돌도끼예요!"
+    },
+    {
+      "id": "equip_prehistoric_bow",
+      "era": 1,
+      "category": "weapon",
+      "name": "신석기 뼈활",
+      "asset": "/assets/equipment/equip_prehistoric_bow.png",
+      "cost": 160,
+      "power_bonus": 30,
+      "defense_bonus": 0,
+      "description": "멀리 있는 날렵한 사냥감도 정확히 맞힐 수 있는 튼튼한 활이에요!"
+    },
+    {
+      "id": "equip_prehistoric_leather_clothes",
+      "era": 1,
+      "category": "armor",
+      "name": "따뜻한 가죽옷",
+      "asset": "/assets/equipment/equip_prehistoric_leather_clothes.png",
+      "cost": 90,
+      "power_bonus": 0,
+      "defense_bonus": 18,
+      "description": "가락바퀴와 뼈바늘로 동물의 가죽을 꿰매어 만든 따뜻한 옷이에요!"
+    },
+    {
+      "id": "equip_prehistoric_bone_armor",
+      "era": 1,
+      "category": "armor",
+      "name": "튼튼한 뼈갑옷",
+      "asset": "/assets/equipment/equip_prehistoric_bone_armor.png",
+      "cost": 150,
+      "power_bonus": 5,
+      "defense_bonus": 28,
+      "description": "단단한 동물 뼈를 엮어 만들어 맹수의 공격을 막아주는 갑옷이에요!"
+    },
+    {
+      "id": "equip_prehistoric_shield",
+      "era": 1,
+      "category": "armor",
+      "name": "통나무 가죽방패",
+      "asset": "/assets/equipment/equip_prehistoric_shield.png",
+      "cost": 110,
+      "power_bonus": 0,
+      "defense_bonus": 22,
+      "description": "두꺼운 나무판에 질긴 가죽을 덧대어 만든 믿음직한 방패예요!"
+    },
+    {
+      "id": "equip_prehistoric_necklace",
+      "era": 1,
+      "category": "accessory",
+      "name": "용맹한 이빨 목걸이",
+      "asset": "/assets/equipment/equip_prehistoric_necklace.png",
+      "cost": 70,
+      "power_bonus": 10,
+      "defense_bonus": 10,
+      "description": "사냥한 동물의 이빨을 꿰어 만들어 용기를 북돋아 주는 목걸이예요!"
+    },
+    {
+      "id": "equip_prehistoric_bracelet",
+      "era": 1,
+      "category": "accessory",
+      "name": "조개껍데기 팔찌",
+      "asset": "/assets/equipment/equip_prehistoric_bracelet.png",
+      "cost": 60,
+      "power_bonus": 5,
+      "defense_bonus": 12,
+      "description": "바닷가에서 주운 예쁜 조개껍데기로 만든 신석기 시대 장신구예요!"
+    },
+
+    {
+      "id": "equip_gojoseon_bronze_sword",
+      "era": 2,
+      "category": "weapon",
+      "name": "비파형 동검",
+      "asset": "/assets/equipment/equip_goryeo_bronze_sword.png",
+      "cost": 120,
+      "power_bonus": 25,
+      "defense_bonus": 5,
+      "description": "악기 비파를 닮은 모양으로 고조선의 군장들이 지녔던 귀한 청동 검이에요!"
+    },
+    {
+      "id": "equip_gojoseon_spear",
+      "era": 2,
+      "category": "weapon",
+      "name": "청동 창",
+      "asset": "/assets/equipment/equip_prehistoric_spear.png",
+      "cost": 90,
+      "power_bonus": 18,
+      "defense_bonus": 0,
+      "description": "청동으로 창끝을 만들어 더욱 단단하고 날카로워진 무기예요!"
+    },
+    {
+      "id": "equip_gojoseon_bow",
+      "era": 2,
+      "category": "weapon",
+      "name": "부여·고구려 각궁",
+      "asset": "/assets/equipment/equip_three_kingdoms_bow.png",
+      "cost": 150,
+      "power_bonus": 28,
+      "defense_bonus": 0,
+      "description": "말을 타고 달리며 쏘기 좋게 만든 옛 나라 사람들의 뛰어난 활이에요!"
+    },
+    {
+      "id": "equip_gojoseon_armor",
+      "era": 2,
+      "category": "armor",
+      "name": "군장의 가죽갑옷",
+      "asset": "/assets/equipment/equip_three_kingdoms_leather_armor.png",
+      "cost": 130,
+      "power_bonus": 0,
+      "defense_bonus": 25,
+      "description": "부족을 이끄는 족장과 군장들이 입던 튼튼한 가죽 갑옷이에요!"
+    },
+    {
+      "id": "equip_gojoseon_shield",
+      "era": 2,
+      "category": "armor",
+      "name": "청동 장식 방패",
+      "asset": "/assets/equipment/equip_three_kingdoms_shield.png",
+      "cost": 110,
+      "power_bonus": 0,
+      "defense_bonus": 22,
+      "description": "청동 장식을 붙여 적의 공격을 튼튼하게 막아내는 방패예요!"
+    },
+    {
+      "id": "equip_gojoseon_necklace",
+      "era": 2,
+      "category": "accessory",
+      "name": "청동 거울 목걸이",
+      "asset": "/assets/equipment/equip_three_kingdoms_necklace.png",
+      "cost": 100,
+      "power_bonus": 12,
+      "defense_bonus": 12,
+      "description": "햇빛을 반사해 하늘의 뜻을 전하던 군장의 신성한 장신구예요!"
+    },
+
+    {
+      "id": "equip_three_kingdoms_sword",
+      "era": 3,
+      "category": "weapon",
+      "name": "삼국 철검",
+      "asset": "/assets/equipment/equip_three_kingdoms_sword.png",
+      "cost": 110,
+      "power_bonus": 22,
+      "defense_bonus": 0,
+      "description": "철기 기술을 발전시킨 고구려·백제·신라 병사들의 날카로운 철검이에요!"
+    },
+    {
+      "id": "equip_three_kingdoms_bow",
+      "era": 3,
+      "category": "weapon",
+      "name": "화랑의 명궁",
+      "asset": "/assets/equipment/equip_three_kingdoms_bow.png",
+      "cost": 140,
+      "power_bonus": 28,
+      "defense_bonus": 0,
+      "description": "삼국의 용감한 무사들이 먼 거리의 적을 물리칠 때 사용한 활이에요!"
+    },
+    {
+      "id": "equip_three_kingdoms_spear",
+      "era": 3,
+      "category": "weapon",
+      "name": "개마무사 긴 창",
+      "asset": "/assets/equipment/equip_three_kingdoms_spear.png",
+      "cost": 170,
+      "power_bonus": 35,
+      "defense_bonus": 5,
+      "description": "철갑을 두른 고구려 개마무사가 들고 달리던 강력한 긴 창이에요!"
+    },
+    {
+      "id": "equip_three_kingdoms_iron_armor",
+      "era": 3,
+      "category": "armor",
+      "name": "가야·삼국 판갑옷",
+      "asset": "/assets/equipment/equip_three_kingdoms_iron_armor.png",
+      "cost": 160,
+      "power_bonus": 5,
+      "defense_bonus": 32,
+      "description": "단단한 철판을 이어 붙여 화살과 창을 막아내는 삼국 시대 철갑옷이에요!"
+    },
+    {
+      "id": "equip_three_kingdoms_shield",
+      "era": 3,
+      "category": "armor",
+      "name": "성곽 수호 방패",
+      "asset": "/assets/equipment/equip_three_kingdoms_shield.png",
+      "cost": 120,
+      "power_bonus": 0,
+      "defense_bonus": 25,
+      "description": "안시성과 삼국의 성곽을 지키는 병사들이 든든하게 들던 방패예요!"
+    },
+    {
+      "id": "equip_three_kingdoms_necklace",
+      "era": 3,
+      "category": "accessory",
+      "name": "신라 금목걸이",
+      "asset": "/assets/equipment/equip_three_kingdoms_necklace.png",
+      "cost": 90,
+      "power_bonus": 10,
+      "defense_bonus": 15,
+      "description": "황금의 나라 신라와 백제의 뛰어난 세공 기술이 담긴 금목걸이예요!"
+    },
+
+    {
+      "id": "equip_ns_sword",
+      "era": 4,
+      "category": "weapon",
+      "name": "청해진 수호 대검",
+      "asset": "/assets/equipment/equip_weapon_greatsword.png",
+      "cost": 130,
+      "power_bonus": 26,
+      "defense_bonus": 5,
+      "description": "장보고 대사가 바다의 해적을 물리치고 무역을 지킬 때 쓰던 보검이에요!"
+    },
+    {
+      "id": "equip_ns_bow",
+      "era": 4,
+      "category": "weapon",
+      "name": "발해 기병의 활",
+      "asset": "/assets/equipment/equip_three_kingdoms_bow.png",
+      "cost": 150,
+      "power_bonus": 30,
+      "defense_bonus": 0,
+      "description": "고구려의 기상을 이어받은 발해 무사들이 사용하던 강력한 활이에요!"
+    },
+    {
+      "id": "equip_ns_armor",
+      "era": 4,
+      "category": "armor",
+      "name": "통일신라 장군 갑옷",
+      "asset": "/assets/equipment/equip_armor_iron_armor.png",
+      "cost": 160,
+      "power_bonus": 5,
+      "defense_bonus": 32,
+      "description": "남북국 시대 나라의 평화를 지키는 장군들이 입던 위엄 있는 갑옷이에요!"
+    },
+    {
+      "id": "equip_ns_shield",
+      "era": 4,
+      "category": "armor",
+      "name": "해동성국 수호 방패",
+      "asset": "/assets/equipment/equip_armor_shield.png",
+      "cost": 120,
+      "power_bonus": 0,
+      "defense_bonus": 26,
+      "description": "바다 동쪽의 융성한 나라 발해의 성문을 굳건히 지키던 방패예요!"
+    },
+    {
+      "id": "equip_ns_ring",
+      "era": 4,
+      "category": "accessory",
+      "name": "서라벌 비취 반지",
+      "asset": "/assets/equipment/equip_three_kingdoms_ring.png",
+      "cost": 90,
+      "power_bonus": 12,
+      "defense_bonus": 12,
+      "description": "아름다운 불교 문화가 꽃피운 통일신라의 정교한 옥반지예요!"
+    },
+
+    {
+      "id": "equip_goryeo_blade",
+      "era": 5,
+      "category": "weapon",
+      "name": "별무반 고려도",
+      "asset": "/assets/equipment/equip_goryeo_blade.png",
+      "cost": 120,
+      "power_bonus": 25,
+      "defense_bonus": 0,
+      "description": "윤관 장군의 별무반과 고려 수호군이 지녔던 날렵한 검이에요!"
+    },
+    {
+      "id": "equip_goryeo_bow",
+      "era": 5,
+      "category": "weapon",
+      "name": "귀주대첩 명궁",
+      "asset": "/assets/equipment/equip_goryeo_bow.png",
+      "cost": 150,
+      "power_bonus": 30,
+      "defense_bonus": 0,
+      "description": "강감찬 장군과 고려 병사들이 외세 침략군을 물리칠 때 사용한 활이에요!"
+    },
+    {
+      "id": "equip_goryeo_plate_armor",
+      "era": 5,
+      "category": "armor",
+      "name": "고려 두정갑(판갑)",
+      "asset": "/assets/equipment/equip_goryeo_plate_armor.png",
+      "cost": 170,
+      "power_bonus": 5,
+      "defense_bonus": 34,
+      "description": "북방 유목 민족의 화살 공격을 든든하게 막아주던 고려의 갑옷이에요!"
+    },
+    {
+      "id": "equip_goryeo_cloth_armor",
+      "era": 5,
+      "category": "armor",
+      "name": "고려 무관 전복",
+      "asset": "/assets/equipment/equip_goryeo_cloth_armor.png",
+      "cost": 110,
+      "power_bonus": 0,
+      "defense_bonus": 22,
+      "description": "움직임이 가볍고 튼튼하게 지어진 고려 시대 수호 의복이에요!"
+    },
+    {
+      "id": "equip_goryeo_shield",
+      "era": 5,
+      "category": "armor",
+      "name": "개경 수호 방패",
+      "asset": "/assets/equipment/equip_goryeo_shield.png",
+      "cost": 130,
+      "power_bonus": 0,
+      "defense_bonus": 28,
+      "description": "고려의 도읍 개경과 성곽을 철통같이 지켜내던 방패예요!"
+    },
+    {
+      "id": "equip_goryeo_necklace",
+      "era": 5,
+      "category": "accessory",
+      "name": "청자 빛 비취 목걸이",
+      "asset": "/assets/equipment/equip_goryeo_necklace.png",
+      "cost": 95,
+      "power_bonus": 12,
+      "defense_bonus": 15,
+      "description": "고려청자처럼 맑고 푸른 비취로 만든 아름다운 목걸이예요!"
+    },
+
+    {
+      "id": "equip_joseon_blade",
+      "era": 6,
+      "category": "weapon",
+      "name": "조선 환도",
+      "asset": "/assets/equipment/equip_joseon_blade.png",
+      "cost": 130,
+      "power_bonus": 26,
+      "defense_bonus": 5,
+      "description": "조선의 수군과 의병들이 나라를 지키기 위해 허리에 차던 칼이에요!"
+    },
+    {
+      "id": "equip_joseon_bow",
+      "era": 6,
+      "category": "weapon",
+      "name": "조선 수군 각궁",
+      "asset": "/assets/equipment/equip_joseon_bow.png",
+      "cost": 160,
+      "power_bonus": 32,
+      "defense_bonus": 0,
+      "description": "이순신 장군의 판옥선 위에서 멀리 있는 적선까지 날아가던 명궁이에요!"
+    },
+    {
+      "id": "equip_joseon_spear",
+      "era": 6,
+      "category": "weapon",
+      "name": "수문장 장창",
+      "asset": "/assets/equipment/equip_joseon_spear.png",
+      "cost": 140,
+      "power_bonus": 28,
+      "defense_bonus": 5,
+      "description": "경복궁과 수원 화성을 지키는 조선 병사들의 늠름한 긴 창이에요!"
+    },
+    {
+      "id": "equip_joseon_cloth_armor",
+      "era": 6,
+      "category": "armor",
+      "name": "선비 도포와 갓",
+      "asset": "/assets/equipment/equip_open_port_gat_dopo.png",
+      "cost": 110,
+      "power_bonus": 10,
+      "defense_bonus": 22,
+      "description": "예절과 학문을 중시하던 조선 시대 선비들의 단정한 옷차림이에요!"
+    },
+    {
+      "id": "equip_joseon_plate_armor",
+      "era": 6,
+      "category": "armor",
+      "name": "조선 장군 두정갑",
+      "asset": "/assets/equipment/equip_joseon_plate_armor.png",
+      "cost": 180,
+      "power_bonus": 8,
+      "defense_bonus": 36,
+      "description": "붉은 융복 안에 철판을 덧대어 총알과 화살을 막아내던 조선 장군 갑옷이에요!"
+    },
+    {
+      "id": "equip_joseon_shield",
+      "era": 6,
+      "category": "armor",
+      "name": "거북선 수호 방패",
+      "asset": "/assets/equipment/equip_joseon_shield.png",
+      "cost": 130,
+      "power_bonus": 0,
+      "defense_bonus": 28,
+      "description": "등에 쇠가시가 돋친 거북선처럼 든든하게 적의 공격을 막아주는 방패예요!"
+    },
+    {
+      "id": "equip_joseon_necklace",
+      "era": 6,
+      "category": "accessory",
+      "name": "전통 오방색 노리개",
+      "asset": "/assets/equipment/equip_accessory_norigae.png",
+      "cost": 90,
+      "power_bonus": 10,
+      "defense_bonus": 15,
+      "description": "한복에 달아 멋을 내고 복을 기원하던 조선 시대의 전통 장신구예요!"
+    },
+
+    {
+      "id": "equip_korean_empire_greatsword",
+      "era": 7,
+      "category": "weapon",
+      "name": "대한제국 환도(예도)",
+      "asset": "/assets/equipment/equip_korean_empire_greatsword.png",
+      "cost": 140,
+      "power_bonus": 28,
+      "defense_bonus": 5,
+      "description": "자주독립 국가 대한제국의 장교들이 패용하던 근대식 지휘검이에요!"
+    },
+    {
+      "id": "equip_open_port_rifle",
+      "era": 7,
+      "category": "weapon",
+      "name": "대한제국 의병 소총",
+      "asset": "/assets/equipment/equip_open_port_rifle.png",
+      "cost": 170,
+      "power_bonus": 35,
+      "defense_bonus": 0,
+      "description": "개항기 이후 나라의 국권을 지키기 위해 의병과 군인들이 사용한 근대식 소총이에요!"
+    },
+    {
+      "id": "equip_korean_empire_military_uniform",
+      "era": 7,
+      "category": "armor",
+      "name": "대한제국 근대식 정복",
+      "asset": "/assets/equipment/equip_korean_empire_military_uniform.png",
+      "cost": 160,
+      "power_bonus": 5,
+      "defense_bonus": 34,
+      "description": "광무개혁을 통해 서양식 제도를 도입하며 만들어진 멋진 대한제국 군복이에요!"
+    },
+    {
+      "id": "equip_korean_empire_shield",
+      "era": 7,
+      "category": "armor",
+      "name": "덕수궁 수호 방패",
+      "asset": "/assets/equipment/equip_korean_empire_shield.png",
+      "cost": 130,
+      "power_bonus": 0,
+      "defense_bonus": 28,
+      "description": "대한제국의 황궁인 덕수궁과 독립문을 굳건히 수호하는 방패예요!"
+    },
+    {
+      "id": "equip_korean_empire_watch",
+      "era": 7,
+      "category": "accessory",
+      "name": "근대 개화기 회중시계",
+      "asset": "/assets/equipment/equip_korean_empire_watch.png",
+      "cost": 100,
+      "power_bonus": 15,
+      "defense_bonus": 15,
+      "description": "개항기 서양 문물과 함께 들어와 정확한 시간을 알려주던 회중시계예요!"
+    },
+
+    {
+      "id": "equip_ind_rifle",
+      "era": 8,
+      "category": "weapon",
+      "name": "독립군 광복 소총",
+      "asset": "/assets/equipment/equip_japanese_occupation_rifle.png",
+      "cost": 160,
+      "power_bonus": 35,
+      "defense_bonus": 5,
+      "description": "봉오동·청산리 전투와 한국광복군이 조국의 독립을 위해 들었던 소총이에요!"
+    },
+    {
+      "id": "equip_ind_pistol",
+      "era": 8,
+      "category": "weapon",
+      "name": "비밀 작전 호신 장비",
+      "asset": "/assets/equipment/equip_japanese_occupation_pistol.png",
+      "cost": 130,
+      "power_bonus": 28,
+      "defense_bonus": 0,
+      "description": "임시정부의 비밀 연락망과 독립운동가들의 안전을 지켜주던 장비예요!"
+    },
+    {
+      "id": "equip_ind_uniform",
+      "era": 8,
+      "category": "armor",
+      "name": "한국광복군 군복",
+      "asset": "/assets/equipment/equip_japanese_occupation_uniform.png",
+      "cost": 170,
+      "power_bonus": 10,
+      "defense_bonus": 35,
+      "description": "대한민국 임시정부의 정식 군대인 한국광복군이 입었던 자랑스러운 제복이에요!"
+    },
+    {
+      "id": "equip_ind_vest",
+      "era": 8,
+      "category": "armor",
+      "name": "독립 연락원 보호 조끼",
+      "asset": "/assets/equipment/equip_japanese_occupation_vest.png",
+      "cost": 130,
+      "power_bonus": 0,
+      "defense_bonus": 28,
+      "description": "독립자금과 비밀 문서를 안전하게 품고 달릴 수 있는 튼튼한 조끼예요!"
+    },
+    {
+      "id": "equip_ind_badge",
+      "era": 8,
+      "category": "accessory",
+      "name": "대한독립 태극기 배지",
+      "asset": "/assets/equipment/equip_japanese_occupation_badge.png",
+      "cost": 100,
+      "power_bonus": 18,
+      "defense_bonus": 18,
+      "description": "가슴 깊이 조국 광복의 염원을 품고 다녔던 소중한 태극기 배지예요!"
+    },
+    {
+      "id": "equip_ind_watch",
+      "era": 8,
+      "category": "accessory",
+      "name": "백범과 애국지사의 시계",
+      "asset": "/assets/equipment/equip_japanese_occupation_watch.png",
+      "cost": 120,
+      "power_bonus": 20,
+      "defense_bonus": 15,
+      "description": "독립 작전의 약속 시간을 정확히 맞추기 위해 지녔던 귀중한 회중시계예요!"
+    }
+  ],
+  "display_artifacts": [
+    {
+      "id": "art_comb_pottery",
+      "era": 1,
+      "name": "빗살무늬 토기 전시품",
+      "asset": "/assets/equipment/equip_special_relic.png",
+      "cost": 100,
+      "power_bonus": 10,
+      "defense_bonus": 10,
+      "description": "신석기 시대를 대표하는 뾰족한 바닥의 빗살무늬 토기예요! 거점에 배치하면 마을이 빛나요."
+    },
+    {
+      "id": "art_prehistoric_fence",
+      "era": 1,
+      "name": "가시 울타리 방어책",
+      "asset": "/assets/tower_items/tower_def_thorn_fence.png",
+      "cost": 120,
+      "power_bonus": 5,
+      "defense_bonus": 20,
+      "description": "맹수가 마을로 쉽게 들어오지 못하도록 거점 둘레에 세우는 튼튼한 울타리예요!"
+    },
+    {
+      "id": "art_prehistoric_watchtower",
+      "era": 1,
+      "name": "움막 마을 망루(활탑)",
+      "asset": "/assets/tower_items/tower_atk_arrow_tower.png",
+      "cost": 150,
+      "power_bonus": 22,
+      "defense_bonus": 8,
+      "description": "높은 곳에서 맹수를 감시하고 마을을 지키는 목조 망루예요!"
+    },
+    {
+      "id": "art_prehistoric_altar",
+      "era": 1,
+      "name": "태양과 자연의 제단",
+      "asset": "/assets/tower_items/tower_def_healing_altar.png",
+      "cost": 180,
+      "power_bonus": 15,
+      "defense_bonus": 20,
+      "description": "마을 사람들의 평안과 사냥의 성공을 기원하는 신성한 돌 제단이에요!"
+    },
+
+    {
+      "id": "art_gojoseon_dolmen",
+      "era": 2,
+      "name": "청동기 고인돌과 성벽",
+      "asset": "/assets/tower_items/tower_def_wall.png",
+      "cost": 120,
+      "power_bonus": 8,
+      "defense_bonus": 22,
+      "description": "고조선과 청동기 시대의 거대한 바위 유적인 고인돌과 성벽 조형물이에요!"
+    },
+    {
+      "id": "art_gojoseon_mirror",
+      "era": 2,
+      "name": "다뉴세문경(청동거울) 성소",
+      "asset": "/assets/tower_items/tower_def_reflector.png",
+      "cost": 160,
+      "power_bonus": 18,
+      "defense_bonus": 18,
+      "description": "햇빛을 반사해 군장의 권위를 보여주던 정교한 청동거울 전시품이에요!"
+    },
+    {
+      "id": "art_gojoseon_banner",
+      "era": 2,
+      "name": "제천행사(영고·동맹) 깃발",
+      "asset": "/assets/tower_items/tower_etc_exp_banner.png",
+      "cost": 140,
+      "power_bonus": 15,
+      "defense_bonus": 15,
+      "description": "부여의 영고, 고구려의 동맹처럼 하늘에 제사를 지내며 단결하던 축제의 깃발이에요!"
+    },
+
+    {
+      "id": "art_tk_incense_burner",
+      "era": 3,
+      "name": "백제 금동대향로 성소",
+      "asset": "/assets/equipment/equip_special_relic.png",
+      "cost": 150,
+      "power_bonus": 20,
+      "defense_bonus": 15,
+      "description": "백제의 뛰어난 예술성과 기술이 담긴 국보 금동대향로 전시물이에요!"
+    },
+    {
+      "id": "art_tk_catapult",
+      "era": 3,
+      "name": "안시성 수호 투석기",
+      "asset": "/assets/tower_items/tower_atk_catapult.png",
+      "cost": 170,
+      "power_bonus": 30,
+      "defense_bonus": 5,
+      "description": "고구려 성곽을 침입하는 적군을 향해 큰 돌을 날려 성을 지키던 투석기예요!"
+    },
+    {
+      "id": "art_tk_crossbow",
+      "era": 3,
+      "name": "삼국 성곽 대형 석궁",
+      "asset": "/assets/tower_items/tower_atk_crossbow.png",
+      "cost": 160,
+      "power_bonus": 26,
+      "defense_bonus": 10,
+      "description": "신라와 삼국의 성벽 위에서 먼 거리의 적을 막아내던 강력한 석궁이에요!"
+    },
+
+    {
+      "id": "art_ns_pagoda",
+      "era": 4,
+      "name": "불국사 석가탑과 다보탑 모형",
+      "asset": "/assets/tower_items/tower_atk_magic_turret.png",
+      "cost": 160,
+      "power_bonus": 20,
+      "defense_bonus": 20,
+      "description": "통일신라 불교 예술의 걸작인 아름다운 석탑 전시품이에요!"
+    },
+    {
+      "id": "art_ns_woodblock",
+      "era": 4,
+      "name": "무구정광대다라니경 보물함",
+      "asset": "/assets/equipment/equip_special_book.png",
+      "cost": 150,
+      "power_bonus": 18,
+      "defense_bonus": 18,
+      "description": "세계에서 가장 오래된 목판 인쇄물인 무구정광대다라니경을 담은 보물함이에요!"
+    },
+    {
+      "id": "art_ns_balhae_wall",
+      "era": 4,
+      "name": "발해 상경성 수호 성벽",
+      "asset": "/assets/tower_items/tower_def_wall.png",
+      "cost": 140,
+      "power_bonus": 10,
+      "defense_bonus": 28,
+      "description": "해동성국 발해의 수도 상경성을 든든하게 감싸던 성벽 시설이에요!"
+    },
+
+    {
+      "id": "art_goryeo_celadon",
+      "era": 5,
+      "name": "고려 상감청자 전시대",
+      "asset": "/assets/equipment/equip_special_relic.png",
+      "cost": 150,
+      "power_bonus": 18,
+      "defense_bonus": 20,
+      "description": "맑고 푸른 비색과 학·구름 무늬가 아름다운 고려 상감청자예요!"
+    },
+    {
+      "id": "art_goryeo_tripitaka",
+      "era": 5,
+      "name": "팔만대장경과 직지 보각",
+      "asset": "/assets/equipment/equip_special_book.png",
+      "cost": 180,
+      "power_bonus": 22,
+      "defense_bonus": 22,
+      "description": "나라를 지키려는 마음으로 새긴 팔만대장경과 세계 최초 금속활자 직지심체요절이에요!"
+    },
+    {
+      "id": "art_goryeo_cannon",
+      "era": 5,
+      "name": "최무선의 화통도감 화포",
+      "asset": "/assets/tower_items/tower_atk_flame_cannon.png",
+      "cost": 190,
+      "power_bonus": 35,
+      "defense_bonus": 5,
+      "description": "최무선 장군이 화약을 발명해 진포 대첩에서 왜구를 물리친 강력한 화포예요!"
+    },
+
+    {
+      "id": "art_joseon_hwacha",
+      "era": 6,
+      "name": "신기전 화차 발사대",
+      "asset": "/assets/tower_items/tower_atk_auto_ballista.png",
+      "cost": 180,
+      "power_bonus": 34,
+      "defense_bonus": 8,
+      "description": "한 번에 100발의 불화살(신기전)을 쏘아 올려 나라를 지키던 조선의 과학 무기예요!"
+    },
+    {
+      "id": "art_joseon_cannon",
+      "era": 6,
+      "name": "거북선 천자총통 대포",
+      "asset": "/assets/tower_items/tower_atk_cannon.png",
+      "cost": 190,
+      "power_bonus": 36,
+      "defense_bonus": 10,
+      "description": "이순신 장군의 거북선과 판옥선에 장착되어 바다를 지킨 늠름한 대포예요!"
+    },
+    {
+      "id": "art_joseon_hunmin",
+      "era": 6,
+      "name": "훈민정음 해례본 전시관",
+      "asset": "/assets/equipment/equip_special_book.png",
+      "cost": 160,
+      "power_bonus": 22,
+      "defense_bonus": 22,
+      "description": "세종대왕님이 백성을 사랑하는 마음으로 창제하신 우리 글자 한글의 보물책이에요!"
+    },
+    {
+      "id": "art_joseon_jagyungnu",
+      "era": 6,
+      "name": "장영실의 자격루와 측우기",
+      "asset": "/assets/tower_items/tower_def_base_enhancer.png",
+      "cost": 170,
+      "power_bonus": 20,
+      "defense_bonus": 25,
+      "description": "스스로 종을 쳐 시간을 알려주는 물시계 자격루와 비의 양을 재는 측우기예요!"
+    },
+
+    {
+      "id": "art_empire_searchlight",
+      "era": 7,
+      "name": "근대식 전등과 탐지 통신탑",
+      "asset": "/assets/tower_items/tower_etc_radar.png",
+      "cost": 160,
+      "power_bonus": 22,
+      "defense_bonus": 20,
+      "description": "대한제국 시기 건청궁과 서울 거리를 환하게 밝혔던 근대 전기·통신 시설이에요!"
+    },
+    {
+      "id": "art_empire_map",
+      "era": 7,
+      "name": "대한제국 황실 칙령과 독도 지도",
+      "asset": "/assets/equipment/equip_special_map.png",
+      "cost": 150,
+      "power_bonus": 20,
+      "defense_bonus": 22,
+      "description": "대한제국 칙령 제41호로 독도가 우리 땅임을 세계에 널리 알린 소중한 지도예요!"
+    },
+    {
+      "id": "art_empire_banner",
+      "era": 7,
+      "name": "독립문과 자주독립 깃발",
+      "asset": "/assets/tower_items/tower_etc_haste_banner.png",
+      "cost": 140,
+      "power_bonus": 18,
+      "defense_bonus": 18,
+      "description": "우리나라가 누구에게도 기대지 않는 자주독립국임을 선포한 자랑스러운 상징물이에요!"
+    },
+
+    {
+      "id": "art_ind_fund_chest",
+      "era": 8,
+      "name": "국채보상·독립자금 모금함",
+      "asset": "/assets/tower_items/tower_etc_gold_collector.png",
+      "cost": 150,
+      "power_bonus": 20,
+      "defense_bonus": 20,
+      "description": "나라를 되찾기 위해 온 국민이 정성껏 모은 소중한 독립자금 보관함이에요!"
+    },
+    {
+      "id": "art_ind_malmoi",
+      "era": 8,
+      "name": "조선어학회 우리말 큰사전 원고",
+      "asset": "/assets/equipment/equip_special_book.png",
+      "cost": 170,
+      "power_bonus": 24,
+      "defense_bonus": 24,
+      "description": "일제의 탄압 속에서도 우리말과 한글을 끝까지 지켜낸 소중한 사전 원고예요!"
+    },
+    {
+      "id": "art_ind_crest",
+      "era": 8,
+      "name": "대한민국 임시정부 광복의 문장",
+      "asset": "/assets/tower_items/tower_etc_revival_crest.png",
+      "cost": 200,
+      "power_bonus": 30,
+      "defense_bonus": 30,
+      "description": "마침내 빛을 되찾은 광복의 기쁨과 임시정부의 숭고한 정신을 담은 휘장이에요!"
+    }
+  ]
+}
