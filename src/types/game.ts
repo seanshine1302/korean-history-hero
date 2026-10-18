@@ -24,6 +24,7 @@ export interface PlayerProfile {
   id: string;
   name: string;
   gender: Gender;
+  difficulty?: UserDifficulty;
   created_at: string;
   last_played_era: number;
   eras: Record<string, EraSaveState>;

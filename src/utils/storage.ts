@@ -46,6 +46,7 @@ export function createNewProfile(name: string, gender: Gender, id?: string): Pla
     id: profileId,
     name: name.trim() || '용감한 탐험가',
     gender,
+    difficulty: 'easy',
     created_at: new Date().toISOString(),
     last_played_era: 1,
     eras
@@ -64,6 +65,7 @@ export function loadSaveData(): GameSaveData {
       Object.keys(parsed.profiles).forEach(profId => {
         const prof = parsed.profiles[profId];
         if (!prof.id) prof.id = profId;
+        if (!prof.difficulty) prof.difficulty = 'easy';
         if (!prof.eras) prof.eras = {};
         for (let i = 1; i <= 8; i++) {
           const eraKey = String(i);

@@ -11,6 +11,7 @@ import {
   UserDifficulty,
 } from '../types/game';
 import { sound } from '../utils/sound';
+import { SettingsModal } from './SettingsModal';
 import {
   ArrowLeft,
   Coins,
@@ -25,6 +26,7 @@ import {
   Sparkles,
   Volume2,
   VolumeX,
+  Settings,
 } from 'lucide-react';
 
 interface EraHomeScreenProps {
@@ -35,6 +37,8 @@ interface EraHomeScreenProps {
   economyRules: EconomyRulesConfig;
   invasionRules: InvasionRulesConfig;
   shopCatalog: ShopCatalogConfig;
+  difficulty: UserDifficulty;
+  onChangeDifficulty: (difficulty: UserDifficulty) => void;
   onBackToEraSelect: () => void;
   onStartQuiz: (difficulty: UserDifficulty) => void;
   onOpenShop: (initialTab?: 'base' | 'equipment' | 'artifact', initialSlotId?: string) => void;
@@ -51,6 +55,8 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
   economyRules,
   invasionRules,
   shopCatalog,
+  difficulty,
+  onChangeDifficulty,
   onBackToEraSelect,
   onStartQuiz,
   onOpenShop,
@@ -58,7 +64,7 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
   onStartReview,
   onStartInvasion,
 }) => {
-  const [showDifficultyModal, setShowDifficultyModal] = useState(false);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [muted, setMuted] = useState(sound.muted);
 
   const baseLv = eraSave.base_level || 1;
@@ -140,6 +146,17 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
                 {eraSave.gold.toLocaleString()} G
               </span>
             </div>
+            <button
+              type="button"
+              onClick={() => {
+                sound.playClick();
+                setShowSettingsModal(true);
+              }}
+              className="p-2 rounded-xl bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 transition-colors shadow-sm"
+              title="게임 설정 (난이도 및 소리 조절)"
+            >
+              <Settings className="w-5 h-5" />
+            </button>
             <button
               type="button"
               onClick={toggleMute}
@@ -346,17 +363,45 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
         {/* Bottom Navigation Bar (Section 5.1): Main [▶ 문제 풀기] + [🎨 꾸미기], [📖 역사도감], [📝 오답 복습] */}
         <div className="space-y-2.5">
           {/* Primary CTA: ▶ 문제 풀기 */}
-          <button
-            type="button"
-            onClick={() => {
-              sound.playClick();
-              setShowDifficultyModal(true);
-            }}
-            className="w-full py-4 sm:py-5 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-black text-xl sm:text-2xl shadow-xl border-b-4 border-orange-700 flex items-center justify-center gap-3 transition-transform active:scale-98"
-          >
-            <Play className="w-7 h-7 fill-white" />
-            <span>문제 풀기 (10문제 탐험)</span>
-          </button>
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => {
+                sound.playClick();
+                onStartQuiz(difficulty);
+              }}
+              className="w-full py-4 sm:py-5 px-4 sm:px-6 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-600 hover:to-orange-600 text-white font-black text-xl sm:text-2xl shadow-xl border-b-4 border-orange-700 flex items-center justify-between gap-2 transition-transform active:scale-98"
+            >
+              <div className="flex items-center gap-3">
+                <Play className="w-7 h-7 fill-white shrink-0" />
+                <span>문제 풀기 (10문제 탐험)</span>
+              </div>
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  sound.playClick();
+                  setShowSettingsModal(true);
+                }}
+                className={`px-3 py-1 rounded-full text-xs sm:text-sm font-black shadow border border-white/40 flex items-center gap-1.5 hover:brightness-110 active:scale-95 transition-all ${
+                  difficulty === 'easy'
+                    ? 'bg-emerald-600 text-white'
+                    : difficulty === 'normal'
+                    ? 'bg-sky-600 text-white'
+                    : 'bg-purple-600 text-white'
+                }`}
+                title="클릭하여 난이도 변경"
+              >
+                <span>
+                  {difficulty === 'easy'
+                    ? '🌱 쉬움'
+                    : difficulty === 'normal'
+                    ? '⭐ 보통'
+                    : '👑 어려움'}
+                </span>
+                <span className="text-[11px] font-extrabold opacity-90 underline">변경</span>
+              </div>
+            </button>
+          </div>
 
           {/* 3 Secondary Action Buttons */}
           <div className="grid grid-cols-3 gap-2.5 sm:gap-3.5">
@@ -404,96 +449,17 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
         </div>
       </div>
 
-      {/* Difficulty Selection Modal (Section 2.1 & 2.2: 쉬움 / 보통 / 어려움) */}
-      {showDifficultyModal && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="w-full max-w-md bg-white rounded-3xl border-4 border-amber-400 shadow-2xl p-6 space-y-4 animate-in fade-in zoom-in-95 duration-150">
-            <div className="text-center">
-              <span className="text-xs font-black px-3 py-1 rounded-full bg-amber-100 text-amber-800">
-                {eraConfig.era_name} 퀴즈 탐험
-              </span>
-              <h2 className="text-2xl font-black text-slate-800 mt-2">
-                어떤 난이도로 풀어볼까요?
-              </h2>
-              <p className="text-sm font-bold text-slate-500 mt-1">
-                10문제를 끝까지 풀면 골드와 경험치, 역사도감을 얻어요!
-              </p>
-            </div>
-
-            <div className="space-y-3">
-              <button
-                type="button"
-                onClick={() => {
-                  sound.playFanfare();
-                  setShowDifficultyModal(false);
-                  onStartQuiz('easy');
-                }}
-                className="w-full p-4 rounded-2xl border-3 border-emerald-400 bg-emerald-50 hover:bg-emerald-100 flex items-center justify-between transition-all active:scale-98"
-              >
-                <div className="text-left">
-                  <div className="text-lg font-black text-emerald-900">🌱 쉬움 (초등 2학년 추천)</div>
-                  <div className="text-xs font-bold text-emerald-700 mt-0.5">
-                    그림과 쉬운 단서로 재미있게 역사를 배워요!
-                  </div>
-                </div>
-                <span className="text-xs font-black bg-emerald-200 text-emerald-900 px-2.5 py-1 rounded-xl shrink-0">
-                  정답당 +10G
-                </span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => {
-                  sound.playFanfare();
-                  setShowDifficultyModal(false);
-                  onStartQuiz('normal');
-                }}
-                className="w-full p-4 rounded-2xl border-3 border-sky-400 bg-sky-50 hover:bg-sky-100 flex items-center justify-between transition-all active:scale-98"
-              >
-                <div className="text-left">
-                  <div className="text-lg font-black text-sky-900">⭐ 보통 (역사 탐험 대원)</div>
-                  <div className="text-xs font-bold text-sky-700 mt-0.5">
-                    유물의 쓰임새와 인물의 업적을 연결해 봐요!
-                  </div>
-                </div>
-                <span className="text-xs font-black bg-sky-200 text-sky-900 px-2.5 py-1 rounded-xl shrink-0">
-                  정답당 +15G
-                </span>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => {
-                  sound.playFanfare();
-                  setShowDifficultyModal(false);
-                  onStartQuiz('hard');
-                }}
-                className="w-full p-4 rounded-2xl border-3 border-purple-400 bg-purple-50 hover:bg-purple-100 flex items-center justify-between transition-all active:scale-98"
-              >
-                <div className="text-left">
-                  <div className="text-lg font-black text-purple-900">👑 어려움 (역사 박사 도전)</div>
-                  <div className="text-xs font-bold text-purple-700 mt-0.5">
-                    사건의 원인과 결과, 깊은 역사 이야기를 풀어봐요!
-                  </div>
-                </div>
-                <span className="text-xs font-black bg-purple-200 text-purple-900 px-2.5 py-1 rounded-xl shrink-0">
-                  정답당 +20G
-                </span>
-              </button>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => {
-                sound.playClick();
-                setShowDifficultyModal(false);
-              }}
-              className="w-full py-3 rounded-2xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-extrabold text-base"
-            >
-              닫기
-            </button>
-          </div>
-        </div>
+      {/* Settings Modal (난이도 조절 및 소리 설정) */}
+      {showSettingsModal && (
+        <SettingsModal
+          isOpen={showSettingsModal}
+          onClose={() => setShowSettingsModal(false)}
+          currentDifficulty={difficulty}
+          onChangeDifficulty={onChangeDifficulty}
+          muted={muted}
+          onToggleMute={toggleMute}
+          isQuizActive={false}
+        />
       )}
     </div>
   );

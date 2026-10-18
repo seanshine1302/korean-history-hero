@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import {
+  DifficultyProfileConfig,
   EconomyRulesConfig,
   InvasionRulesConfig,
   KnowledgeItem,
@@ -8,6 +9,8 @@ import {
   UserDifficulty,
 } from '../types/game';
 import { sound } from '../utils/sound';
+import { selectSessionQuestions } from '../utils/quizEngine';
+import { SettingsModal } from './SettingsModal';
 import {
   CheckCircle2,
   XCircle,
@@ -20,6 +23,7 @@ import {
   ShieldCheck,
   Award,
   Home,
+  Settings,
 } from 'lucide-react';
 
 export interface QuizSessionResult {
@@ -40,26 +44,38 @@ interface QuizSessionScreenProps {
   mode: 'normal' | 'review';
   difficulty: UserDifficulty;
   questions: QuizQuestion[];
+  allEraQuestions?: QuizQuestion[];
+  difficultyConfig?: DifficultyProfileConfig | null;
   knowledgeMap: Record<string, KnowledgeItem>;
   economyRules: EconomyRulesConfig;
   invasionRules: InvasionRulesConfig;
   currentGauge: number;
   onFinishSession: (result: QuizSessionResult, triggerInvasionNow: boolean) => void;
   onCancel: () => void;
+  onChangeDifficulty?: (difficulty: UserDifficulty) => void;
 }
 
 export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
   eraName,
   mode,
-  difficulty,
-  questions,
+  difficulty: initialDifficulty,
+  questions: initialQuestions,
+  allEraQuestions = [],
+  difficultyConfig = null,
   knowledgeMap,
   economyRules,
   invasionRules,
   currentGauge,
   onFinishSession,
   onCancel,
+  onChangeDifficulty,
 }) => {
+  const [currentDifficulty, setCurrentDifficulty] = useState<UserDifficulty>(initialDifficulty);
+  const [sessionQuestions, setSessionQuestions] = useState<QuizQuestion[]>(initialQuestions);
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [difficultyToast, setDifficultyToast] = useState<string | null>(null);
+  const [muted, setMuted] = useState(sound.muted);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedChoice, setSelectedChoice] = useState<number | null>(null);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -69,7 +85,48 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
   const [wrongMasterIds, setWrongMasterIds] = useState<string[]>([]);
   const [isFinished, setIsFinished] = useState(false);
 
-  const currentQuestion = questions[currentIndex];
+  const currentQuestion = sessionQuestions[currentIndex];
+
+  const handleChangeDifficulty = (newDiff: UserDifficulty) => {
+    if (newDiff === currentDifficulty) return;
+    setCurrentDifficulty(newDiff);
+    onChangeDifficulty?.(newDiff);
+
+    // If in normal quiz mode and questions remain after the current one, update upcoming questions
+    if (mode === 'normal' && difficultyConfig && allEraQuestions.length > 0) {
+      const remainingCount = sessionQuestions.length - (currentIndex + 1);
+      if (remainingCount > 0) {
+        // Keep completed and current question
+        const kept = sessionQuestions.slice(0, currentIndex + 1);
+        const usedIds = kept.map((q) => q.question_id);
+
+        const freshQuestions = selectSessionQuestions(
+          allEraQuestions.filter((q) => !usedIds.includes(q.question_id)),
+          newDiff,
+          difficultyConfig,
+          Array.from(new Set([...solvedQuestionIds, ...usedIds])),
+          remainingCount
+        );
+
+        setSessionQuestions([...kept, ...freshQuestions]);
+      }
+    }
+
+    const diffLabels: Record<UserDifficulty, string> = {
+      easy: '쉬움 🌱',
+      normal: '보통 ⭐',
+      hard: '어려움 👑',
+    };
+    setDifficultyToast(`난이도가 '${diffLabels[newDiff]}'으로 변경되었어요!`);
+    setTimeout(() => {
+      setDifficultyToast(null);
+    }, 3000);
+  };
+
+  const toggleMute = () => {
+    sound.muted = !sound.muted;
+    setMuted(sound.muted);
+  };
 
   useEffect(() => {
     return () => {
@@ -121,7 +178,7 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
   const handleNext = () => {
     sound.playClick();
     sound.stopSpeaking();
-    if (currentIndex + 1 < questions.length) {
+    if (currentIndex + 1 < sessionQuestions.length) {
       setCurrentIndex((prev) => prev + 1);
       setSelectedChoice(null);
       setIsSubmitted(false);
@@ -138,19 +195,22 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
 
   if (isFinished) {
     const correctCount = solvedQuestionIds.length;
-    const wrongCount = questions.length - correctCount;
+    const wrongCount = sessionQuestions.length - correctCount;
 
     const goldPerCorrect =
       mode === 'review'
         ? economyRules.quiz_rewards.review_correct_gold + 10 // Bonus gold for review
-        : economyRules.quiz_rewards.correct_gold_by_difficulty[difficulty] || 10;
+        : economyRules.quiz_rewards.correct_gold_by_difficulty[currentDifficulty] || 10;
 
     const expPerCorrect =
       mode === 'review'
         ? 10
-        : economyRules.quiz_rewards.correct_exp_by_difficulty[difficulty] || 10;
+        : economyRules.quiz_rewards.correct_exp_by_difficulty[currentDifficulty] || 10;
 
-    const isPerfect = mode === 'normal' && correctCount === questions.length && questions.length >= 10;
+    const isPerfect =
+      mode === 'normal' &&
+      correctCount === sessionQuestions.length &&
+      sessionQuestions.length >= 10;
     const perfectBonus = isPerfect ? economyRules.quiz_rewards.perfect_clear_bonus_gold : 0;
 
     const earnedGold = correctCount * goldPerCorrect + perfectBonus;
@@ -171,14 +231,14 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
 
     const resultPayload: QuizSessionResult = {
       mode,
-      difficulty,
+      difficulty: currentDifficulty,
       solvedQuestionIds,
       correctMasterIds,
       wrongMasterIds,
       earnedGold,
       earnedExp,
       gaugeDelta,
-      totalQuestions: questions.length,
+      totalQuestions: sessionQuestions.length,
       correctCount,
     };
 
@@ -190,9 +250,9 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
               {mode === 'review' ? '오답 복습 완료!' : `${eraName} 10문제 탐험 완료!`}
             </span>
             <h2 className="text-3xl font-black text-slate-800">
-              {correctCount === questions.length
+              {correctCount === sessionQuestions.length
                 ? '와아! 모든 문제를 맞혔어요! 🎉'
-                : `참 잘했어요! ${questions.length}문제 중 ${correctCount}문제 정답!`}
+                : `참 잘했어요! ${sessionQuestions.length}문제 중 ${correctCount}문제 정답!`}
             </h2>
           </div>
 
@@ -327,34 +387,82 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
       <div className="w-full max-w-2xl mx-auto flex-1 flex flex-col justify-between gap-4">
         {/* Quiz Header & Progress Bar */}
         <header className="bg-white/95 rounded-2xl p-4 shadow-md border-2 border-amber-300 space-y-2">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
+          {difficultyToast && (
+            <div className="bg-amber-100 border border-amber-300 text-amber-900 text-xs font-black px-3 py-1.5 rounded-xl text-center animate-bounce">
+              ✨ {difficultyToast}
+            </div>
+          )}
+
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
               <span className="px-3 py-1 rounded-full bg-amber-500 text-white font-black text-xs sm:text-sm">
                 {mode === 'review' ? '📝 오답 복습' : `🌟 ${eraName}`}
               </span>
-              <span className="text-sm sm:text-base font-black text-slate-700">
-                문제 {currentIndex + 1} / {questions.length}
+
+              {mode === 'normal' && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    sound.playClick();
+                    setShowSettingsModal(true);
+                  }}
+                  className={`px-2.5 py-0.5 rounded-full font-black text-xs border transition-transform active:scale-95 flex items-center gap-1 shadow-sm ${
+                    currentDifficulty === 'easy'
+                      ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
+                      : currentDifficulty === 'normal'
+                      ? 'bg-sky-100 text-sky-800 border-sky-300'
+                      : 'bg-purple-100 text-purple-800 border-purple-300'
+                  }`}
+                  title="난이도 변경하기"
+                >
+                  <span>
+                    {currentDifficulty === 'easy'
+                      ? '🌱 쉬움'
+                      : currentDifficulty === 'normal'
+                      ? '⭐ 보통'
+                      : '👑 어려움'}
+                  </span>
+                </button>
+              )}
+
+              <span className="text-xs sm:text-base font-black text-slate-700">
+                문제 {currentIndex + 1} / {sessionQuestions.length}
               </span>
             </div>
 
-            <button
-              type="button"
-              onClick={() => {
-                sound.playClick();
-                if (window.confirm('문제 풀이를 멈추고 거점으로 돌아갈까요?')) {
-                  onCancel();
-                }
-              }}
-              className="text-xs font-extrabold text-slate-400 hover:text-slate-600 px-2.5 py-1 rounded-lg bg-slate-100"
-            >
-              그만하기
-            </button>
+            <div className="flex items-center gap-1.5 shrink-0">
+              <button
+                type="button"
+                onClick={() => {
+                  sound.playClick();
+                  setShowSettingsModal(true);
+                }}
+                className="flex items-center gap-1 px-2.5 py-1 rounded-xl bg-amber-100 hover:bg-amber-200 text-amber-900 font-extrabold text-xs transition-colors shadow-sm"
+                title="난이도 및 게임 설정"
+              >
+                <Settings className="w-3.5 h-3.5" />
+                <span>설정</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => {
+                  sound.playClick();
+                  if (window.confirm('문제 풀이를 멈추고 거점으로 돌아갈까요?')) {
+                    onCancel();
+                  }
+                }}
+                className="text-xs font-extrabold text-slate-400 hover:text-slate-600 px-2.5 py-1 rounded-xl bg-slate-100 transition-colors"
+              >
+                그만하기
+              </button>
+            </div>
           </div>
 
           <div className="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
             <div
               className="h-full bg-gradient-to-r from-amber-400 to-orange-500 rounded-full transition-all duration-300"
-              style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
+              style={{ width: `${((currentIndex + 1) / sessionQuestions.length) * 100}%` }}
             />
           </div>
         </header>
@@ -489,7 +597,9 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
                 className="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-black text-lg shadow-md flex items-center justify-center gap-2"
               >
                 <span>
-                  {currentIndex + 1 < questions.length ? '다음 문제로 가기' : '결과 보러 가기!'}
+                  {currentIndex + 1 < sessionQuestions.length
+                    ? '다음 문제로 가기'
+                    : '결과 보러 가기!'}
                 </span>
                 <ArrowRight className="w-5 h-5" />
               </button>
@@ -501,6 +611,16 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
           끝까지 풀면 골드와 경험치, 역사도감 보상을 한 번에 받아요!
         </div>
       </div>
+
+      <SettingsModal
+        isOpen={showSettingsModal}
+        onClose={() => setShowSettingsModal(false)}
+        currentDifficulty={currentDifficulty}
+        onChangeDifficulty={handleChangeDifficulty}
+        muted={muted}
+        onToggleMute={toggleMute}
+        isQuizActive={true}
+      />
     </div>
   );
 };

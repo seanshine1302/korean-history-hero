@@ -52,7 +52,11 @@ export function App() {
 
   // Active Quiz Session state
   const [quizMode, setQuizMode] = useState<'normal' | 'review'>('normal');
-  const [quizDifficulty, setQuizDifficulty] = useState<UserDifficulty>('easy');
+  const [quizDifficulty, setQuizDifficulty] = useState<UserDifficulty>(() => {
+    const initial = loadSaveData();
+    const prof = initial.current_profile_id ? initial.profiles[initial.current_profile_id] : null;
+    return prof?.difficulty || 'easy';
+  });
   const [sessionQuestions, setSessionQuestions] = useState<QuizQuestion[]>([]);
 
   // Active Modals in Era Home
@@ -183,6 +187,7 @@ export function App() {
     setSaveData((prev) => ({ ...prev, current_profile_id: profileId }));
     if (prof) {
       setCurrentEraId(prof.last_played_era || 1);
+      setQuizDifficulty(prof.difficulty || 'easy');
     }
     setScreen('era_select');
   };
@@ -197,7 +202,27 @@ export function App() {
       },
     }));
     setCurrentEraId(1);
+    setQuizDifficulty(newProf.difficulty || 'easy');
     setScreen('era_select');
+  };
+
+  const handleUpdateDifficulty = (newDiff: UserDifficulty) => {
+    setQuizDifficulty(newDiff);
+    if (!currentProfile) return;
+    setSaveData((prev) => {
+      const profId = prev.current_profile_id;
+      if (!profId || !prev.profiles[profId]) return prev;
+      return {
+        ...prev,
+        profiles: {
+          ...prev.profiles,
+          [profId]: {
+            ...prev.profiles[profId],
+            difficulty: newDiff,
+          },
+        },
+      };
+    });
   };
 
   const handleDeleteProfile = (profileId: string) => {
@@ -534,12 +559,15 @@ export function App() {
         mode={quizMode}
         difficulty={quizDifficulty}
         questions={sessionQuestions}
+        allEraQuestions={eraQuestionBanks[currentEraId] || []}
+        difficultyConfig={difficultyConfig}
         knowledgeMap={knowledgeMap}
         economyRules={economyRules}
         invasionRules={invasionRules}
         currentGauge={currentEraSave.invasion_gauge || 0}
         onFinishSession={handleFinishQuizSession}
         onCancel={() => setScreen('era_home')}
+        onChangeDifficulty={handleUpdateDifficulty}
       />
     );
   }
@@ -554,6 +582,8 @@ export function App() {
         economyRules={economyRules}
         invasionRules={invasionRules}
         shopCatalog={shopCatalog}
+        difficulty={quizDifficulty}
+        onChangeDifficulty={handleUpdateDifficulty}
         onBackToEraSelect={() => setScreen('era_select')}
         onStartQuiz={handleStartQuiz}
         onOpenShop={(initialTab = 'base', initialSlotId = 'slot_1') =>
