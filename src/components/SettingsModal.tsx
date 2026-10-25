@@ -15,6 +15,7 @@ import {
   Minus,
   Plus,
   Trophy,
+  Cloud,
 } from 'lucide-react';
 
 interface SettingsModalProps {
@@ -27,6 +28,8 @@ interface SettingsModalProps {
   muted?: boolean;
   onToggleMute?: () => void;
   isQuizActive?: boolean;
+  onOpenCloudSync?: () => void;
+  cloudSyncCode?: string;
 }
 
 export const SettingsModal: React.FC<SettingsModalProps> = ({
@@ -39,6 +42,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   muted = sound.muted,
   onToggleMute,
   isQuizActive = false,
+  onOpenCloudSync,
+  cloudSyncCode,
 }) => {
   if (!isOpen) return null;
 
@@ -359,6 +364,40 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               }`}
             >
               {muted ? '소리 켜기' : '소리 켬'}
+            </button>
+          </div>
+        )}
+
+        {/* Section 4: Cloud Sync Section */}
+        {onOpenCloudSync && (
+          <div className="pt-2 border-t border-slate-100 flex items-center justify-between bg-sky-50/70 p-3.5 rounded-2xl border-2 border-sky-200">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-xl bg-white border border-sky-300 flex items-center justify-center text-sky-600">
+                <Cloud className="w-4 h-4" />
+              </div>
+              <div>
+                <div className="text-sm font-black text-slate-800 flex items-center gap-1.5">
+                  어디서든 이어하기
+                  {cloudSyncCode && (
+                    <span className="text-[10px] font-black text-sky-800 bg-sky-100 px-1.5 py-0.2 rounded border border-sky-300">
+                      {cloudSyncCode}
+                    </span>
+                  )}
+                </div>
+                <div className="text-xs font-bold text-slate-500">
+                  다른 기기(폰/PC)로 여행자 불러오기 및 백업
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                sound.playClick();
+                onOpenCloudSync();
+              }}
+              className="px-3 py-1.5 rounded-xl font-black text-xs bg-sky-500 hover:bg-sky-600 text-white transition-colors shadow-sm"
+            >
+              클라우드 설정
             </button>
           </div>
         )}

@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { Gender, PlayerProfile } from '../types/game';
 import { sound } from '../utils/sound';
-import { Sparkles, UserPlus, Play, Trash2, Compass } from 'lucide-react';
+import { CloudSyncModal } from './CloudSyncModal';
+import { Sparkles, UserPlus, Trash2, Compass, Cloud, CloudDownload } from 'lucide-react';
 
 interface ProfileSelectScreenProps {
   profiles: Record<string, PlayerProfile>;
   onSelectProfile: (profileId: string) => void;
   onCreateProfile: (name: string, gender: Gender) => void;
   onDeleteProfile: (profileId: string) => void;
+  onImportProfile?: (profile: PlayerProfile) => void;
+  onUpdateProfile?: (profile: PlayerProfile) => void;
 }
 
 export const ProfileSelectScreen: React.FC<ProfileSelectScreenProps> = ({
@@ -15,11 +18,18 @@ export const ProfileSelectScreen: React.FC<ProfileSelectScreenProps> = ({
   onSelectProfile,
   onCreateProfile,
   onDeleteProfile,
+  onImportProfile,
+  onUpdateProfile,
 }) => {
   const profileList = Object.values(profiles);
   const [isCreating, setIsCreating] = useState(profileList.length === 0);
   const [name, setName] = useState('');
   const [gender, setGender] = useState<Gender>('boy');
+
+  // Cloud Sync Modal state
+  const [syncModalOpen, setSyncModalOpen] = useState(false);
+  const [syncTargetProfile, setSyncTargetProfile] = useState<PlayerProfile | null>(null);
+  const [syncInitialTab, setSyncInitialTab] = useState<'upload' | 'download'>('upload');
 
   const handleCreate = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,6 +37,20 @@ export const ProfileSelectScreen: React.FC<ProfileSelectScreenProps> = ({
     onCreateProfile(name.trim() || '용감한 탐험가', gender);
     setName('');
     setIsCreating(false);
+  };
+
+  const openCloudBackup = (prof: PlayerProfile) => {
+    sound.playClick();
+    setSyncTargetProfile(prof);
+    setSyncInitialTab('upload');
+    setSyncModalOpen(true);
+  };
+
+  const openCloudDownload = () => {
+    sound.playClick();
+    setSyncTargetProfile(profileList[0] || null);
+    setSyncInitialTab('download');
+    setSyncModalOpen(true);
   };
 
   return (
@@ -77,13 +101,19 @@ export const ProfileSelectScreen: React.FC<ProfileSelectScreenProps> = ({
                       />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1.5 flex-wrap">
                         <span className="text-xl font-black text-slate-800 truncate">
                           {prof.name}
                         </span>
                         <span className="text-xs font-extrabold px-2 py-0.5 rounded-full bg-amber-200 text-amber-900">
                           {prof.gender === 'boy' ? '남자 대원' : '여자 대원'}
                         </span>
+                        {prof.cloud_sync_code && (
+                          <span className="text-[10px] font-black px-1.5 py-0.2 rounded bg-sky-100 text-sky-800 border border-sky-300 flex items-center gap-0.5">
+                            <Cloud className="w-2.5 h-2.5" />
+                            {prof.cloud_sync_code}
+                          </span>
+                        )}
                       </div>
                       <p className="text-sm font-bold text-slate-600 mt-1">
                         최근 여행: 제{prof.last_played_era}시대
@@ -92,36 +122,63 @@ export const ProfileSelectScreen: React.FC<ProfileSelectScreenProps> = ({
                         해결한 역사 문제: {totalSolved}개
                       </p>
                     </div>
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        sound.playClick();
-                        if (window.confirm(`'${prof.name}' 여행자 기록을 지울까요?`)) {
-                          onDeleteProfile(prof.id);
-                        }
-                      }}
-                      className="p-2 rounded-xl text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors"
-                      title="프로필 삭제"
-                    >
-                      <Trash2 className="w-5 h-5" />
-                    </button>
+
+                    <div className="flex flex-col gap-1 items-end shrink-0">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          openCloudBackup(prof);
+                        }}
+                        className="p-2 rounded-xl text-sky-600 hover:bg-sky-100/70 transition-colors"
+                        title="클라우드 백업 및 탐험 코드 확인"
+                      >
+                        <Cloud className="w-5 h-5" />
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          sound.playClick();
+                          if (window.confirm(`'${prof.name}' 여행자 기록을 지울까요?`)) {
+                            onDeleteProfile(prof.id);
+                          }
+                        }}
+                        className="p-2 rounded-xl text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors"
+                        title="프로필 삭제"
+                      >
+                        <Trash2 className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
                 );
               })}
             </div>
 
-            <button
-              type="button"
-              onClick={() => {
-                sound.playClick();
-                setIsCreating(true);
-              }}
-              className="w-full py-4 rounded-2xl border-3 border-dashed border-amber-400 bg-amber-50/60 hover:bg-amber-100/80 text-amber-900 font-black text-lg flex items-center justify-center gap-2 transition-all active:scale-98"
-            >
-              <UserPlus className="w-6 h-6 text-amber-700" />
-              <span>+ 새 여행자 만들기</span>
-            </button>
+            {/* Action Buttons: Create New + Cloud Download */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+              <button
+                type="button"
+                onClick={() => {
+                  sound.playClick();
+                  setIsCreating(true);
+                }}
+                className="py-4 px-4 rounded-2xl border-3 border-dashed border-amber-400 bg-amber-50/60 hover:bg-amber-100/80 text-amber-900 font-black text-base flex items-center justify-center gap-2 transition-all active:scale-98"
+              >
+                <UserPlus className="w-5 h-5 text-amber-700" />
+                <span>+ 새 여행자 만들기</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={openCloudDownload}
+                className="py-4 px-4 rounded-2xl border-3 border-sky-400 bg-sky-50/70 hover:bg-sky-100 text-sky-900 font-black text-base flex items-center justify-center gap-2 transition-all active:scale-98 shadow-sm"
+              >
+                <CloudDownload className="w-5 h-5 text-sky-700" />
+                <span>다른 기기에서 불러오기</span>
+              </button>
+            </div>
           </div>
         )}
 
@@ -214,6 +271,22 @@ export const ProfileSelectScreen: React.FC<ProfileSelectScreenProps> = ({
           </form>
         )}
       </div>
+
+      {/* Cloud Sync Modal */}
+      {syncModalOpen && (
+        <CloudSyncModal
+          isOpen={syncModalOpen}
+          onClose={() => setSyncModalOpen(false)}
+          currentProfile={syncTargetProfile}
+          initialTab={syncInitialTab}
+          onProfileImported={(importedProfile) => {
+            onImportProfile?.(importedProfile);
+          }}
+          onProfileUpdated={(updatedProfile) => {
+            onUpdateProfile?.(updatedProfile);
+          }}
+        />
+      )}
     </div>
   );
 };

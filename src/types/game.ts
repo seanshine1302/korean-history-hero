@@ -26,6 +26,8 @@ export interface PlayerProfile {
   gender: Gender;
   difficulty?: UserDifficulty;
   enemy_difficulty?: number; // 0 (기본 최저) ~ 10 (최고 난이도)
+  cloud_sync_code?: string; // 클라우드 동기화 탐험 코드 (예: KOR-8492)
+  cloud_last_synced?: string; // 마지막 클라우드 동기화 시간 (ISO)
   created_at: string;
   last_played_era: number;
   eras: Record<string, EraSaveState>;

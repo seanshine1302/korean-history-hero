@@ -12,6 +12,7 @@ import {
   QuizQuestion,
   ShopCatalogConfig,
   UserDifficulty,
+  PlayerProfile,
 } from './types/game';
 import { createNewProfile, loadSaveData, saveGameData } from './utils/storage';
 import { selectReviewQuestions, selectSessionQuestions } from './utils/quizEngine';
@@ -22,6 +23,7 @@ import { QuizSessionResult, QuizSessionScreen } from './components/QuizSessionSc
 import { InvasionModal, InvasionOutcome } from './components/InvasionModal';
 import { ShopDecorateModal } from './components/ShopDecorateModal';
 import { CodexModal } from './components/CodexModal';
+import { CloudSyncModal } from './components/CloudSyncModal';
 
 type ScreenState = 'profile_select' | 'era_select' | 'era_home' | 'quiz_session';
 
@@ -71,6 +73,7 @@ export function App() {
     initialSlotId: string;
   }>({ open: false, initialTab: 'base', initialSlotId: 'slot_1' });
   const [showCodexModal, setShowCodexModal] = useState(false);
+  const [showCloudSyncModal, setShowCloudSyncModal] = useState(false);
   const [invasionModalState, setInvasionModalState] = useState<{
     open: boolean;
     isBoss: boolean;
@@ -263,6 +266,33 @@ export function App() {
         profiles: nextProfiles,
       };
     });
+  };
+
+  const handleImportProfile = (imported: PlayerProfile) => {
+    setSaveData((prev) => {
+      const nextProfiles = {
+        ...prev.profiles,
+        [imported.id]: imported,
+      };
+      return {
+        ...prev,
+        current_profile_id: imported.id,
+        profiles: nextProfiles,
+      };
+    });
+    setCurrentEraId(imported.last_played_era || 1);
+    setQuizDifficulty(imported.difficulty || 'easy');
+    setEnemyDifficulty(imported.enemy_difficulty ?? 0);
+  };
+
+  const handleUpdateProfile = (updated: PlayerProfile) => {
+    setSaveData((prev) => ({
+      ...prev,
+      profiles: {
+        ...prev.profiles,
+        [updated.id]: updated,
+      },
+    }));
   };
 
   const handleSelectEra = (eraId: number) => {
@@ -559,6 +589,8 @@ export function App() {
         onSelectProfile={handleSelectProfile}
         onCreateProfile={handleCreateProfile}
         onDeleteProfile={handleDeleteProfile}
+        onImportProfile={handleImportProfile}
+        onUpdateProfile={handleUpdateProfile}
       />
     );
   }
@@ -615,6 +647,8 @@ export function App() {
         enemyDifficulty={enemyDifficulty}
         onChangeDifficulty={handleUpdateDifficulty}
         onChangeEnemyDifficulty={handleUpdateEnemyDifficulty}
+        onOpenCloudSync={() => setShowCloudSyncModal(true)}
+        cloudSyncCode={currentProfile.cloud_sync_code}
         onBackToEraSelect={() => setScreen('era_select')}
         onStartQuiz={handleStartQuiz}
         onOpenShop={(initialTab = 'base', initialSlotId = 'slot_1') =>
@@ -668,6 +702,16 @@ export function App() {
           enemyDifficulty={enemyDifficulty}
           onComplete={handleCompleteInvasion}
           onClose={() => setInvasionModalState({ open: false, isBoss: false })}
+        />
+      )}
+
+      {showCloudSyncModal && (
+        <CloudSyncModal
+          isOpen={showCloudSyncModal}
+          onClose={() => setShowCloudSyncModal(false)}
+          currentProfile={currentProfile}
+          onProfileImported={handleImportProfile}
+          onProfileUpdated={handleUpdateProfile}
         />
       )}
     </>

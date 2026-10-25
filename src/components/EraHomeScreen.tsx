@@ -41,6 +41,8 @@ interface EraHomeScreenProps {
   onChangeDifficulty: (difficulty: UserDifficulty) => void;
   enemyDifficulty?: number;
   onChangeEnemyDifficulty?: (difficulty: number) => void;
+  onOpenCloudSync?: () => void;
+  cloudSyncCode?: string;
   onBackToEraSelect: () => void;
   onStartQuiz: (difficulty: UserDifficulty) => void;
   onOpenShop: (initialTab?: 'base' | 'equipment' | 'artifact', initialSlotId?: string) => void;
@@ -61,6 +63,8 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
   onChangeDifficulty,
   enemyDifficulty = 0,
   onChangeEnemyDifficulty,
+  onOpenCloudSync,
+  cloudSyncCode,
   onBackToEraSelect,
   onStartQuiz,
   onOpenShop,
@@ -465,6 +469,8 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
           muted={muted}
           onToggleMute={toggleMute}
           isQuizActive={false}
+          onOpenCloudSync={onOpenCloudSync}
+          cloudSyncCode={cloudSyncCode}
         />
       )}
     </div>
