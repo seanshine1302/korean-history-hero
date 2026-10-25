@@ -73,8 +73,12 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
 
   const baseEnemyPower = targetUnit.power || targetUnit.difficulty || 50;
   const enemyPower = Math.round(baseEnemyPower * enemyTier.powerMultiplier);
-  // Friendly child-oriented win formula: normal invasions almost always succeed or encourage growth; bosses check if playerPower is close
-  const isVictory = isBoss ? playerPower >= enemyPower * 0.72 : playerPower >= enemyPower * 0.5;
+  // 0단계(기준)에서는 초등 저학년 친화적 승리 판정(보스 0.72, 일반 0.50) 유지
+  // 1~10단계에서는 단계별로 요구 승리 비율이 대폭 상승하여 정직한 진검승부(보스 1.05, 일반 1.0) 필요
+  const winThresholdRatio = isBoss
+    ? Math.min(1.05, 0.72 + enemyDifficulty * 0.033)
+    : Math.min(1.0, 0.5 + enemyDifficulty * 0.05);
+  const isVictory = playerPower >= enemyPower * winThresholdRatio;
 
   const earnedRewardGold = isVictory
     ? Math.round(targetUnit.reward_gold * enemyTier.rewardMultiplier)
