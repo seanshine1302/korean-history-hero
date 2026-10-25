@@ -9,6 +9,7 @@ import {
   ShopCatalogConfig,
 } from '../types/game';
 import { sound } from '../utils/sound';
+import { getEnemyDifficultyTier } from '../utils/enemyDifficulty';
 import { Shield, Sword, FastForward, Trophy, Sparkles, Coins, Home, Heart } from 'lucide-react';
 
 export interface InvasionOutcome {
@@ -28,6 +29,7 @@ interface InvasionModalProps {
   eraSave: EraSaveState;
   invasionRules: InvasionRulesConfig;
   shopCatalog: ShopCatalogConfig;
+  enemyDifficulty?: number;
   onComplete: (outcome: InvasionOutcome) => void;
   onClose: () => void;
 }
@@ -40,6 +42,7 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
   eraSave,
   invasionRules,
   shopCatalog,
+  enemyDifficulty = 0,
   onComplete,
   onClose,
 }) => {
@@ -50,6 +53,8 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
   const encounterCfg = invasionRules.era_encounters[String(eraId)];
   const isMission = encounterCfg?.event_type === 'mission';
   const targetUnit: EncounterUnit = isBoss ? encounterCfg.boss : encounterCfg.normal_enemy;
+
+  const enemyTier = getEnemyDifficultyTier(enemyDifficulty);
 
   const equippedObjects = (eraSave.equipped_items || [])
     .map((id) => shopCatalog.equipment_items.find((e) => e.id === id))
@@ -66,9 +71,17 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
     equippedObjects.reduce((s, e) => s + (e?.power_bonus || 0) + (e?.defense_bonus || 0), 0) +
     placedObjects.reduce((s, a) => s + (a?.power_bonus || 0) + (a?.defense_bonus || 0), 0);
 
-  const enemyPower = targetUnit.power || targetUnit.difficulty || 50;
+  const baseEnemyPower = targetUnit.power || targetUnit.difficulty || 50;
+  const enemyPower = Math.round(baseEnemyPower * enemyTier.powerMultiplier);
   // Friendly child-oriented win formula: normal invasions almost always succeed or encourage growth; bosses check if playerPower is close
   const isVictory = isBoss ? playerPower >= enemyPower * 0.72 : playerPower >= enemyPower * 0.5;
+
+  const earnedRewardGold = isVictory
+    ? Math.round(targetUnit.reward_gold * enemyTier.rewardMultiplier)
+    : 20;
+  const earnedRewardExp = isVictory
+    ? Math.round(targetUnit.reward_exp * enemyTier.rewardMultiplier)
+    : 10;
 
   // Max HP derived from power so leveling up and equipping items visibly increases HP
   const playerMaxHp = Math.round(playerPower * 2.5);
@@ -199,8 +212,8 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
     onComplete({
       isBoss,
       victory: isVictory,
-      earnedGold: isVictory ? targetUnit.reward_gold : 20, // Even on defeat, give 20 consolation gold & zero penalty!
-      earnedExp: isVictory ? targetUnit.reward_exp : 10,
+      earnedGold: earnedRewardGold,
+      earnedExp: earnedRewardExp,
       unlockedEnemyIds: unlockedIds,
       rewardItemName: isBoss && isVictory ? targetUnit.reward_item : undefined,
     });
@@ -253,14 +266,33 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
               <div className="text-2xl font-black text-amber-600 px-1">VS</div>
 
               <div className="flex flex-col items-center">
-                <img
-                  src={targetUnit.asset}
-                  alt={targetUnit.name}
-                  className="w-20 h-20 object-contain drop-shadow"
-                />
-                <span className="text-xs font-black text-slate-700 mt-1">{targetUnit.name}</span>
+                <div className="relative">
+                  <img
+                    src={targetUnit.asset}
+                    alt={targetUnit.name}
+                    className="w-20 h-20 object-contain drop-shadow"
+                  />
+                  {enemyDifficulty > 0 && (
+                    <span className="absolute -top-1 -right-2 px-1.5 py-0.5 rounded-full text-[10px] font-black bg-rose-600 text-white shadow">
+                      +{Math.round((enemyTier.powerMultiplier - 1) * 100)}%
+                    </span>
+                  )}
+                </div>
+                <div className="flex items-center gap-1 mt-1">
+                  <span className="text-xs font-black text-slate-700">{targetUnit.name}</span>
+                  <span
+                    className={`text-[10px] font-black px-1.5 py-0.2 rounded border ${enemyTier.badgeBg} ${enemyTier.badgeBorder} ${enemyTier.badgeText}`}
+                  >
+                    Lv.{enemyDifficulty}
+                  </span>
+                </div>
                 <span className="text-xs font-black text-red-700">
                   {isMission ? `🔥 난이도 ${enemyPower}` : `🔥 전투력 ${enemyPower}`}
+                  {enemyDifficulty > 0 && (
+                    <span className="text-[10px] text-slate-400 font-bold ml-1">
+                      (기본 {baseEnemyPower})
+                    </span>
+                  )}
                 </span>
                 <div className="w-full mt-2 bg-white/90 rounded-xl p-1.5 border border-rose-300 shadow-inner">
                   <div className="flex items-center justify-between text-[11px] font-black text-rose-900 mb-1 px-0.5">
@@ -351,6 +383,9 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
                 <div className="flex items-center justify-between text-xs font-black">
                   <span className="text-rose-300 truncate flex items-center gap-1">
                     👾 {targetUnit.name}
+                    <span className="text-[10px] bg-rose-950/80 text-rose-300 border border-rose-600 px-1 py-0.2 rounded font-extrabold">
+                      Lv.{enemyDifficulty}
+                    </span>
                   </span>
                   <span className="text-white tabular-nums">
                     {enemyHp} / {enemyMaxHp} ({enemyHpPercent}%)
@@ -451,9 +486,16 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
               <div className="bg-amber-50 border-2 border-amber-300 rounded-2xl p-3.5 flex items-center justify-center gap-2">
                 <Coins className="w-7 h-7 text-amber-500" />
                 <div className="text-left">
-                  <div className="text-xs font-bold text-slate-500">보상 골드</div>
+                  <div className="text-xs font-bold text-slate-500">
+                    보상 골드
+                    {isVictory && enemyDifficulty > 0 && (
+                      <span className="ml-1 text-[10px] text-amber-700 font-black">
+                        (+{Math.round((enemyTier.rewardMultiplier - 1) * 100)}%)
+                      </span>
+                    )}
+                  </div>
                   <div className="text-lg font-black text-amber-800">
-                    +{isVictory ? targetUnit.reward_gold : 20} G
+                    +{earnedRewardGold} G
                   </div>
                 </div>
               </div>
@@ -461,9 +503,16 @@ export const InvasionModal: React.FC<InvasionModalProps> = ({
               <div className="bg-purple-50 border-2 border-purple-300 rounded-2xl p-3.5 flex items-center justify-center gap-2">
                 <Sparkles className="w-7 h-7 text-purple-500" />
                 <div className="text-left">
-                  <div className="text-xs font-bold text-slate-500">보상 경험치</div>
+                  <div className="text-xs font-bold text-slate-500">
+                    보상 경험치
+                    {isVictory && enemyDifficulty > 0 && (
+                      <span className="ml-1 text-[10px] text-purple-700 font-black">
+                        (+{Math.round((enemyTier.rewardMultiplier - 1) * 100)}%)
+                      </span>
+                    )}
+                  </div>
                   <div className="text-lg font-black text-purple-800">
-                    +{isVictory ? targetUnit.reward_exp : 10} EXP
+                    +{earnedRewardExp} EXP
                   </div>
                 </div>
               </div>

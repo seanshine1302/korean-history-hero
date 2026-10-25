@@ -1,6 +1,7 @@
 import React from 'react';
 import { UserDifficulty } from '../types/game';
 import { sound } from '../utils/sound';
+import { getEnemyDifficultyTier, ENEMY_DIFFICULTY_TIERS } from '../utils/enemyDifficulty';
 import {
   Settings,
   X,
@@ -9,6 +10,11 @@ import {
   VolumeX,
   Sparkles,
   Info,
+  Swords,
+  Shield,
+  Minus,
+  Plus,
+  Trophy,
 } from 'lucide-react';
 
 interface SettingsModalProps {
@@ -16,6 +22,8 @@ interface SettingsModalProps {
   onClose: () => void;
   currentDifficulty: UserDifficulty;
   onChangeDifficulty: (difficulty: UserDifficulty) => void;
+  enemyDifficulty?: number;
+  onChangeEnemyDifficulty?: (difficulty: number) => void;
   muted?: boolean;
   onToggleMute?: () => void;
   isQuizActive?: boolean;
@@ -26,11 +34,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onClose,
   currentDifficulty,
   onChangeDifficulty,
+  enemyDifficulty = 0,
+  onChangeEnemyDifficulty,
   muted = sound.muted,
   onToggleMute,
   isQuizActive = false,
 }) => {
   if (!isOpen) return null;
+
+  const currentEnemyTier = getEnemyDifficultyTier(enemyDifficulty);
 
   const difficultyOptions: {
     id: UserDifficulty;
@@ -78,9 +90,22 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     },
   ];
 
+  const handleEnemyDiffStep = (delta: number) => {
+    if (!onChangeEnemyDifficulty) return;
+    const nextVal = Math.max(0, Math.min(10, enemyDifficulty + delta));
+    sound.playClick();
+    onChangeEnemyDifficulty(nextVal);
+  };
+
+  const handleEnemyDiffSelect = (level: number) => {
+    if (!onChangeEnemyDifficulty) return;
+    sound.playClick();
+    onChangeEnemyDifficulty(level);
+  };
+
   return (
     <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-      <div className="w-full max-w-lg bg-white rounded-3xl border-4 border-amber-400 shadow-2xl p-5 sm:p-7 space-y-5 animate-in fade-in zoom-in-95 duration-150 max-h-[92vh] overflow-y-auto">
+      <div className="w-full max-w-xl bg-white rounded-3xl border-4 border-amber-400 shadow-2xl p-5 sm:p-7 space-y-6 animate-in fade-in zoom-in-95 duration-150 max-h-[92vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between border-b-2 border-amber-100 pb-3">
           <div className="flex items-center gap-2.5">
@@ -90,7 +115,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             <div>
               <h2 className="text-xl sm:text-2xl font-black text-slate-800">게임 환경 설정</h2>
               <p className="text-xs font-bold text-slate-500">
-                난이도 및 게임 설정을 언제든지 조절할 수 있어요
+                퀴즈 문제와 적군 전투 난이도를 자유롭게 조절할 수 있어요
               </p>
             </div>
           </div>
@@ -106,12 +131,135 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </button>
         </div>
 
-        {/* Difficulty Section */}
+        {/* Section 1: Enemy Difficulty (적군 난이도 0 ~ 10 단계 조절) */}
+        {onChangeEnemyDifficulty && (
+          <div className="space-y-3.5 bg-gradient-to-br from-rose-50/70 via-amber-50/50 to-orange-50/70 p-4 sm:p-5 rounded-3xl border-2 border-rose-200 shadow-sm">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-rose-500 text-white flex items-center justify-center shadow-sm">
+                  <Swords className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="text-sm sm:text-base font-black text-slate-800 flex items-center gap-1.5">
+                    적군 난이도 조절
+                    <span className="text-[11px] font-extrabold text-rose-600 bg-rose-100 px-2 py-0.5 rounded-full">
+                      0 ~ 10단계
+                    </span>
+                  </span>
+                  <p className="text-[11px] font-bold text-slate-500">
+                    현재 기준(0단계)부터 최대 10단계까지 적의 힘을 조절해요
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-right">
+                <span
+                  className={`inline-block text-xs font-black px-2.5 py-1 rounded-xl border shadow-sm ${currentEnemyTier.badgeBg} ${currentEnemyTier.badgeBorder} ${currentEnemyTier.badgeText}`}
+                >
+                  {currentEnemyTier.badge}
+                </span>
+              </div>
+            </div>
+
+            {/* Slider & Step Controls */}
+            <div className="space-y-3 bg-white/90 p-3.5 rounded-2xl border border-rose-200 shadow-inner">
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  onClick={() => handleEnemyDiffStep(-1)}
+                  disabled={enemyDifficulty <= 0}
+                  className={`w-9 h-9 rounded-xl border flex items-center justify-center font-black transition-all ${
+                    enemyDifficulty <= 0
+                      ? 'border-slate-200 text-slate-300 bg-slate-50 cursor-not-allowed'
+                      : 'border-slate-300 text-slate-700 bg-white hover:bg-slate-100 active:scale-95 shadow-sm'
+                  }`}
+                  aria-label="난이도 1단계 낮추기"
+                >
+                  <Minus className="w-4 h-4" />
+                </button>
+
+                <div className="flex-1 relative flex items-center">
+                  <input
+                    type="range"
+                    min="0"
+                    max="10"
+                    step="1"
+                    value={enemyDifficulty}
+                    onChange={(e) => handleEnemyDiffSelect(Number(e.target.value))}
+                    className="w-full h-3 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-rose-500 focus:outline-none"
+                  />
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => handleEnemyDiffStep(1)}
+                  disabled={enemyDifficulty >= 10}
+                  className={`w-9 h-9 rounded-xl border flex items-center justify-center font-black transition-all ${
+                    enemyDifficulty >= 10
+                      ? 'border-slate-200 text-slate-300 bg-slate-50 cursor-not-allowed'
+                      : 'border-rose-400 text-rose-700 bg-rose-50 hover:bg-rose-100 active:scale-95 shadow-sm'
+                  }`}
+                  aria-label="난이도 1단계 높이기"
+                >
+                  <Plus className="w-4 h-4" />
+                </button>
+              </div>
+
+              {/* 0 to 10 Quick Select Pill Grid */}
+              <div className="grid grid-cols-11 gap-1 pt-1">
+                {ENEMY_DIFFICULTY_TIERS.map((tier) => {
+                  const isSelected = tier.level === enemyDifficulty;
+                  return (
+                    <button
+                      key={tier.level}
+                      type="button"
+                      onClick={() => handleEnemyDiffSelect(tier.level)}
+                      className={`py-1 rounded-lg text-xs font-black transition-all ${
+                        isSelected
+                          ? `${tier.activeColor} shadow-md scale-105 ring-2 ring-rose-400`
+                          : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
+                      }`}
+                    >
+                      {tier.level}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Min/Max Marker Labels */}
+              <div className="flex justify-between text-[11px] font-extrabold text-slate-400 px-0.5">
+                <span>0단계 (최저 · 현재 기준)</span>
+                <span>5단계</span>
+                <span>10단계 (최고)</span>
+              </div>
+            </div>
+
+            {/* Current Level Status Card */}
+            <div className="bg-white/95 rounded-2xl p-3 border-2 border-rose-200 space-y-1.5 shadow-sm">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-black text-slate-800 flex items-center gap-1">
+                  ⚔️ {currentEnemyTier.name}
+                  {enemyDifficulty === 0 && (
+                    <span className="text-[10px] font-extrabold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded">
+                      현재 기본값
+                    </span>
+                  )}
+                </span>
+                <span className="text-xs font-black text-rose-600">
+                  {currentEnemyTier.detail}
+                </span>
+              </div>
+              <p className="text-xs font-bold text-slate-600">{currentEnemyTier.desc}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Section 2: Quiz Difficulty Section */}
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <span className="text-sm font-black text-slate-800 flex items-center gap-1.5">
               <Sparkles className="w-4 h-4 text-amber-500" />
-              게임 난이도 조절
+              역사 퀴즈 난이도
             </span>
             <span className="text-xs font-extrabold text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-full">
               현재: {difficultyOptions.find((d) => d.id === currentDifficulty)?.name}
@@ -180,7 +328,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </div>
         </div>
 
-        {/* Audio Section */}
+        {/* Section 3: Audio Section */}
         {onToggleMute && (
           <div className="pt-2 border-t border-slate-100 flex items-center justify-between bg-slate-50 p-3.5 rounded-2xl border-2 border-slate-200">
             <div className="flex items-center gap-2.5">

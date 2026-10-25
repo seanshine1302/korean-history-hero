@@ -47,6 +47,7 @@ export function createNewProfile(name: string, gender: Gender, id?: string): Pla
     name: name.trim() || '용감한 탐험가',
     gender,
     difficulty: 'easy',
+    enemy_difficulty: 0,
     created_at: new Date().toISOString(),
     last_played_era: 1,
     eras
@@ -66,6 +67,12 @@ export function loadSaveData(): GameSaveData {
         const prof = parsed.profiles[profId];
         if (!prof.id) prof.id = profId;
         if (!prof.difficulty) prof.difficulty = 'easy';
+        if (prof.enemy_difficulty === undefined || prof.enemy_difficulty === null) {
+          prof.enemy_difficulty = 0;
+        } else {
+          // 0 ~ 10 clamp
+          prof.enemy_difficulty = Math.max(0, Math.min(10, Math.round(prof.enemy_difficulty)));
+        }
         if (!prof.eras) prof.eras = {};
         for (let i = 1; i <= 8; i++) {
           const eraKey = String(i);

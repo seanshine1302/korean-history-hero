@@ -57,6 +57,11 @@ export function App() {
     const prof = initial.current_profile_id ? initial.profiles[initial.current_profile_id] : null;
     return prof?.difficulty || 'easy';
   });
+  const [enemyDifficulty, setEnemyDifficulty] = useState<number>(() => {
+    const initial = loadSaveData();
+    const prof = initial.current_profile_id ? initial.profiles[initial.current_profile_id] : null;
+    return prof?.enemy_difficulty ?? 0;
+  });
   const [sessionQuestions, setSessionQuestions] = useState<QuizQuestion[]>([]);
 
   // Active Modals in Era Home
@@ -188,6 +193,7 @@ export function App() {
     if (prof) {
       setCurrentEraId(prof.last_played_era || 1);
       setQuizDifficulty(prof.difficulty || 'easy');
+      setEnemyDifficulty(prof.enemy_difficulty ?? 0);
     }
     setScreen('era_select');
   };
@@ -203,6 +209,7 @@ export function App() {
     }));
     setCurrentEraId(1);
     setQuizDifficulty(newProf.difficulty || 'easy');
+    setEnemyDifficulty(newProf.enemy_difficulty ?? 0);
     setScreen('era_select');
   };
 
@@ -219,6 +226,26 @@ export function App() {
           [profId]: {
             ...prev.profiles[profId],
             difficulty: newDiff,
+          },
+        },
+      };
+    });
+  };
+
+  const handleUpdateEnemyDifficulty = (newEnemyDiff: number) => {
+    const clamped = Math.max(0, Math.min(10, Math.round(newEnemyDiff)));
+    setEnemyDifficulty(clamped);
+    if (!currentProfile) return;
+    setSaveData((prev) => {
+      const profId = prev.current_profile_id;
+      if (!profId || !prev.profiles[profId]) return prev;
+      return {
+        ...prev,
+        profiles: {
+          ...prev.profiles,
+          [profId]: {
+            ...prev.profiles[profId],
+            enemy_difficulty: clamped,
           },
         },
       };
@@ -558,6 +585,7 @@ export function App() {
         eraName={currentEraConfig.era_name}
         mode={quizMode}
         difficulty={quizDifficulty}
+        enemyDifficulty={enemyDifficulty}
         questions={sessionQuestions}
         allEraQuestions={eraQuestionBanks[currentEraId] || []}
         difficultyConfig={difficultyConfig}
@@ -568,6 +596,7 @@ export function App() {
         onFinishSession={handleFinishQuizSession}
         onCancel={() => setScreen('era_home')}
         onChangeDifficulty={handleUpdateDifficulty}
+        onChangeEnemyDifficulty={handleUpdateEnemyDifficulty}
       />
     );
   }
@@ -583,7 +612,9 @@ export function App() {
         invasionRules={invasionRules}
         shopCatalog={shopCatalog}
         difficulty={quizDifficulty}
+        enemyDifficulty={enemyDifficulty}
         onChangeDifficulty={handleUpdateDifficulty}
+        onChangeEnemyDifficulty={handleUpdateEnemyDifficulty}
         onBackToEraSelect={() => setScreen('era_select')}
         onStartQuiz={handleStartQuiz}
         onOpenShop={(initialTab = 'base', initialSlotId = 'slot_1') =>
@@ -634,6 +665,7 @@ export function App() {
           eraSave={currentEraSave}
           invasionRules={invasionRules}
           shopCatalog={shopCatalog}
+          enemyDifficulty={enemyDifficulty}
           onComplete={handleCompleteInvasion}
           onClose={() => setInvasionModalState({ open: false, isBoss: false })}
         />

@@ -25,6 +25,7 @@ export interface PlayerProfile {
   name: string;
   gender: Gender;
   difficulty?: UserDifficulty;
+  enemy_difficulty?: number; // 0 (기본 최저) ~ 10 (최고 난이도)
   created_at: string;
   last_played_era: number;
   eras: Record<string, EraSaveState>;

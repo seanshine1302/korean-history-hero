@@ -39,6 +39,8 @@ interface EraHomeScreenProps {
   shopCatalog: ShopCatalogConfig;
   difficulty: UserDifficulty;
   onChangeDifficulty: (difficulty: UserDifficulty) => void;
+  enemyDifficulty?: number;
+  onChangeEnemyDifficulty?: (difficulty: number) => void;
   onBackToEraSelect: () => void;
   onStartQuiz: (difficulty: UserDifficulty) => void;
   onOpenShop: (initialTab?: 'base' | 'equipment' | 'artifact', initialSlotId?: string) => void;
@@ -57,6 +59,8 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
   shopCatalog,
   difficulty,
   onChangeDifficulty,
+  enemyDifficulty = 0,
+  onChangeEnemyDifficulty,
   onBackToEraSelect,
   onStartQuiz,
   onOpenShop,
@@ -456,6 +460,8 @@ export const EraHomeScreen: React.FC<EraHomeScreenProps> = ({
           onClose={() => setShowSettingsModal(false)}
           currentDifficulty={difficulty}
           onChangeDifficulty={onChangeDifficulty}
+          enemyDifficulty={enemyDifficulty}
+          onChangeEnemyDifficulty={onChangeEnemyDifficulty}
           muted={muted}
           onToggleMute={toggleMute}
           isQuizActive={false}

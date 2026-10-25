@@ -50,9 +50,11 @@ interface QuizSessionScreenProps {
   economyRules: EconomyRulesConfig;
   invasionRules: InvasionRulesConfig;
   currentGauge: number;
+  enemyDifficulty?: number;
   onFinishSession: (result: QuizSessionResult, triggerInvasionNow: boolean) => void;
   onCancel: () => void;
   onChangeDifficulty?: (difficulty: UserDifficulty) => void;
+  onChangeEnemyDifficulty?: (difficulty: number) => void;
 }
 
 export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
@@ -66,9 +68,11 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
   economyRules,
   invasionRules,
   currentGauge,
+  enemyDifficulty = 0,
   onFinishSession,
   onCancel,
   onChangeDifficulty,
+  onChangeEnemyDifficulty,
 }) => {
   const [currentDifficulty, setCurrentDifficulty] = useState<UserDifficulty>(initialDifficulty);
   const [sessionQuestions, setSessionQuestions] = useState<QuizQuestion[]>(initialQuestions);
@@ -617,6 +621,8 @@ export const QuizSessionScreen: React.FC<QuizSessionScreenProps> = ({
         onClose={() => setShowSettingsModal(false)}
         currentDifficulty={currentDifficulty}
         onChangeDifficulty={handleChangeDifficulty}
+        enemyDifficulty={enemyDifficulty}
+        onChangeEnemyDifficulty={onChangeEnemyDifficulty}
         muted={muted}
         onToggleMute={toggleMute}
         isQuizActive={true}
