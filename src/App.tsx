@@ -420,6 +420,13 @@ export function App() {
         eraState.invasion_gauge = 0;
       }
 
+      // Record any correctly solved questions during tactical quiz
+      if (outcome.solvedTacticalQuestionIds && outcome.solvedTacticalQuestionIds.length > 0) {
+        const solvedSet = new Set(eraState.solved_question_ids || []);
+        outcome.solvedTacticalQuestionIds.forEach((qId) => solvedSet.add(qId));
+        eraState.solved_question_ids = Array.from(solvedSet);
+      }
+
       if (outcome.victory) {
         const codexSet = new Set(eraState.unlocked_codex_ids || []);
         outcome.unlockedEnemyIds.forEach((id) => codexSet.add(id));
@@ -699,6 +706,7 @@ export function App() {
           eraSave={currentEraSave}
           invasionRules={invasionRules}
           shopCatalog={shopCatalog}
+          questions={eraQuestionBanks[currentEraId] || []}
           enemyDifficulty={enemyDifficulty}
           onComplete={handleCompleteInvasion}
           onClose={() => setInvasionModalState({ open: false, isBoss: false })}
